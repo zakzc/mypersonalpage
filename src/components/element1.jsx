@@ -1,15 +1,22 @@
 import React, { Component } from "react";
+import myData from "../data/myData.json";
+
+const school = myData.education;
 
 export default class Element1 extends Component {
   render() {
+    // console.log("My school", school[0].course);
     return (
       <React.Fragment>
-        <h2>What?</h2>
-        <h1>This is Element1 dude</h1>
-        {/* {this.someOtherFunc} */}
-        <span>
-          <button>This is a button</button>
-        </span>
+        <h2>Education</h2>
+        {/* <ul> */}
+        {school.map((s, i) => (
+          <div>
+            <h3 key={i}> {s.level} </h3>
+            <p>{s.course}</p>
+          </div>
+        ))}
+        {/* </ul> */}
       </React.Fragment>
     );
   }

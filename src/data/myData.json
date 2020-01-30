@@ -1,0 +1,21 @@
+{
+  "education": [
+    {
+      "level": "graduation",
+      "course": [
+        "Systems Analyst(Technologist), ",
+        "English Language and Translation"
+      ]
+    },
+    {
+      "level": "Post-graduation Degree/Diploma (1)",
+      "course": ["Full Stack Web Developer, ", "Software Engineer"]
+    },
+    { "level": "MBA", "course": "Information Security" },
+    {
+      "level": "Other University level Degrees in",
+      "course": "Masters in Literature"
+    }
+  ],
+  "contact": ["linkedInLink", "gitHubLink"]
+}
