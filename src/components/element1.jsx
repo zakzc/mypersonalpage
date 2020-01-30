@@ -9,14 +9,12 @@ export default class Element1 extends Component {
     return (
       <React.Fragment>
         <h2>Education</h2>
-        {/* <ul> */}
-        {school.map((s, i) => (
+        {school.map(s => (
           <div>
-            <h3 key={i}> {s.level} </h3>
+            <h3> {s.level} </h3>
             <p>{s.course}</p>
           </div>
         ))}
-        {/* </ul> */}
       </React.Fragment>
     );
   }
