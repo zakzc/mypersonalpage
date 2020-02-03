@@ -4,7 +4,7 @@ import MyBase from "./components/Base";
 import AboutMe from "./components/AboutMe";
 import MyCV from "./components/MyCV";
 import MyProjects from "./components/MyProjects";
-// import MyNavigation from "./components/Navigation";
+import MySkills from "./components/Skills";
 import "../src/App.scss";
 
 export default class App extends React.Component {
@@ -37,6 +37,7 @@ export default class App extends React.Component {
                 <MyBase />
                 <About />
                 <CV />
+                <Skills />
               </div>
             </Route>
             <Route path="/MyProjects">
@@ -60,6 +61,10 @@ function About() {
 
 function CV() {
   return <MyCV />;
+}
+
+function Skills() {
+  return <MySkills />;
 }
 
 function Projects() {

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import myData from "../data/myData.json";
-// import { Link } from "react-router-dom";
-// import myImageToDisplay from "../img/grayHouse.svg";
 
 const school = myData.education;
 
