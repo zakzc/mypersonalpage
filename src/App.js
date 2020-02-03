@@ -1,52 +1,54 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Base from "./components/base";
-import Element2 from "./components/element2";
-import Element1 from "./components/element1";
+import Base from "./components/Base";
+import AboutMe from "./components/AboutMe";
+import MyCV from "./components/MyCV";
+import MyProjects from "./components/MyProjects";
+import "../src/App.scss";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/CV">CV</Link>
-            </li>
-          </ul>
-        </nav>
+        <div id="navigation">
+          <div id="navigationBlack">
+            <Link to="/about">About me</Link>
+          </div>
+          <div id="navigationWhite">
+            <Link to="/MyProjects">My Projects</Link>
+          </div>
+        </div>
         <Switch>
-          <Route path="/about">
-            <Home />
-            <About />
+          <Route path="/About">
+            <div id="about">
+              <Base />
+              <About />
+              <CV />
+            </div>
           </Route>
-          <Route path="/CV">
-            <Home />
-            <CV />
+          <Route path="/MyProjects">
+            <Base />
+            <Projects />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/">{/* <Base /> */}</Route>
         </Switch>
       </div>
     </Router>
   );
 }
 
-function Home() {
-  return <Base />;
-}
+// function Base() {
+//   return <Base />;
+// }
 
 function About() {
-  return <Element2 />;
+  return <AboutMe />;
 }
 
 function CV() {
-  return <Element1 />;
+  return <MyCV />;
+}
+
+function Projects() {
+  return <MyProjects />;
 }

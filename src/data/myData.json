@@ -17,5 +17,12 @@
       "course": "Masters in Literature"
     }
   ],
-  "contact": ["linkedInLink", "gitHubLink"]
+  "contact": ["linkedInLink", "gitHubLink"],
+  "Skills": [
+    { "Basic Web Dev": ["HTML5", "CSS3"] },
+    { "PHP": ["Laravel and Wordpress"] },
+    { "Python": ["Django"] },
+    { "Javascript-ES6": ["React", "Meteor.JS"] },
+    { "UX/UI": ["Design of interfaces"] }
+  ]
 }

@@ -1,0 +1,48 @@
+body {
+  background-color: $white;
+  color: $black;
+  font-family: "Roboto Condensed", sans-serif;
+  //   font-style: $white;
+  #houseIcon {
+    height: 55px;
+    width: 55px;
+  }
+  #about {
+    background-color: $black;
+    color: $white;
+  }
+  #projects {
+    background-color: $white;
+    color: $black;
+    float: right;
+  }
+  #base {
+    padding-top: 100px;
+  }
+  #navigation {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+    #navigationWhite {
+      float: left;
+      margin-left: 50px;
+      a {
+        background-color: $white;
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+    #navigationBlack {
+      float: right;
+      margin-right: 50px;
+      a {
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
