@@ -11,15 +11,6 @@ export default class CV extends Component {
     return (
       <React.Fragment>
         <div id="about">
-          {/* <li>
-            <Link to="/">
-              <img
-                id="houseIcon"
-                src={myImageToDisplay}
-                alt="back to home page"
-              />
-            </Link>
-          </li> */}
           <h1>My CV</h1>
           <h2>Education</h2>
           {school.map(s => (

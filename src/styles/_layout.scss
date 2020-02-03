@@ -25,8 +25,8 @@ body {
     // align-items: center;
     // height: 100vh;
     #navigationWhite {
-      float: left;
-      margin-left: 50px;
+      // float: left;
+      margin-left: 15px;
       a {
         background-color: $white;
         color: $black;
@@ -35,8 +35,9 @@ body {
       }
     }
     #navigationBlack {
-      float: right;
-      margin-right: 50px;
+      background-color: $black;
+      // float: right;
+      margin-right: 15px;
       a {
         background-color: $black;
         color: $white;
