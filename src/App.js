@@ -1,22 +1,35 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MyBase from "./components/Base";
 import AboutMe from "./components/AboutMe";
 import MyCV from "./components/MyCV";
 import MyProjects from "./components/MyProjects";
-import MyNavigation from "./components/Navigation";
+// import MyNavigation from "./components/Navigation";
 import "../src/App.scss";
 
 export default class App extends React.Component {
   state = {
-    navigationVisible: true,
+    isNavigationOn: true,
   };
   render() {
+    console.log(this.state);
     return (
       <Router>
-        <div>
-          <div>
-            <MyNavigation />
+        <div
+          className={
+            this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
+          }
+          // onClick={() =>
+          //   this.setState({
+          //     isNavigationOn: !this.state.isNavigationOn,
+          //   })
+          // }
+        >
+          <div id="navigationBlack">
+            <Link to="/about">About me</Link>
+          </div>
+          <div id="navigationWhite">
+            <Link to="/MyProjects">My Projects</Link>
           </div>
           <Switch>
             <Route path="/About">

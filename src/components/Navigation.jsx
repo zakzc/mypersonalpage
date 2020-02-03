@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Navigation extends Component {
   render() {
     return (
-      <div id="navigation">
+      <div>
         <div id="navigationBlack">
           <Link to="/about">About me</Link>
         </div>

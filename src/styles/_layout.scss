@@ -19,31 +19,4 @@ body {
   #base {
     padding-top: 100px;
   }
-  #navigation {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // height: 100vh;
-    #navigationWhite {
-      // float: left;
-      margin-left: 15px;
-      a {
-        background-color: $white;
-        color: $black;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-    }
-    #navigationBlack {
-      background-color: $black;
-      // float: right;
-      margin-right: 15px;
-      a {
-        background-color: $black;
-        color: $white;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-    }
-  }
 }
