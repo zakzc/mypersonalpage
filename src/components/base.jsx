@@ -8,12 +8,17 @@ export default class Base extends Component {
     this.state = {
       navStatus: this.props.isNavigationOn,
     };
+    this.sendNavDataBack = () => {
+      this.props.updateNavigation(true);
+      console.log("UP UP UP");
+    };
     console.log("props ==>  ", this.props.navStatus);
   }
+  //////////////////////
   render() {
     return (
       <React.Fragment>
-        <div id="base">
+        <div id="base" onClick={this.sendNavDataBack}>
           <Link to="/">
             <img
               id="houseIcon"
@@ -21,7 +26,6 @@ export default class Base extends Component {
               alt="back to home page"
             />
           </Link>
-          <h4>==>: {this.props.navStatus}</h4>
         </div>
       </React.Fragment>
     );

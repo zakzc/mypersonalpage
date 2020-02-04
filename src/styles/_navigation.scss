@@ -1,8 +1,8 @@
 .navIsVisible {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -15,7 +15,7 @@
     }
   }
   #navigationBlack {
-    background-color: $black;
+    background-color: yellow;
     margin-right: 15px;
     a {
       background-color: $black;

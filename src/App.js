@@ -13,33 +13,38 @@ export default class App extends React.Component {
     this.state = {
       isNavigationOn: true,
     };
-    this.handleNav = this.handleNav.bind(this);
-    console.log("construct:", this.state);
-    console.log("construct prop:", this.props);
+    // this.handleNav = this.handleNav.bind(this);
+    console.log("current state is:", this.state);
   }
-  // ! Rendering of the visible invisible in the main navigation
-  handleNav(_State) {
-    console.log("Handle:", _State);
-    if (_State) {
-      return "navIsVisible";
-    } else {
-      return "navIsInvisible";
-    }
-  }
+  //////////////////////
+  updateNav = value => {
+    this.setState({
+      isNavigationOn: value,
+    });
+    console.log("update!!!", this.state.isNavigationOn);
+  };
+  //* Rendering of the visible invisible in the main navigation
+  //////////////////////
   render() {
     return (
       <Router>
         <Switch>
           <Route path="/About">
             <div id="about">
-              <MyBase navStatus={this.state.isNavigationOn} />
+              <MyBase
+                navStatus={this.state.isNavigationOn}
+                updateNavigation={this.updateNav}
+              />
               <About />
               <CV />
               <Skills />
             </div>
           </Route>
           <Route path="/MyProjects">
-            <MyBase navStatus={this.state.isNavigationOn} />
+            <MyBase
+              navStatus={this.state.isNavigationOn}
+              updateNavigation={this.updateNav}
+            />
             <Projects />
           </Route>
         </Switch>
@@ -50,11 +55,11 @@ export default class App extends React.Component {
             this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
           }
           // TODO agora que o state-props, funciona, implementar a chamada de volta no base.jsx
-          // onClick={() =>
-          //   this.setState({
-          //     isNavigationOn: !this.state.isNavigationOn,
-          //   })
-          // }
+          onClick={() =>
+            this.setState({
+              isNavigationOn: !this.state.isNavigationOn,
+            })
+          }
         >
           <div id="navigationBlack">
             <Link to="/about">About me</Link>
