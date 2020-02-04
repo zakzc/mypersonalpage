@@ -10,9 +10,6 @@ export default class AboutMe extends Component {
         <div id="about">
           <h1>About me</h1>
           <h2>My contacts</h2>
-          <span>
-            <button>This is a button</button>
-          </span>
           <ul>
             {myContact.map((c, i) => (
               <li key={i}>{c}</li>

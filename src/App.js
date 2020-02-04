@@ -8,17 +8,48 @@ import MySkills from "./components/Skills";
 import "../src/App.scss";
 
 export default class App extends React.Component {
-  state = {
-    isNavigationOn: true,
-  };
+  constructor() {
+    super();
+    this.state = {
+      isNavigationOn: true,
+    };
+    this.handleNav = this.handleNav.bind(this);
+    console.log("construct:", this.state);
+    console.log("construct prop:", this.props);
+  }
+  // ! Rendering of the visible invisible in the main navigation
+  handleNav(_State) {
+    console.log("Handle:", _State);
+    if (_State) {
+      return "navIsVisible";
+    } else {
+      return "navIsInvisible";
+    }
+  }
   render() {
-    console.log(this.state);
     return (
       <Router>
+        <Switch>
+          <Route path="/About">
+            <div id="about">
+              <MyBase navStatus={this.state.isNavigationOn} />
+              <About />
+              <CV />
+              <Skills />
+            </div>
+          </Route>
+          <Route path="/MyProjects">
+            <MyBase navStatus={this.state.isNavigationOn} />
+            <Projects />
+          </Route>
+        </Switch>
+        {/* Navigation menu */}
         <div
+          // className={this.handleNav(this.state)}
           className={
             this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
           }
+          // TODO agora que o state-props, funciona, implementar a chamada de volta no base.jsx
           // onClick={() =>
           //   this.setState({
           //     isNavigationOn: !this.state.isNavigationOn,
@@ -31,29 +62,15 @@ export default class App extends React.Component {
           <div id="navigationWhite">
             <Link to="/MyProjects">My Projects</Link>
           </div>
-          <Switch>
-            <Route path="/About">
-              <div id="about">
-                <MyBase />
-                <About />
-                <CV />
-                <Skills />
-              </div>
-            </Route>
-            <Route path="/MyProjects">
-              <MyBase />
-              <Projects />
-            </Route>
-          </Switch>
         </div>
       </Router>
     );
   }
 }
 
-function Base() {
-  return <Base />;
-}
+// function MyBase() {
+//   return <Base navStatus={this.props.isNavigationOn} />;
+// }
 
 function About() {
   return <AboutMe />;
