@@ -1,0 +1,26 @@
+// About Section
+#aboutWrapper {
+  background-color: $black;
+  color: $white;
+}
+#textLeft {
+  display: flex;
+  text-align: left;
+  position: fixed;
+  top: 30%;
+  botton: 70%;
+  left: 10%;
+}
+#backHomeLeft {
+  display: flex;
+  text-align: left;
+  position: fixed;
+  top: 50%;
+  botton: 50%;
+  left: 15%;
+}
+#aboutContentRight {
+  text-align: left;
+  justify-content: left;
+  margin-left: 30%;
+}

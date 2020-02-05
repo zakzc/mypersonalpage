@@ -27,48 +27,61 @@ export default class App extends React.Component {
   //////////////////////
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path="/About">
-            <div id="about">
-              <MyBase
-                navStatus={this.state.isNavigationOn}
-                updateNavigation={this.updateNav}
-              />
-              <About />
-              <CV />
-              <Skills />
+      <div className="flex-container">
+        <Router>
+          <Switch>
+            <Route path="/About">
+              <div id="aboutWrapper">
+                <h1 id="textLeft">About Me</h1>
+                <div id="backHomeLeft">
+                  <MyBase
+                    navStatus={this.state.isNavigationOn}
+                    updateNavigation={this.updateNav}
+                  />
+                </div>
+                <div id="aboutContentRight">
+                  <About />
+                  <CV />
+                  <Skills />
+                </div>
+              </div>
+            </Route>
+            <Route path="/MyProjects">
+              <div id="projectWrapper">
+                <h1 id="textRight">My Projects</h1>
+                <div id="backHomeRight">
+                  <MyBase
+                    navStatus={this.state.isNavigationOn}
+                    updateNavigation={this.updateNav}
+                  />
+                </div>
+                <div id="projectContentLeft">
+                  <Projects />
+                </div>
+              </div>
+            </Route>
+          </Switch>
+          {/* Navigation menu */}
+          <div
+            // className={this.handleNav(this.state)}
+            className={
+              this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
+            }
+            onClick={() =>
+              this.setState({
+                isNavigationOn: !this.state.isNavigationOn,
+              })
+            }
+          >
+            <div id="blackBox">
+              <Link to="/about">About me</Link>
             </div>
-          </Route>
-          <Route path="/MyProjects">
-            <MyBase
-              navStatus={this.state.isNavigationOn}
-              updateNavigation={this.updateNav}
-            />
-            <Projects />
-          </Route>
-        </Switch>
-        {/* Navigation menu */}
-        <div
-          // className={this.handleNav(this.state)}
-          className={
-            this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
-          }
-          // TODO agora que o state-props, funciona, implementar a chamada de volta no base.jsx
-          onClick={() =>
-            this.setState({
-              isNavigationOn: !this.state.isNavigationOn,
-            })
-          }
-        >
-          <div id="navigationBlack">
-            <Link to="/about">About me</Link>
+            <div id="whiteBox">
+              <Link to="/MyProjects">My Projects</Link>
+            </div>
           </div>
-          <div id="navigationWhite">
-            <Link to="/MyProjects">My Projects</Link>
-          </div>
-        </div>
-      </Router>
+        </Router>
+      </div>
     );
   }
 }

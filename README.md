@@ -1,3 +1,46 @@
+# Zak Zangrando's Personal WebPage
+==================================
+
+
+## Objetive
+
+This project develops my **Personal Webpage** aimed at displaying my CV and previous projects.
+
+## How to:
+
+Dev Mode: Go to a Terminal and run **npm start**. Since it is a React implementation, it will show the page at <localhost:3000> in any web browser.
+
+Build: just access the webpage at: **address**.
+
+## Technologies used:
+
+This project was developed using:
+
+- The usual HTML5 and CSS3,
+- ReactJSj,
+
+## Notes and Obs
+
+### TO DO:
+
+- <del>Develop static html.
+- <del>Develop dynamic html.
+- <del>Add git repository.
+- <del>Develop initial approach to navigation.
+- Work on style implementation for the contents.
+	1. Make grids using flexbox.
+- Refactor navigation into a single function? Or just leave it this way, since it's such a simple if?
+- Add it to github.
+- Deploy it.
+
+
+
+
+------------------------------------------------------------------------
+
+
+# React ReadMe file
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

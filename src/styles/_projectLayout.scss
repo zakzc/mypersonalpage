@@ -1,0 +1,26 @@
+// Project Section
+#projectWrapper {
+  background-color: $white;
+  color: $black;
+}
+#textRight {
+  display: flex;
+  text-align: right;
+  position: fixed;
+  top: 30%;
+  botton: 70%;
+  right: 10%;
+}
+#backHomeRight {
+  display: flex;
+  text-align: right;
+  position: fixed;
+  top: 50%;
+  botton: 50%;
+  right: 15%;
+}
+#projectContentLeft {
+  text-align: left;
+  justify-content: left;
+  margin-right: 30%;
+}
