@@ -11,10 +11,10 @@ export default class CV extends Component {
         <div id="about">
           <h1>My CV</h1>
           <h2>Education</h2>
-          {school.map(s => (
-            <div>
-              <h3> {s.level} </h3>
-              <p>{s.course}</p>
+          {school.map((c, i) => (
+            <div key={i}>
+              <h3> {c.level} </h3>
+              <p>{c.course}</p>
             </div>
           ))}
         </div>

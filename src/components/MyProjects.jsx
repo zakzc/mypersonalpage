@@ -10,8 +10,8 @@ export default class CV extends Component {
       <React.Fragment>
         <div id="projects">
           <h2>Previous projects</h2>
-          {myProjects.map(p => (
-            <div id="card">
+          {myProjects.map((p, i) => (
+            <div key={i} id="card">
               <img src={p.image} alt={p.alt}></img>
               <h3> {p.name} </h3>
               <p>{p.describe}</p>

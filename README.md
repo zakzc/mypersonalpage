@@ -35,6 +35,8 @@ This project was developed using:
 	1. <del>Make grids using flexbox.
 	2. <del>Make the cards using css only
 	3. Make a card with image and contents on hover <---- HERE NOW
+	4. Solve the image import for svgs.
+	5. Make the svg's gray to follow the project colors. Choose tone of gray.
 - Display the images dynamically into React from data in the json file <---- HERE NOW
 
 #### Refactoring stage
