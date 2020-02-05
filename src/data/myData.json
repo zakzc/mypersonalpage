@@ -24,32 +24,32 @@
   "skills": [
     {
       "skillset": "Basic Web Dev",
-      "language": ["HTML5", "CSS3"],
-      "image": "image link",
+      "language": ["HTML5, ", "CSS3"],
+      "image": "./img/html5.svg",
       "level": "percentage"
     },
     {
       "skillset": "PHP",
       "language": ["Laravel and Wordpress"],
-      "image": "image link",
+      "image": "./img/php.svg",
       "level": "percentage"
     },
     {
       "skillset": "Python",
       "language": ["Django"],
-      "image": "image link",
+      "image": "./img/python.svg",
       "level": "percentage"
     },
     {
       "skillset": "Javascript-ES6",
       "language": ["React", "Meteor.JS"],
-      "image": "image link",
+      "image": ".img/js.svg",
       "level": "percentage"
     },
     {
       "skillset": "UX/UI",
       "language": ["Design of interfaces"],
-      "image": "image link",
+      "image": ".img/uxui.svg",
       "level": "percentage"
     }
   ],
@@ -57,7 +57,7 @@
     {
       "name": "Diary App",
       "link": "https://guarded-dusk-70293.herokuapp.com",
-      "image": "public/img/DiayApptake1.png",
+      "image": "./img/DiaryApptake1.png",
       "alt": "coding project: Diary",
       "tech": "Technologies used: html5, css3, JS, MeteorJS.",
       "describe": "This is a project from my course on Meteor.JS by the University of London - Goldsmiths. This is a diary that keeps track of your entries and returns it to you if you ask for a list of entries. It has a log in page and you must log in if you want to use it. The front and back end are made with Meteor. On clicking, the link will take to the actual app that is active on Heroku."
@@ -65,7 +65,7 @@
     {
       "name": "Typer",
       "link": "https://github.com/zakzc/Typer",
-      "image": "public/img/TyperTake1.png",
+      "image": "./img/TyperTake1.png",
       "alt": "coding project: typer",
       "tech": "Technologies used: html5, css3, ES6, jquery, Ajax.",
       "describe": "This is project for a Typer game, where it shows you a text and you have to type it as fast as you can. It uses material design for the UX part for simplification. The link will take you to the Github page where the project is stored. Follow the readme.md for instructions on how to turn it on locally."
@@ -73,7 +73,7 @@
     {
       "name": "Older personal webpages",
       "link": "no Link",
-      "image": "public/img/Personal_Django_index.png",
+      "image": "./img/Personal_Django_index.png",
       "alt": "Older coding projects",
       "tech": "Technologies used: Python, Django",
       "describe": "Through the years I have made different versions of this and other pages. Initially on wordpress.com, later on wordpress.org, in a self-hosted version. Then, tweaking themes using php and making my only branches of themes. This is the last version of a personal website, done with Django - apart from the usual html,css.js. There is no link to this, since most of these pages don't exist anymore."
@@ -81,7 +81,7 @@
     {
       "name": "Python Game",
       "link": "https://github.com/zakzc/thegame",
-      "image": "public/img/PythonCarGame.png",
+      "image": ".img/PythonCarGame.png",
       "alt": "coding project: python racing game",
       "tech": "Technologies used: Python, PyGame",
       "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up"

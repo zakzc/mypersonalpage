@@ -12,16 +12,13 @@ export default class Skills extends Component {
       <React.Fragment>
         <div id="about">
           <h2>My Skills</h2>
-          <h4>TODO Elaborate the skills further</h4>
           <ul>
             {mySkills.map((s, i) => (
-              <ul>
-                <li key={i}>
-                  <h4> {s.skillset} </h4>
-                  <p>{s.language}</p>
-                  <p>{s.image}</p>
-                </li>
-              </ul>
+              <li id="skillCard" key={i}>
+                <h4> {s.skillset} </h4>
+                <p>{s.language}</p>
+                <img src={s.image} />
+              </li>
             ))}
           </ul>
         </div>

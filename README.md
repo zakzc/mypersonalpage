@@ -19,21 +19,36 @@ This project was developed using:
 - The usual HTML5 and CSS3,
 - ReactJSj,
 
-## Notes and Obs
 
-### TO DO:
+## TO DO:
 
-- <del>Develop static html.
-- <del>Develop dynamic html.
+#### Development
+- <del>Develop static html to serve as base of the future dynamic file.
+- <del>Start React project.
 - <del>Add git repository.
-- <del>Develop initial approach to navigation.
+- <del> Define the dynamic elements in a json file.
+- <del> Determine which contents is inmutable, so that it is used from constants, and which is mutable, coming from the component state.
+- <del> Develop initial approach to navigation, using only html basics.
+- <del> Implement the navigation dynamically, using onClick.
+- <del> Use the state and props to update the navigation.
 - Work on style implementation for the contents.
-	1. Make grids using flexbox.
-- Refactor navigation into a single function? Or just leave it this way, since it's such a simple if?
+	1. <del>Make grids using flexbox.
+	2. <del>Make the cards using css only
+	3. Make a card with image and contents on hover <---- HERE NOW
+- Display the images dynamically into React from data in the json file <---- HERE NOW
+
+#### Refactoring stage
+- Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc.
+- Refactor the website for mobile access
+
+#### Final Stage
 - Add it to github.
 - Deploy it.
 
 
+
+## Personal Notes
+Even though it looks simple, with a minimalist black-white look, the project behind the scenes involves quite a lot of React (states, props, functions) and CSS. My option was to minimize the use of external libraries, like bootstrap (that would make the rendering of the columns much easier, withoub the pletora of flexbox everywhere) in order to give it a smaller size/fast speed, using, as much as possible, native html and css functionalities. This is the guideline of the project.
 
 
 ------------------------------------------------------------------------
