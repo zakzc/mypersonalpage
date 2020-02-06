@@ -41,7 +41,10 @@ export default class App extends React.Component {
                 </div>
                 <div id="aboutContentRight">
                   <About />
+                  <br />
                   <CV />
+                  <br />
+                  <br />
                   <Skills />
                 </div>
               </div>
@@ -67,17 +70,30 @@ export default class App extends React.Component {
             className={
               this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
             }
-            onClick={() =>
-              this.setState({
-                isNavigationOn: !this.state.isNavigationOn,
-              })
-            }
           >
             <div id="blackBox">
-              <Link to="/about">About me</Link>
+              <Link
+                to="/about"
+                onClick={() =>
+                  this.setState({
+                    isNavigationOn: !this.state.isNavigationOn,
+                  })
+                }
+              >
+                About me
+              </Link>
             </div>
             <div id="whiteBox">
-              <Link to="/MyProjects">My Projects</Link>
+              <Link
+                to="/MyProjects"
+                onClick={() =>
+                  this.setState({
+                    isNavigationOn: !this.state.isNavigationOn,
+                  })
+                }
+              >
+                My Projects
+              </Link>
             </div>
           </div>
         </Router>

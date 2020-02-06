@@ -8,10 +8,16 @@ export default class AboutMe extends Component {
     return (
       <React.Fragment>
         <div id="about">
-          <h2>My contacts</h2>
+          <h2>Find me</h2>
           <ul>
             {myContact.map((c, i) => (
-              <li key={i}>{c}</li>
+              <li key={i}>
+                <div className="links" key={i}>
+                  <a href={c.url}>
+                    <p>{c.description}</p>
+                  </a>
+                </div>
+              </li>
             ))}
           </ul>
         </div>

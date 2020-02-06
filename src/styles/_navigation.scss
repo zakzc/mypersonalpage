@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: 150%;
   a {
     text-decoration: none;
     text-transform: uppercase;
     text-size-adjust: 450%;
     cursor: pointer;
+    padding: 5%;
   }
   #whiteBox {
     width: 100%;
@@ -24,6 +26,10 @@
       botton: 50%;
       right: 20%;
     }
+    :hover {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
   }
   #blackBox {
     width: 100%;
@@ -39,6 +45,10 @@
       top: 50%;
       botton: 50%;
       left: 20%;
+    }
+    :hover {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
     }
   }
 }

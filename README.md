@@ -31,16 +31,27 @@ This project was developed using:
 - <del> Develop initial approach to navigation, using only html basics.
 - <del> Implement the navigation dynamically, using onClick.
 - <del> Use the state and props to update the navigation.
-- Work on style implementation for the contents.
-	1. <del>Make grids using flexbox.
-	2. <del>Make the cards using css only
-	3. Make a card with image and contents on hover <---- HERE NOW
-	4. Solve the image import for svgs.
-	5. <del>Make the svg's gray to follow the project colors. Choose tone of gray.
-- Display the images dynamically into React from data in the json file <---- HERE NOW
+- <del> Work on style implementation for the contents.
+- Solve the image import for svgs.<br>
+		1. Use a constant to load the image. Make an area in the json file for the images.<br>
+		2. Make a function that maps the image addresses into an array, like in the original verstion.
+- <del> Refactor the contacts in the json file and add the links.
+- <del> Add the links to the Projects (also from json file)
+
+#### CSS
+- <del>Make grids using flexbox.
+- <del>Make the cards using css only
+- <del> Make a card with image and sepia on hover
+
+- <del>Make the svg's gray to follow the project colors. Choose tone of gray.
+- Soften the transition between the pages with css or some react alternative.
+- <del> Make the card cover the whole content and not each part and paragraph.
+- <del> Fix the click on the navigation bar so that it goes to the childrem elements even if you click on an empty area.
+- Make the images in projects area close to the center
+- Check alternatives to text display.
 
 #### Refactoring stage
-- Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc.
+- Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded. <==== HERE NOW
 - Refactor the website for mobile access
 
 #### Final Stage

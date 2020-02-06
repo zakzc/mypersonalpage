@@ -1,4 +1,8 @@
 // About Section
+html {
+  background-color: $black;
+}
+
 #aboutWrapper {
   background-color: $black;
   color: $white;
@@ -10,6 +14,7 @@
   top: 30%;
   botton: 70%;
   left: 10%;
+  text-transform: uppercase;
 }
 #backHomeLeft {
   display: flex;
@@ -18,9 +23,16 @@
   top: 50%;
   botton: 50%;
   left: 15%;
+  :hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
 }
 #aboutContentRight {
   text-align: left;
   justify-content: left;
   margin-left: 30%;
+}
+a {
+  color: $gray;
 }

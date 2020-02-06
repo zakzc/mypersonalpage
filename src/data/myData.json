@@ -1,26 +1,35 @@
 {
   "education": [
     {
-      "level": "graduation",
+      "level": "Graduation",
       "course": [
-        "Systems Analyst(Technologist), ",
+        "Systems Analyst(Technologist) & ",
         "English Language and Translation"
       ]
     },
     {
-      "level": "Post-graduation Degree/Diploma",
-      "course": ["Full Stack Web Developer, ", "Software Engineer"]
+      "level": "Post-graduation Degrees-Diplomas",
+      "course": ["Full Stack Web Developer & ", "Software Engineering"]
     },
     {
       "level": "MBA, Masters in Business Administration",
       "course": "Information Security"
     },
     {
-      "level": "Other University level Degrees in",
+      "level": "Other University-level Degrees in",
       "course": "Masters in Literature"
     }
   ],
-  "contact": ["linkedInLink", "gitHubLink"],
+  "contact": [
+    {
+      "url": "https://www.linkedin.com/in/zakzangrando/",
+      "description": "Find me on LinkedIn"
+    },
+    {
+      "url": "https://github.com/zakzc",
+      "description": "Link to this website's code on GitHub"
+    }
+  ],
   "skills": [
     {
       "skillSet": "Basic Web Dev",
