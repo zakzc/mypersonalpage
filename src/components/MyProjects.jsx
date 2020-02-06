@@ -12,9 +12,13 @@ export default class CV extends Component {
           <h2>Previous projects</h2>
           {myProjects.map((p, i) => (
             <div key={i} id="card">
-              <img src={p.image} alt={p.alt}></img>
-              <h3> {p.name} </h3>
-              <p>{p.describe}</p>
+              <div id="projectImage">
+                <img src={p.image} alt={p.alt}></img>
+              </div>
+              <div id="projectText">
+                <h3> {p.name} </h3>
+                <p>{p.describe}</p>
+              </div>
             </div>
           ))}
         </div>

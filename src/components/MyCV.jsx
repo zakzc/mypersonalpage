@@ -9,8 +9,7 @@ export default class CV extends Component {
     return (
       <React.Fragment>
         <div id="about">
-          <h1>My CV</h1>
-          <h2>Education</h2>
+          <h2>My Educational-Academic Life</h2>
           {school.map((c, i) => (
             <div key={i}>
               <h3> {c.level} </h3>

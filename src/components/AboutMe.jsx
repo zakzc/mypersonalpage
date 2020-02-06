@@ -8,7 +8,6 @@ export default class AboutMe extends Component {
     return (
       <React.Fragment>
         <div id="about">
-          <h1>About me</h1>
           <h2>My contacts</h2>
           <ul>
             {myContact.map((c, i) => (
