@@ -10,7 +10,7 @@ export default class Base extends Component {
     };
     this.sendNavDataBack = () => {
       this.props.updateNavigation();
-      console.log("Data sent up to the state");
+      // console.log("Data sent up to the state");
     };
   }
   //////////////////////

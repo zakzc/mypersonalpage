@@ -32,13 +32,14 @@ This project was developed using:
 - <del> Implement the navigation dynamically, using onClick.
 - <del> Use the state and props to update the navigation.
 - <del> Work on style implementation for the contents.
-- Solve the image import for svgs.<br>
-		1. Use a constant to load the image. Make an area in the json file for the images.<br>
+- <del> Solve the image import for svgs.<br>
+		1. <del> Use a constant to load the image. Make an area in the json file for the images.<br>
 		2. Make a function that maps the image addresses into an array, like in the original verstion.
 - <del> Refactor the contacts in the json file and add the links.
 - <del> Add the links to the Projects (also from json file)
-- Remove all console.logs used during development.
-- Finally, go error message by error message in the console and fix all of them. Console must be totally clean at the end.
+- <del> Remove all console.logs used during development.
+- <del> Finally, go error message by error message in the console and fix all of them. Console must be totally clean at the end.</del>
+	1. Can't fix the error map message, since it comes from Chrome and seems to be a bug.
 
 #### CSS
 - <del>Make grids using flexbox.
@@ -49,8 +50,8 @@ This project was developed using:
 - Soften the transition between the pages with css or some react alternative.
 - <del> Make the card cover the whole content and not each part and paragraph.
 - <del> Fix the click on the navigation bar so that it goes to the childrem elements even if you click on an empty area.
-- Make the images in projects area close to the center
-- Check alternatives to text display.
+- <del> Make the images in projects area close to the center
+- <del> Check alternatives to text display.
 
 #### Refactoring stage
 - Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded. <==== HERE NOW
@@ -58,7 +59,7 @@ This project was developed using:
 
 #### Final Stage
 - Add it to github.
-- Add Google Analytics.
+- Add Google Analytics with React-ga
 - Deploy it.
 
 

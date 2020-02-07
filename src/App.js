@@ -1,7 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Page404 from "./components/Page404";
 import "../src/App.scss";
+// import { Redirect } from "react-router";
 
 export default class App extends React.Component {
   render() {
@@ -9,7 +16,12 @@ export default class App extends React.Component {
       <React.Fragment>
         <div className="flex-container">
           <Router>
-            <Route exact path="/" component={Navigation} />
+            <Switch>
+              <Route exact path="/" component={Navigation} />
+              <Redirect from="/about" to="/" />;
+              <Redirect from="/MyProjects" to="/" />;
+              <Route component={Page404} />
+            </Switch>
           </Router>
         </div>
       </React.Fragment>

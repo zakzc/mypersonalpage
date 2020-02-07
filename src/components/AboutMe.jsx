@@ -4,10 +4,6 @@ import myData from "../data/myData.json";
 const myContact = myData.contact;
 
 export default class AboutMe extends Component {
-  constructor() {
-    super();
-    console.log("constructor About");
-  }
   render() {
     return (
       <React.Fragment>

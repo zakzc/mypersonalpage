@@ -13,7 +13,6 @@ export default class Navigation extends React.Component {
     this.state = {
       isNavigationOn: true,
     };
-    console.log("Constructor Navigation", this.state.isNavigationOn);
   }
   //////////////////////
   // Update navigation sets updates the nav based on the
@@ -102,6 +101,10 @@ export default class Navigation extends React.Component {
     );
   }
 }
+
+// function Base() {
+//   return <MyBase />;
+// }
 
 function About() {
   return <AboutMe />;
