@@ -21,7 +21,7 @@ export default class Navigation extends React.Component {
     this.setState({
       isNavigationOn: true,
     });
-    console.log("updateNav activated", this.state.isNavigationOn);
+    // console.log("updateNav activated", this.state.isNavigationOn);
   };
   //////////////////////
   render() {

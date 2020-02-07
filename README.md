@@ -45,30 +45,27 @@ This project was developed using:
 - <del>Make grids using flexbox.
 - <del>Make the cards using css only
 - <del> Make a card with image and sepia on hover
-
 - <del>Make the svg's gray to follow the project colors. Choose tone of gray.
-- Soften the transition between the pages with css or some react alternative.
 - <del> Make the card cover the whole content and not each part and paragraph.
 - <del> Fix the click on the navigation bar so that it goes to the childrem elements even if you click on an empty area.
 - <del> Make the images in projects area close to the center
 - <del> Check alternatives to text display.
+- __Soften the transition between the pages with css or some react alternative.__  <==== HERE NOW
 
 #### Refactoring stage
-- Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded. <==== HERE NOW
-- **Refactor the website for mobile!!**
+- <del> Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded.
+- **Refactor the website for mobile!!** <br>  <==== HERE NOW
+	1. __Transform what is side by side in the layout with top-botton.__
+	2. 
 
 #### Final Stage
 - Add it to github.
 - Add Google Analytics with React-ga
-- Deploy it.
+- Deploy it (Firebase).
 
 
 ### Future implementations
 - Incorporate a blog, with a backend using Node.
-
-On reload the constructur is making the SenddataBack make the nav tru again. Try to take it out as a fuction of on click only!!!!!
-
-
 
 ## Personal Notes
 Even though it looks simple, with a minimalist black-white look, the project behind the scenes involves quite a bit of React (states, props, functions) and a lot of CSS. My option was to minimize the use of external libraries, like bootstrap (that would make the rendering of the columns much easier, withoub the pletora of flexbox everywhere) in order to give it a smaller size/fast speed, using, as much as possible, native html and css functionalities. This is the guideline of the project. <br>

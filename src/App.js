@@ -8,7 +8,6 @@ import {
 import Navigation from "./components/Navigation";
 import Page404 from "./components/Page404";
 import "../src/App.scss";
-// import { Redirect } from "react-router";
 
 export default class App extends React.Component {
   render() {
