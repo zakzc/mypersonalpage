@@ -13,10 +13,10 @@ export default class App extends React.Component {
     this.state = {
       isNavigationOn: true,
     };
-    // this.handleNav = this.handleNav.bind(this);
-    console.log("current state is:", this.state);
+    console.log("current state is ==>  ", this.state);
   }
   //////////////////////
+  //* Update navigation sets the state and the class
   updateNav = value => {
     this.setState({
       isNavigationOn: value,
@@ -66,7 +66,6 @@ export default class App extends React.Component {
           </Switch>
           {/* Navigation menu */}
           <div
-            // className={this.handleNav(this.state)}
             className={
               this.state.isNavigationOn ? "navIsVisible" : "navIsInvisible"
             }
@@ -76,7 +75,7 @@ export default class App extends React.Component {
                 to="/about"
                 onClick={() =>
                   this.setState({
-                    isNavigationOn: !this.state.isNavigationOn,
+                    isNavigationOn: false,
                   })
                 }
               >
@@ -88,7 +87,7 @@ export default class App extends React.Component {
                 to="/MyProjects"
                 onClick={() =>
                   this.setState({
-                    isNavigationOn: !this.state.isNavigationOn,
+                    isNavigationOn: false,
                   })
                 }
               >
@@ -101,10 +100,6 @@ export default class App extends React.Component {
     );
   }
 }
-
-// function MyBase() {
-//   return <Base navStatus={this.props.isNavigationOn} />;
-// }
 
 function About() {
   return <AboutMe />;

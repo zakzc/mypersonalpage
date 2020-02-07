@@ -17,7 +17,7 @@ Build: just access the webpage at: **address**.
 This project was developed using:
 
 - The usual HTML5 and CSS3,
-- ReactJSj,
+- React.JS.
 
 
 ## TO DO:
@@ -37,6 +37,8 @@ This project was developed using:
 		2. Make a function that maps the image addresses into an array, like in the original verstion.
 - <del> Refactor the contacts in the json file and add the links.
 - <del> Add the links to the Projects (also from json file)
+- Remove all console.logs used during development.
+- Finally, go error message by error message in the console and fix all of them. Console must be totally clean at the end.
 
 #### CSS
 - <del>Make grids using flexbox.
@@ -52,16 +54,19 @@ This project was developed using:
 
 #### Refactoring stage
 - Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded. <==== HERE NOW
-- Refactor the website for mobile access
+- **Refactor the website for mobile!!**
 
 #### Final Stage
 - Add it to github.
+- Add Google Analytics.
 - Deploy it.
 
 
 
 ## Personal Notes
-Even though it looks simple, with a minimalist black-white look, the project behind the scenes involves quite a lot of React (states, props, functions) and CSS. My option was to minimize the use of external libraries, like bootstrap (that would make the rendering of the columns much easier, withoub the pletora of flexbox everywhere) in order to give it a smaller size/fast speed, using, as much as possible, native html and css functionalities. This is the guideline of the project.
+Even though it looks simple, with a minimalist black-white look, the project behind the scenes involves quite a bit of React (states, props, functions) and a lot of CSS. My option was to minimize the use of external libraries, like bootstrap (that would make the rendering of the columns much easier, withoub the pletora of flexbox everywhere) in order to give it a smaller size/fast speed, using, as much as possible, native html and css functionalities. This is the guideline of the project. <br>
+I know that it's a bit of an overkill to use React, since most, if not all, of this could be rendered in plain html+css+vanilaJS-or-jQuery, but the idea is to expand the project into a blog and incorporate other options (aligning also backend into the project) in the future. For that, I prefered the solid base of React from the very beginning, plus the fact that it helped me practice a little.
+<br>
 
 
 ------------------------------------------------------------------------
