@@ -16,7 +16,6 @@ export default class App extends React.Component {
       isNavigationOn: true,
     };
   }
-
   //////////////////////
   // Update navigation sets updates the nav based on the
   // props coming from base.jsx

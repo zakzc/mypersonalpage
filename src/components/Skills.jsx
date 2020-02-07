@@ -11,8 +11,7 @@ import u_Logo from "../img/uxui.svg";
 // Data used in the component
 const imageList = [h_Logo, p_Logo, py_Logo, j_Logo, u_Logo];
 const mySkills = myData.skills;
-
-// TODO Format the svgs to gray and small
+//////////////////////
 
 export default class Skills extends Component {
   render() {

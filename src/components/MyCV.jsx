@@ -5,7 +5,6 @@ const school = myData.education;
 
 export default class CV extends Component {
   render() {
-    // console.log("My school", school[0].course);
     return (
       <React.Fragment>
         <div id="about">
