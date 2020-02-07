@@ -10,7 +10,6 @@ const ProjectImageList = [diaryApp, typerApp, personalApp, pythonApp];
 
 export default class CV extends Component {
   render() {
-    console.log(myProjects);
     return (
       <React.Fragment>
         <div id="projects">
@@ -18,14 +17,17 @@ export default class CV extends Component {
           {myProjects.map((p, i) => (
             <div key={i}>
               <div className="card">
-                <h3> {p.name} </h3>
+                <h2> {p.name} </h2>
                 <br />
                 <div className="projectImage">
-                  <img src={ProjectImageList[i]} alt={p.alt}></img>
+                  <a href={p.link}>
+                    <img src={ProjectImageList[i]} alt={p.alt}></img>
+                  </a>
                 </div>
                 <br />
                 <br />
                 <div className="projectText">
+                  <h4>{p.tech}</h4>
                   <p>{p.describe}</p>
                 </div>
               </div>

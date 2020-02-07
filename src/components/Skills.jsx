@@ -16,8 +16,6 @@ const mySkills = myData.skills;
 
 export default class Skills extends Component {
   render() {
-    console.log("full:", mySkills);
-    console.log("image: ", mySkills.image);
     return (
       <React.Fragment>
         <div id="about">

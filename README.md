@@ -62,6 +62,9 @@ This project was developed using:
 - Deploy it.
 
 
+On reload the constructur is making the SenddataBack make the nav tru again. Try to take it out as a fuction of on click only!!!!!
+
+
 
 ## Personal Notes
 Even though it looks simple, with a minimalist black-white look, the project behind the scenes involves quite a bit of React (states, props, functions) and a lot of CSS. My option was to minimize the use of external libraries, like bootstrap (that would make the rendering of the columns much easier, withoub the pletora of flexbox everywhere) in order to give it a smaller size/fast speed, using, as much as possible, native html and css functionalities. This is the guideline of the project. <br>

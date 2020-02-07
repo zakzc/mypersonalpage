@@ -7,21 +7,24 @@ import MyProjects from "./components/MyProjects";
 import MySkills from "./components/Skills";
 import "../src/App.scss";
 
+// const debugMe = true;
+
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
       isNavigationOn: true,
     };
-    console.log("current state is ==>  ", this.state);
   }
+
   //////////////////////
-  //* Update navigation sets the state and the class
+  // Update navigation sets updates the nav based on the
+  // props coming from base.jsx
   updateNav = value => {
     this.setState({
       isNavigationOn: value,
     });
-    console.log("update!!!", this.state.isNavigationOn);
+    console.log("updateNav activated", this.state.isNavigationOn);
   };
   //* Rendering of the visible invisible in the main navigation
   //////////////////////
