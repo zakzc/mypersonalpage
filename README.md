@@ -62,6 +62,9 @@ This project was developed using:
 - Deploy it.
 
 
+### Future implementations
+- Incorporate a blog, with a backend using Node.
+
 On reload the constructur is making the SenddataBack make the nav tru again. Try to take it out as a fuction of on click only!!!!!
 
 

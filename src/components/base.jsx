@@ -9,7 +9,7 @@ export default class Base extends Component {
       navStatus: this.props.isNavigationOn,
     };
     this.sendNavDataBack = () => {
-      this.props.updateNavigation(true);
+      this.props.updateNavigation();
       console.log("Data sent up to the state");
     };
   }
