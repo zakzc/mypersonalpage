@@ -15,6 +15,18 @@ html {
   botton: 70%;
   left: 10%;
   text-transform: uppercase;
+  // Mobile adjust
+  @media screen and (max-width: $break) {
+    // display: flex;
+    text-align: center;
+    position: relative;
+    top: 13%;
+    left: 30%;
+    right: 20%;
+    background-color: $black;
+    padding: 14% 0 6% 0;
+    margin: 0 0 0 0;
+  }
 }
 #backHomeLeft {
   display: flex;
@@ -26,6 +38,18 @@ html {
   :hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  // Mobile adjust
+  @media screen and (max-width: $break) {
+    // display: flex;
+    text-align: center;
+    position: relative;
+    top: 13%;
+    left: 40%;
+    right: 40%;
+    background-color: $black;
+    padding: 4% 0 2% 0;
+    margin: 0 0 0 0;
   }
 }
 #aboutContentRight {
