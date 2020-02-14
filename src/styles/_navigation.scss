@@ -33,9 +33,20 @@
         right: 8%;
       }
     }
-    :hover {
-      -webkit-transform: scale(1.5);
+    a:hover {
       transform: scale(1.5);
+    }
+    :hover#nameRight {
+      cursor: crosshair;
+      transform: none;
+    }
+    #nameRight {
+      font-size: 100%;
+      background-color: $white;
+      color: $black;
+      text-align: left;
+      margin-left: 2%;
+      transform: none;
     }
   }
   #blackBox {
@@ -57,9 +68,20 @@
         left: 8%;
       }
     }
-    :hover {
-      -webkit-transform: scale(1.5);
+    a:hover {
       transform: scale(1.5);
+    }
+    :hover#nameLeft {
+      cursor: crosshair;
+      transform: none;
+    }
+    #nameLeft {
+      background-color: $black;
+      color: $white;
+      font-size: 100%;
+      text-align: right;
+      margin-right: 2%;
+      transform: none;
     }
   }
 }

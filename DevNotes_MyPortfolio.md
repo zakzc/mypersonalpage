@@ -36,6 +36,7 @@
 - Put the house symbol in a circle and recheck the gray.
 - Make the favicon. Make it gray?
 - __Soften the transition between the pages with css or some react alternative.__  
+- Add my NAME to the page.
 #== HERE NOW====#
 
 
@@ -43,6 +44,7 @@
 # Refactoring
 - <del> Refactor navigation into a single function in order to avoid the quirks of access directly to /about etc. OR, maybe, make a Component WIll mount that sets the navigation to invisible before the elements are loaded.
 - **Refactor the website for mobile!!** <br>
+	1. Find the point of overflow in the mobile rendering of the house and About/Project background.
 - #== HERE NOW====#
 
 ## Mobile refactoring

@@ -6,6 +6,12 @@ html {
 #projectWrapper {
   background-color: $white;
   color: $black;
+  @media screen and (max-width: $break) {
+    text-align: center;
+    width: 100%;
+    padding: 20px 16px;
+    margin: 20px 16px;
+  }
 }
 #textRight {
   display: flex;
@@ -15,6 +21,17 @@ html {
   botton: 70%;
   right: 10%;
   text-transform: uppercase;
+  @media screen and (max-width: $break) {
+    // display: flex;
+    text-align: center;
+    position: relative;
+    top: 13%;
+    left: 30%;
+    right: 20%;
+    background-color: $white;
+    padding: 14% 0 6% 0;
+    margin: 0 0 0 0;
+  }
 }
 #backHomeRight {
   display: flex;
@@ -26,6 +43,17 @@ html {
   :hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  @media screen and (max-width: $break) {
+    // display: flex;
+    text-align: center;
+    position: relative;
+    top: 13%;
+    left: 40%;
+    right: 40%;
+    background-color: $white;
+    padding: 4% 0 2% 0;
+    margin: 0 0 0 0;
   }
 }
 #projectContentLeft {
@@ -42,6 +70,12 @@ html {
   :hover {
     // box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  @media screen and (max-width: $break) {
+    text-align: center;
+    width: 100%;
+    padding: 20px 16px;
+    margin: 20px 16px;
+  }
 }
 .projectImage {
   :hover {
@@ -49,6 +83,13 @@ html {
     transform: scale(1.05);
     -webkit-filter: grayscale(10);
     filter: grayscale(10);
+  }
+  @media screen and (max-width: $break) {
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 .projectText {

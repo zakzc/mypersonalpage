@@ -6,6 +6,12 @@ html {
 #aboutWrapper {
   background-color: $black;
   color: $white;
+  @media screen and (max-width: $break) {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    width: 100%;
+  }
 }
 #textLeft {
   display: flex;
@@ -17,7 +23,6 @@ html {
   text-transform: uppercase;
   // Mobile adjust
   @media screen and (max-width: $break) {
-    // display: flex;
     text-align: center;
     position: relative;
     top: 13%;
@@ -45,10 +50,10 @@ html {
     text-align: center;
     position: relative;
     top: 13%;
-    left: 40%;
-    right: 40%;
+    left: 34%;
+    // right: 4%;
     background-color: $black;
-    padding: 4% 0 2% 0;
+    padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
 }
@@ -56,7 +61,14 @@ html {
   text-align: left;
   justify-content: left;
   margin-left: 30%;
-}
-a {
-  color: $gray;
+  a {
+    color: $gray;
+  }
+  @media screen and (max-width: $break) {
+    text-align: center;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    overflow: visible;
+  }
 }

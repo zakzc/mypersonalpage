@@ -32,7 +32,7 @@ export default class Navigation extends React.Component {
             <Switch>
               <Route path="/About">
                 <div id="aboutWrapper">
-                  <h1 id="textLeft">About Me</h1>
+                  <h2 id="textLeft">About Me</h2>
                   <div id="backHomeLeft">
                     <MyBase
                       navStatus={this.state.isNavigationOn}
@@ -51,7 +51,7 @@ export default class Navigation extends React.Component {
               </Route>
               <Route path="/MyProjects">
                 <div id="projectWrapper">
-                  <h1 id="textRight">My Projects</h1>
+                  <h2 id="textRight">My Projects</h2>
                   <div id="backHomeRight">
                     <MyBase
                       navStatus={this.state.isNavigationOn}
@@ -71,6 +71,9 @@ export default class Navigation extends React.Component {
               }
             >
               <div id="blackBox">
+                <div id="nameLeft">
+                  <h1>Zak</h1>
+                </div>
                 <Link
                   to="/about"
                   onClick={() =>
@@ -83,6 +86,9 @@ export default class Navigation extends React.Component {
                 </Link>
               </div>
               <div id="whiteBox">
+                <div id="nameRight">
+                  <h1>Zangrando</h1>
+                </div>
                 <Link
                   to="/MyProjects"
                   onClick={() =>
