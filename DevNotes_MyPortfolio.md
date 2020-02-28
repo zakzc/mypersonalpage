@@ -64,6 +64,17 @@
 - Add Google Analytics with React-ga
 - Deploy it (Firebase).
 
+steps.
+
+1. npm run build and it created build folder
+2. firebase init , select hosting
+3. What do you want to use as your public directory? build
+4. Configure as a single-page app (rewrite all urls to /index.html)? Yes
+5. File build/index.html already exists. Overwrite? No
+6. and then finally firebase deploy
+
+Note: remember to build everytime first, of it will deploying the older version of the site.
+
 
 ### Future implementations
 - Incorporate a blog, with a backend using Node.

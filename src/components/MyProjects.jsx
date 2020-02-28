@@ -4,9 +4,10 @@ import diaryApp from "../img/DiaryApptake1.png";
 import typerApp from "../img/TyperTake1.png";
 import personalApp from "../img/Personal_meteor_work.png";
 import pythonApp from "../img/PythonCarGame.png";
+import thisSite from "../img/thisSite.png";
 
 const myProjects = myData.projects;
-const ProjectImageList = [diaryApp, typerApp, personalApp, pythonApp];
+const ProjectImageList = [thisSite, diaryApp, typerApp, personalApp, pythonApp];
 
 export default class CV extends Component {
   render() {

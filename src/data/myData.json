@@ -51,7 +51,7 @@
     },
     {
       "skillSet": "Javascript-ES6",
-      "language": ["React", "Meteor.JS"],
+      "language": ["React ", "Meteor.JS "],
       "alt": "Javascript logo",
       "level": "percentage"
     },
@@ -63,6 +63,14 @@
     }
   ],
   "projects": [
+    {
+      "name": "This website",
+      "link": "https://github.com/zakzc/mypersonalpage",
+      "image": "../img/thisSite.png",
+      "alt": "coding project: this website",
+      "tech": "Technologies used: html5, css3, React",
+      "describe": "This is the github link to the code of this website."
+    },
     {
       "name": "Diary App",
       "link": "https://guarded-dusk-70293.herokuapp.com",
