@@ -1,6 +1,6 @@
-# Zak Zangrando's Personal WebPage
-==================================
+# Zak's Personal WebPage
 
+==================================
 
 ## Objetive
 
@@ -10,19 +10,19 @@ This project develops my **Personal Webpage** aimed at displaying my CV and prev
 
 Dev Mode: Go to a Terminal and run **npm start**. Since it is a React implementation, it will show the page at <localhost:3000> in any web browser.
 
-Build: just access the webpage at: **address**.
+Build: just access the webpage at: https://zakzangrando.com.
 
 ## Technologies used:
 
 This project was developed using:
 
 - The usual HTML5 and CSS3,
+
+*
+
 - React.JS.
 
-
-
-------------------------------------------------------------------------
-
+---
 
 # React ReadMe file
 
