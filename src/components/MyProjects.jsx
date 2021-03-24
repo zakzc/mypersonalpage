@@ -14,7 +14,6 @@ export default class CV extends Component {
     return (
       <React.Fragment>
         <div id="projects">
-          <h2>Previous projects</h2>
           {myProjects.map((p, i) => (
             <div key={i}>
               <div className="card">

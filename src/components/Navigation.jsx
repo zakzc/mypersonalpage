@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Components
-import MyBase from "./Base";
+import MyBase from "./base";
 import AboutMe from "./AboutMe";
 import MyCV from "./MyCV";
 import MyProjects from "./MyProjects";
@@ -32,7 +32,7 @@ export default class Navigation extends React.Component {
             <Switch>
               <Route path="/About">
                 <div id="aboutWrapper">
-                  <h2 id="textLeft">About Me</h2>
+                  <h2 id="textLeft">Profile</h2>
                   <div id="backHomeLeft">
                     <MyBase
                       navStatus={this.state.isNavigationOn}
@@ -51,7 +51,7 @@ export default class Navigation extends React.Component {
               </Route>
               <Route path="/MyProjects">
                 <div id="projectWrapper">
-                  <h2 id="textRight">My Projects</h2>
+                  <h2 id="textRight">Projects</h2>
                   <div id="backHomeRight">
                     <MyBase
                       navStatus={this.state.isNavigationOn}
@@ -82,7 +82,7 @@ export default class Navigation extends React.Component {
                     })
                   }
                 >
-                  About me
+                  Profile
                 </Link>
               </div>
               <div id="whiteBox">
@@ -97,7 +97,7 @@ export default class Navigation extends React.Component {
                     })
                   }
                 >
-                  My Projects
+                  Projects
                 </Link>
               </div>
             </div>
