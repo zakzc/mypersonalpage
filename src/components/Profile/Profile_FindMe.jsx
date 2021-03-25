@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import myData from "../data/myData.json";
+import myData from "../../data/myData.json";
 
 const myContact = myData.contact;
 
-export default class AboutMe extends Component {
+export default class FindMe extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="about">
+        <div id="findMe">
           <h2>Find me</h2>
           <ul>
             {myContact.map((c, i) => (

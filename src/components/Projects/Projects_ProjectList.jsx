@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import myData from "../data/myData.json";
-import diaryApp from "../img/DiaryApptake1.png";
-import typerApp from "../img/TyperTake1.png";
-import personalApp from "../img/Personal_meteor_work.png";
-import pythonApp from "../img/PythonCarGame.png";
-import thisSite from "../img/thisSite.png";
+///
+import myData from "../../data/myData.json";
+///
+import diaryApp from "../../assets/img/DiaryApptake1.png";
+import typerApp from "../../assets/img/TyperTake1.png";
+import personalApp from "../../assets/img//Personal_meteor_work.png";
+import pythonApp from "../../assets/img/PythonCarGame.png";
+import thisSite from "../../assets/img/thisSite.png";
 
 const myProjects = myData.projects;
 const ProjectImageList = [thisSite, diaryApp, typerApp, personalApp, pythonApp];
 
-export default class CV extends Component {
+export default class ProjectList extends Component {
   render() {
     return (
       <React.Fragment>

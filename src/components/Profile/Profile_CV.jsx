@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import myData from "../data/myData.json";
+import myData from "../../data/myData.json";
 
 const school = myData.education;
 
@@ -8,7 +8,7 @@ export default class CV extends Component {
     return (
       <React.Fragment>
         <div id="about">
-          <h2>My Educational-Academic Life</h2>
+          <h2>Education</h2>
           {school.map((c, i) => (
             <div key={i}>
               <h3 className="courseLevel"> {c.level} </h3>

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import myData from "../data/myData.json";
+import myData from "../../data/myData.json";
 
 // list of images
-import h_Logo from "../img/html5.svg";
-import p_Logo from "../img/php.svg";
-import py_Logo from "../img/python.svg";
-import j_Logo from "../img/js.svg";
-import u_Logo from "../img/uxui.svg";
+import h_Logo from "../../assets/svg/html5.svg";
+import p_Logo from "../../assets/svg/php.svg";
+import py_Logo from "../../assets/svg/python.svg";
+import j_Logo from "../../assets/svg/js.svg";
+import u_Logo from "../../assets/svg/uxui.svg";
 
 // Data used in the component
 const imageList = [h_Logo, p_Logo, py_Logo, j_Logo, u_Logo];
