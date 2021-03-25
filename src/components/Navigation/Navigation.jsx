@@ -48,6 +48,7 @@ export default class Navigation extends React.Component {
   showProjectsButton() {
     return (
       <button
+        className="navigationButtons"
         id="showProjectsButton"
         onClick={(state) => {
           this.setState({ viewSwitch: 2 });
@@ -66,10 +67,15 @@ export default class Navigation extends React.Component {
           this.setState({ viewSwitch: 0 });
         }}
       >
-        <img id="houseIcon" src={grayHouseIcon} alt="back to home page" />
+        <img
+          id={this.state.viewSwitch === 1 ? "houseIconBlack" : "houseIconWhite"}
+          src={grayHouseIcon}
+          alt="back to home page"
+        />
       </button>
     );
   }
+  //showProfileButton
 
   generalView() {
     return (
