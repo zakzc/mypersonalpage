@@ -33,6 +33,48 @@ export default function MyProjects_Portfolio() {
           </div>
         </div>
       ))}
+      <div>
+        <div className="card-container">
+          <div className="card">
+            <div className="card-head">
+              <div className="card-detail">
+                <h2>Title of the card</h2>
+              </div>
+            </div>
+            {/* <span class="back-text">Shadow</span> */}
+            <div className="card-body">
+              <div>
+                <span className="section-title">
+                  Sub-Title
+                  <span className="badge">Or sub-title?</span>
+                </span>
+                <span className="card-caption">
+                  Here we describe something, can it be a little longer text?
+                  Because I need it longer
+                </span>
+              </div>
+              <div className="properties">
+                <span className="whatIUsed">
+                  <h4>I used:</h4>
+                  <ul className="ul-size">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                  </ul>
+                </span>
+                <span className="card_links">
+                  <h4>Link to source</h4>
+                  <ul className="ul-links">
+                    <li>d</li>
+                    <li>e</li>
+                    <li>f</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

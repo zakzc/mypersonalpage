@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 ///
-import CV from "./Profile_CV";
-import Skills from "./Profile_Skills";
+import ProjectList from "./Projects_ProjectList";
 
-export default class Profile extends Component {
+export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,10 +12,11 @@ export default class Profile extends Component {
   }
   render() {
     return (
-      <div id="aboutWrapper">
-        <h2>Profile</h2>
-        <CV />
-        <Skills />
+      <div id="projectWrapper">
+        <h2>Projects</h2>
+        <div id="projectContentLeft">
+          <ProjectList />
+        </div>
       </div>
     );
   }

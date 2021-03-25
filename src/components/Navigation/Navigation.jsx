@@ -1,9 +1,9 @@
 import React from "react";
 ///
-import Projects from "../Projects/MyProjects";
-import Profile from "../Profile/Profile_0";
+import Projects from "../Projects/MyProjects_0";
+import Profile from "../Profile/MyProfile_0";
 //
-import grayHouseIcon from "../../assets/svg/goHomeRed.svg";
+import goBackHomeButton from "../../assets/svg/goHomeRed.svg";
 
 export default class Navigation extends React.Component {
   constructor() {
@@ -66,7 +66,7 @@ export default class Navigation extends React.Component {
       >
         <img
           id={this.state.viewSwitch === 1 ? "houseIconBlack" : "houseIconWhite"}
-          src={grayHouseIcon}
+          src={goBackHomeButton}
           alt="back to home page"
         />
       </button>
