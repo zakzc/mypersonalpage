@@ -1,9 +1,9 @@
 import React from "react";
 ///
-import Projects from "../Projects/Projects_0";
+import Projects from "../Projects/MyProjects";
 import Profile from "../Profile/Profile_0";
 //
-import grayHouseIcon from "../../assets/svg/grayHouse.svg";
+import grayHouseIcon from "../../assets/svg/goHomeRed.svg";
 
 export default class Navigation extends React.Component {
   constructor() {

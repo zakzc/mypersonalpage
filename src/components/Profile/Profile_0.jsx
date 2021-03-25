@@ -14,12 +14,9 @@ export default class Profile extends Component {
   render() {
     return (
       <div id="aboutWrapper">
-        <h2 id="textLeft">Profile</h2>
-        <div id="backHomeLeft"></div>
-        <div id="aboutContentRight">
-          <CV />
-          <Skills />
-        </div>
+        <h2>Profile</h2>
+        <CV />
+        <Skills />
       </div>
     );
   }
