@@ -5,8 +5,6 @@ import Profile from "../Profile/Profile_0";
 //
 import grayHouseIcon from "../../assets/svg/grayHouse.svg";
 
-// TODO: fix routing and passing of props to remake the App. Try redux?
-
 export default class Navigation extends React.Component {
   constructor() {
     super();
@@ -96,10 +94,12 @@ export default class Navigation extends React.Component {
     );
   }
 
+  // TODO: align the house icon to the left or right depending no the view
+  // TODO: use the grid to fraction 1 of the screen for this icon
   viewProfile() {
     return (
       <div id="profilePage">
-        {this.backHomeButton()}
+        <div id="profileGoHome"> {this.backHomeButton()}</div>
         <Profile />
       </div>
     );
@@ -108,7 +108,7 @@ export default class Navigation extends React.Component {
   viewProjects() {
     return (
       <div id="projectsPage">
-        {this.backHomeButton()}
+        <div id="projectsGoHome"> {this.backHomeButton()}</div>
         <Projects />
       </div>
     );
