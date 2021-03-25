@@ -60,7 +60,6 @@ export default class Navigation extends React.Component {
   backHomeButton() {
     return (
       <button
-        id="showProfileButton"
         onClick={(state) => {
           this.setState({ viewSwitch: 0 });
         }}
@@ -77,7 +76,7 @@ export default class Navigation extends React.Component {
 
   generalView() {
     return (
-      <div id="generalSplitView">
+      <div id="generalView">
         <div id="blackBox">
           <div id="nameLeft">
             <h1>Zak</h1>
@@ -100,7 +99,9 @@ export default class Navigation extends React.Component {
     return (
       <div id="profilePage">
         <div id="profileGoHome"> {this.backHomeButton()}</div>
-        <Profile />
+        <div id="myProfile">
+          <Profile />
+        </div>
       </div>
     );
   }
@@ -109,7 +110,9 @@ export default class Navigation extends React.Component {
     return (
       <div id="projectsPage">
         <div id="projectsGoHome"> {this.backHomeButton()}</div>
-        <Projects />
+        <div id="myProjects">
+          <Projects />
+        </div>
       </div>
     );
   }
@@ -117,9 +120,15 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div className="Navigation">
-        {this.state.viewSwitch === 0 ? this.generalView() : <div></div>}
-        {this.state.viewSwitch === 1 ? this.viewProfile() : <div></div>}
-        {this.state.viewSwitch === 2 ? this.viewProjects() : <div></div>}
+        <div id="generalSplitView">
+          {this.state.viewSwitch === 0 ? this.generalView() : <div></div>}
+        </div>
+        <div id="profileSplitView">
+          {this.state.viewSwitch === 1 ? this.viewProfile() : <div></div>}
+        </div>
+        <div id="projectsSplitView">
+          {this.state.viewSwitch === 2 ? this.viewProjects() : <div></div>}
+        </div>
       </div>
     );
   }

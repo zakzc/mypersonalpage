@@ -2,7 +2,7 @@
   display: grid;
 }
 
-#generalSplitView {
+#generalView {
   display: grid;
   grid-template-areas: "blackBox whiteBox";
   width: 100vw;
@@ -67,9 +67,27 @@
 }
 
 #profileGoHome {
+  grid-area: "goHome_Profile";
   float: left;
+  margin-top: 2%;
 }
 
-#projectsGoHme {
+#projectsGoHome {
+  grid-area: "goHome_Project";
   float: right;
+  margin-top: 2%;
 }
+
+// Split view of the different views
+
+// #profilePage {
+//   grid-area: "profilePage";
+// }
+
+// #projectsPage {
+//   grid-area: "projectPage";
+// }
+
+// #profileSplitView {
+//   display: grid;
+// }
