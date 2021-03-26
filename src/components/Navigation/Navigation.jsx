@@ -3,7 +3,8 @@ import React from "react";
 import Projects from "../Projects/MyProjects_0";
 import Profile from "../Profile/MyProfile_0";
 //
-import goBackHomeButton from "../../assets/svg/goHomeRed.svg";
+import lightHouse from "../../assets/svg/grayHouse.svg";
+import stoneHouse from "../../assets/svg/houseStone.svg";
 
 export default class Navigation extends React.Component {
   constructor() {
@@ -66,7 +67,7 @@ export default class Navigation extends React.Component {
       >
         <img
           id={this.state.viewSwitch === 1 ? "houseIconBlack" : "houseIconWhite"}
-          src={goBackHomeButton}
+          src={this.state.viewSwitch === 1 ? lightHouse : stoneHouse}
           alt="back to home page"
         />
       </button>
