@@ -3,8 +3,8 @@ import React from "react";
 import Projects from "../Projects/MyProjects_0";
 import Profile from "../Profile/MyProfile_0";
 //
-import lightHouse from "../../assets/svg/grayHouse.svg";
-import stoneHouse from "../../assets/svg/houseStone.svg";
+import lightHouse from "../../assets/svg/blackHouse.svg";
+import darkHouse from "../../assets/svg/whiteHouse.svg";
 
 export default class Navigation extends React.Component {
   constructor() {
@@ -67,7 +67,7 @@ export default class Navigation extends React.Component {
       >
         <img
           id={this.state.viewSwitch === 1 ? "houseIconBlack" : "houseIconWhite"}
-          src={this.state.viewSwitch === 1 ? lightHouse : stoneHouse}
+          src={this.state.viewSwitch === 1 ? lightHouse : darkHouse}
           alt="back to home page"
         />
       </button>
@@ -93,9 +93,6 @@ export default class Navigation extends React.Component {
       </div>
     );
   }
-
-  // TODO: align the house icon to the left or right depending no the view
-  // TODO: use the grid to fraction 1 of the screen for this icon
   viewProfile() {
     return (
       <div id="profilePage">

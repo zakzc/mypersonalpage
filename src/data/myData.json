@@ -1,23 +1,34 @@
 {
   "education": [
     {
+      "title": "Analyst",
       "level": "Graduation",
-      "course": [
-        "Systems Analyst(Technologist) & ",
-        "English Language and Translation"
-      ]
+      "description": "Computer Systems Analysis",
+      "stage": "Graduated"
     },
     {
-      "level": "Post-graduation Degrees-Diplomas",
-      "course": ["Full Stack Web Developer & ", "Software Engineering"]
+      "title": "Bachelor",
+      "level": "Graduation",
+      "description": "Bachelor in English Language, Translation and Literature",
+      "stage": "Graduated"
     },
     {
-      "level": "MBA, Masters in Business Administration",
-      "course": "Information Security"
+      "title": "Specialist",
+      "level": "Post graduation (Specialization)",
+      "description": "Full-Stack WebDesign",
+      "stage": "Awaiting official documentation"
     },
     {
-      "level": "Other University-level Degrees in",
-      "course": "Masters in Literature"
+      "title": "Specialist",
+      "level": "Post graduation (Specialization)",
+      "description": "Software Engineering",
+      "stage": "Ongoing"
+    },
+    {
+      "title": "Master",
+      "level": "MBA",
+      "description": "Information Security",
+      "stage": "Graduated"
     }
   ],
   "contact": [
@@ -32,37 +43,69 @@
   ],
   "skills": [
     {
-      "skillSet": "Basic Web Dev",
-      "language": ["HTML5, ", "CSS3"],
-      "alt": "html5 and CSS3 logo",
-      "level": "percentage"
+      "skillSet": "HTML5",
+      "language": ["XML"],
+      "alt": "html5logo",
+      "level": 5
+    },
+    {
+      "skillSet": "CSS3",
+      "language": ["Sass, ", "Less"],
+      "alt": "html5 logo",
+      "level": 4
     },
     {
       "skillSet": "PHP",
-      "language": ["Laravel and Wordpress"],
+      "language": ["Wordpress"],
       "alt": "PHP logo",
-      "level": "percentage"
+      "level": 2
     },
     {
       "skillSet": "Python",
       "language": ["Django"],
       "alt": "Python logo",
-      "level": "percentage"
+      "level": 3
     },
     {
-      "skillSet": "Javascript-ES6",
-      "language": ["React ", "Meteor.JS "],
+      "skillSet": "Javascript",
+      "language": ["ES6 ", "Meteor.JS "],
       "alt": "Javascript logo",
-      "level": "percentage"
+      "level": 4
+    },
+    {
+      "skillSet": "React",
+      "language": ["React Router, ", "Redux"],
+      "alt": "Javascript logo",
+      "level": 4
+    },
+    {
+      "skillSet": "Node",
+      "language": ["Express ", "Meteor.JS "],
+      "alt": "Javascript logo",
+      "level": 4
+    },
+    {
+      "skillSet": "Jest",
+      "language": ["Mocha, ", "Chai"],
+      "alt": "Javascript logo",
+      "level": 4
     },
     {
       "skillSet": "UX/UI",
       "language": ["Design of interfaces"],
       "alt": "UX and UI",
-      "level": "percentage"
+      "level": 4
     }
   ],
   "projects": [
+    {
+      "name": "Flashcards",
+      "link": "https://github.com/zakzc/mypersonalpage",
+      "image": "../img/thisSite.png",
+      "alt": "coding project: flashcardsProject",
+      "tech": "Technologies used: html5, css3, React, Node, Express, Sass",
+      "describe": "Final project for my specialist course on Full-Stack WebDev in the University."
+    },
     {
       "name": "This website",
       "link": "https://github.com/zakzc/mypersonalpage",

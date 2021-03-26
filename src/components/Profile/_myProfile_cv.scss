@@ -1,0 +1,50 @@
+// .courseInfo {
+//   float: left;
+//   text-align: left;
+//   margin-right: 10%;
+//   color: yellow;
+// }
+// .courseLevel {
+//   float: left;
+//   text-align: left;
+//   color: $gray;
+//   color: yellow;
+// }
+
+.whiteTitles {
+  color: $white;
+  text-align: center;
+  font-size: 250%;
+}
+
+.list {
+  list-style: none;
+  // width: 600px;
+  max-width: 80%;
+  color: $white;
+  text-align: left;
+  padding-left: 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 10px;
+}
+
+.listItem {
+  border: 1px solid $white;
+  border-radius: 25px 25px 0 0;
+}
+
+.listDescription {
+  // margin: 5%;
+  padding-left: 3%;
+}
+
+.courseTitle {
+  padding: 12px;
+  color: #101820ff;
+  background-color: #e96245;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 25px 25px 0 0;
+}

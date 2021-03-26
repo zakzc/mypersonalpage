@@ -29,4 +29,14 @@ button {
   height: 100vh;
   min-height: 100%;
   width: 100vw;
+  background-color: $white;
+}
+
+a {
+  color: #1f456e;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }

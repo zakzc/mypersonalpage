@@ -1,10 +1,15 @@
 @import "./styles/normalize";
 @import "./styles/variables";
 @import "./styles/layout";
+///
 @import "./components/Navigation/navigation";
-@import "./components/Profile/aboutLayout";
-@import "./components/Projects/projectList";
+///
 @import "./components/Projects/myProjects_portfolio";
-@import "./components/Profile/skillsLayout";
-@import "./components/Profile/cvLayout";
+@import "./components/Projects/myProjects_cards";
+///
+@import "./components/Profile/myProfile_0";
+@import "./components/Profile/myProfile_skills";
+@import "./components/Profile/myProfile_cv";
+@import "./components/Profile/myProfile_cards";
+///
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");

@@ -17,17 +17,43 @@ const mySkills = myData.skills;
 export default function MyProfile_Skills() {
   return (
     <div id="skills">
-      <h2>My Skills</h2>
+      <h2 className="whiteTitles">Skill Set</h2>
       {/* <img src={h_Logo} /> */}
       <div className="skillArea">
         {mySkills.map((s, i) => (
-          <div id="skillCard" key={i}>
-            <div className="skillIcons">
-              <img src={imageList[i]} alt={s.alt} />
-            </div>
-            <div className="skillText">
-              <h4> {s.skillSet} </h4>
-              <p>{s.language}</p>
+          <div key={i} className="skill-card-container">
+            <div key={i} className="skill-card">
+              <div className="skill-card-head">
+                <div className="skill-card-detail">
+                  <h2>{s.skillSet}</h2>
+                </div>
+                <img className="skill-img" src={imageList[i]} alt={s.alt}></img>
+              </div>
+              {/* <span class="back-text">Shadow</span> */}
+              <div className="skill-card-body">
+                <div>
+                  <span className="skill-badge">And, also:</span>
+                  <span className="skill-card-caption">{s.language}</span>
+                </div>
+                <div className="skill-properties">
+                  <span className="skill-refs">
+                    <span className="skill-rating">
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star grey"></i>
+                    </span>
+                  </span>
+                  <span className="skill-card_links">
+                    <h4>
+                      {/* <a href={p.link} className="ul-links">
+                      Link to source code or online application
+                    </a> */}
+                    </h4>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         ))}

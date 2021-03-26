@@ -15,13 +15,13 @@ export default function MyProjects_Portfolio() {
   return (
     <div id="projects">
       {myProjects.map((p, i) => (
-        <div className="card-container">
-          <div key={i} className="card">
+        <div key={i} className="card-container">
+          <div className="card">
             <div className="card-head">
               <div className="card-detail">
                 <h2>{p.name}</h2>
               </div>
-              <li class="crop">
+              <li className="crop">
                 <img
                   id="projectImage"
                   src={ProjectImageList[i]}
