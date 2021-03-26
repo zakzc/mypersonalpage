@@ -1,5 +1,6 @@
 .Navigation {
   display: grid;
+  box-sizing: border-box;
 }
 
 #generalView {
@@ -7,6 +8,7 @@
   grid-template-areas: "blackBox whiteBox";
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 #whiteBox {
@@ -69,25 +71,29 @@
 #profileGoHome {
   grid-area: "goHome_Profile";
   float: left;
-  margin-top: 2%;
 }
 
 #projectsGoHome {
   grid-area: "goHome_Project";
   float: right;
-  margin-top: 2%;
+  // margin-top: 2%;
 }
 
 // Split view of the different views
 
 #profilePage {
-  grid-area: "profilePage";
+  // grid-area: "profilePage";
+  // background-color: yellow;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flexbox;
 }
 
 #projectsPage {
   grid-area: "projectPage";
 }
 
-#profileSplitView {
-  display: grid;
-}
+// #profileSplitView {
+//   display: grid;
+// }

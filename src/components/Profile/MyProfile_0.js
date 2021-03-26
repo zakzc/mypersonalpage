@@ -6,8 +6,8 @@ import FindMe from "./MyProfile_FindMe";
 
 export default function MyProfile_0() {
   return (
-    <div id="aboutWrapper">
-      <h2>Profile</h2>
+    <div id="profileWrapper">
+      <h2 id="sectionMainTitle">Profile</h2>
       <CV />
       <Skills />
       <FindMe />

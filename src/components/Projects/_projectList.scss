@@ -8,7 +8,7 @@ html {
 //   background-color: #f0f8ff;
 // }
 
-#projectsMainTitle {
+#sectionMainTitle {
   font-size: xx-large;
   text-align: center;
 }
@@ -86,9 +86,6 @@ html {
   width: 80%;
   padding: 20px 16px;
   margin: 20px 16px;
-  :hover {
-    // box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  }
   @media screen and (max-width: $break) {
     text-align: center;
     width: 100%;
