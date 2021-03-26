@@ -66,7 +66,7 @@ export default class Navigation extends React.Component {
         }}
       >
         <img
-          id={this.state.viewSwitch === 1 ? "houseIconBlack" : "houseIconWhite"}
+          id={this.state.viewSwitch === 1 ? "houseIconWhite" : "houseIconBlack"}
           src={this.state.viewSwitch === 1 ? lightHouse : darkHouse}
           alt="back to home page"
         />

@@ -40,13 +40,16 @@
 #houseIconWhite {
   height: 80px;
   width: 80px;
-  background-color: $white;
+  position: fixed; /* or absolute */
+  top: 50%;
 }
 
 #houseIconBlack {
   height: 80px;
   width: 80px;
-  background-color: $black;
+  position: fixed;
+  top: 50%;
+  margin-left: -5%;
 }
 
 #showProfileButton {
@@ -96,4 +99,10 @@
 
 #profileSplitView {
   background-color: $black;
+}
+
+#backHomeButton {
+  background-color: yellow;
+  position: fixed; /* or absolute */
+  top: 50%;
 }

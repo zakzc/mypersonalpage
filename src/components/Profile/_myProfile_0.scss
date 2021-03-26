@@ -1,13 +1,10 @@
 #profileWrapper {
   height: 100vh;
   width: 100vw;
-  // background-color: $black;
-  // color: $white;
-  background-color: #0a1a29;
+  background-color: $black;
   display: grid;
   @media screen and (max-width: $break) {
     background-color: #0a1a29;
-    color: $white;
     text-align: center;
     width: 100%;
   }

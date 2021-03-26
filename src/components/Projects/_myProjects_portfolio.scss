@@ -10,9 +10,12 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 10px;
 }
+
 #projectWrapper {
+  height: 100vh;
+  width: 100vw;
   background-color: $white;
-  color: $black;
+  display: grid;
   @media screen and (max-width: $break) {
     text-align: center;
     width: 100%;
