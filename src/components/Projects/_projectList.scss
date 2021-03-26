@@ -10,6 +10,7 @@ html {
 
 #projectsMainTitle {
   font-size: xx-large;
+  text-align: center;
 }
 
 #projects {
@@ -95,21 +96,7 @@ html {
     margin: 20px 16px;
   }
 }
-.projectImage {
-  :hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-filter: grayscale(10);
-    filter: grayscale(10);
-  }
-  @media screen and (max-width: $break) {
-    text-align: center;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
+
 .projectText {
   text-indent: 5%;
 }

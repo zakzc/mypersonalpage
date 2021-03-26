@@ -21,11 +21,13 @@ export default function MyProjects_Portfolio() {
               <div className="card-detail">
                 <h2>{p.name}</h2>
               </div>
-              <img
-                id="projectImage"
-                src={ProjectImageList[i]}
-                alt={p.alt}
-              ></img>
+              <li class="crop">
+                <img
+                  id="projectImage"
+                  src={ProjectImageList[i]}
+                  alt={p.alt}
+                ></img>
+              </li>
             </div>
             {/* <span class="back-text">Shadow</span> */}
             <div className="card-body">
