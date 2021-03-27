@@ -29,10 +29,27 @@
     margin: 0 0 0 0;
   }
 }
+
+.heroTitle {
+  position: absolute;
+  text-align: center;
+  font-size: 550%;
+  top: 28px;
+  left: 50%;
+  color: $red;
+  transform: translate(-50%, -50%);
+}
+
+.whiteTitles {
+  color: $white;
+  text-align: center;
+  font-size: 250%;
+}
+
 #backHomeLeft {
   display: flex;
   text-align: left;
-  position: fixed;
+  position: absolute;
   top: 50%;
   botton: 50%;
   left: 15%;
@@ -67,5 +84,23 @@
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     overflow: visible;
+  }
+}
+
+.parallax {
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
