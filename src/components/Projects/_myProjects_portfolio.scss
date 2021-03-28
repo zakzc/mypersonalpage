@@ -1,10 +1,10 @@
 // Project Section
 
-#projects {
-  background-color: $white;
+.projects {
+  background-color: $gray;
   color: $black;
-  width: 80%;
-  margin-left: 10%;
+  // width: 80%;
+  padding-left: 10%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -14,7 +14,7 @@
 #projectWrapper {
   height: 100vh;
   width: 100vw;
-  background-color: $white;
+  background-color: $gray;
   display: grid;
   @media screen and (max-width: $break) {
     text-align: center;
@@ -66,10 +66,10 @@
     margin: 0 0 0 0;
   }
 }
-#projectContentLeft {
+.projectSection {
   text-align: left;
   justify-content: left;
-  // margin-right: 30%;
+  background-color: $gray;
 }
 
 .card {
@@ -90,8 +90,8 @@
   text-indent: 5%;
 }
 
-.blackTitle {
-  font-size: 250%;
+.blackTitles {
+  color: $darkBlue;
   text-align: center;
-  color: $black;
+  font-size: 250%;
 }

@@ -3,7 +3,7 @@
 }
 
 .card {
-  border-radius: 25px;
+  border-radius: 10% 10% 0 0;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   background-color: white;
 }
@@ -160,7 +160,7 @@
 }
 
 .ul-size li a.active {
-  background: #f35e3d;
+  background: $darkBlue;
   color: #fff;
 }
 
@@ -206,4 +206,16 @@
   border-radius: 100%;
   margin-left: -5px;
   margin-top: -5px;
+}
+
+.heroTitle-project {
+  position: absolute;
+  text-align: center;
+  font-size: 550%;
+  top: 28px;
+  left: 50%;
+  color: $white;
+  background-color: $darkBlue;
+  border-radius: 20% 20% 0 0;
+  transform: translate(-50%, -50%);
 }

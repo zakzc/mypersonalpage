@@ -95,10 +95,15 @@
 
 #projectsPage {
   grid-area: "projectPage";
+  background-color: $gray;
 }
 
 #profileSplitView {
   background-color: $black;
+}
+
+#projectsSplitView {
+  background-color: $gray;
 }
 
 #backHomeButton {

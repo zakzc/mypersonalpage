@@ -8,7 +8,7 @@ export default function MyProfile_0() {
   return (
     <div id="profileWrapper">
       <div className="parallax" style={{ backgroundImage: `url(${darkKeys})` }}>
-        <h1 className="heroTitle">Profile</h1>
+        <h1 className="heroTitle-profile">Profile</h1>
       </div>
       <CV />
       <div

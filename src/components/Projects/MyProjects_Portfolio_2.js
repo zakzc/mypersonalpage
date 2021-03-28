@@ -2,19 +2,16 @@ import React from "react";
 ///
 import myData from "../../data/myData.json";
 ///
-import diaryApp from "../../assets/img/DiaryApptake1.png";
-import typerApp from "../../assets/img/TyperTake1.png";
 import personalApp from "../../assets/img//Personal_meteor_work.png";
 import pythonApp from "../../assets/img/PythonCarGame.png";
-import thisSite from "../../assets/img/thisSite.png";
 
-const myProjects = myData.projects;
-const ProjectImageList = [thisSite, diaryApp, typerApp, personalApp, pythonApp];
+const myProjects_2 = myData.projects_2;
+const ProjectImageList = [personalApp, pythonApp];
 
 export default function MyProjects_Portfolio() {
   return (
-    <div id="projects">
-      {myProjects.map((p, i) => (
+    <div className="projects">
+      {myProjects_2.map((p, i) => (
         <div key={i} className="card-container">
           <div className="card">
             <div className="card-head">

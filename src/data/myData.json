@@ -104,7 +104,7 @@
       "image": "../img/thisSite.png",
       "alt": "coding project: flashcardsProject",
       "tech": "Technologies used: html5, css3, React, Node, Express, Sass",
-      "describe": "Final project for my specialist course on Full-Stack WebDev in the University."
+      "describe": "Final project for my specialist course on Full-Stack WebDev in the University. It's a tool for memorizing study contents by means of a card game"
     },
     {
       "name": "This website",
@@ -112,7 +112,7 @@
       "image": "../img/thisSite.png",
       "alt": "coding project: this website",
       "tech": "Technologies used: html5, css3, React",
-      "describe": "This is the github link to the code of this website."
+      "describe": "This is the github link to the code of this website. It was/is developed entirely in React."
     },
     {
       "name": "Diary App",
@@ -129,14 +129,16 @@
       "alt": "coding project: typer",
       "tech": "Technologies used: html5, css3, ES6, jquery, Ajax.",
       "describe": "This is project for a Typer game, where it shows you a text and you have to type it as fast as you can. It uses material design for simplification of the UI. The link will take you to the Github page where the project is stored. Follow the readme.md for instructions on how to turn it on locally."
-    },
+    }
+  ],
+  "projects_2": [
     {
       "name": "Older personal webpages",
       "link": "no Link",
       "image": "../img/Personal_Django_index.png",
       "alt": "Older coding projects",
-      "tech": "Technologies used: Python, Django",
-      "describe": "Through the years I have made different versions of this and other pages. Initially on wordpress.com, later on wordpress.org, in a self-hosted version. Then, tweaking themes using php and making my only branches of themes. This is the last version of a personal website, done with Django - apart from the usual html,css, js, of course. There is no link to this, since most of these pages don't exist anymore."
+      "tech": "Technologies used: Python, Django, Wordpress, PHP",
+      "describe": "Through the years I have made different versions of my personal webpage, as well as other projects. Initially on wordpress in a self-hosted version. Then, tweaking themes using php and making my only branches of themes with personal styles. This is the last version of a personal website, done initially in PHP, then developed with Django - apart from the usual html,css, js, of course. There is no link to this, since most of these pages don't exist anymore."
     },
     {
       "name": "Python Game",
@@ -144,7 +146,7 @@
       "image": "..img/PythonCarGame.png",
       "alt": "coding project: python racing game",
       "tech": "Technologies used: Python, PyGame",
-      "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs."
+      "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects in my learning path."
     }
   ]
 }
