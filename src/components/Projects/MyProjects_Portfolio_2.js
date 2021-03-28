@@ -8,7 +8,7 @@ import pythonApp from "../../assets/img/PythonCarGame.png";
 const myProjects_2 = myData.projects_2;
 const ProjectImageList = [personalApp, pythonApp];
 
-export default function MyProjects_Portfolio() {
+export default function MyProjects_Portfolio_1() {
   return (
     <div className="projects">
       {myProjects_2.map((p, i) => (

@@ -1,7 +1,7 @@
 import React from "react";
 ///
-import Portfolio from "./MyProjects_Portfolio_1";
-import Portfolio_2 from "./MyProjects_Portfolio_2";
+import MyPortfolio1 from "./MyProjects_Portfolio_1";
+import MyPortfolio2 from "./MyProjects_Portfolio_2";
 //
 import lightKeys from "../../assets/img/lightKeyboard.jpg";
 
@@ -16,7 +16,7 @@ export default function MyProjects() {
       </div>
       <div className="projectSection">
         <h2 className="blackTitles">Web Projects (JS/ES)</h2>
-        <Portfolio />
+        <MyPortfolio1 />
       </div>
       <div
         className="parallax"
@@ -24,7 +24,7 @@ export default function MyProjects() {
       ></div>
       <div className="projectSection">
         <h2 className="blackTitles">Other Projects</h2>
-        <Portfolio_2 />
+        <MyPortfolio2 />
       </div>
     </div>
   );

@@ -3,15 +3,30 @@ import React from "react";
 import myData from "../../data/myData.json";
 
 // list of images
-import h_Logo from "../../assets/svg/html5.svg";
+import html_Logo from "../../assets/svg/html5.svg";
+import css_Logo from "../../assets/svg/css3.svg";
 import p_Logo from "../../assets/svg/php.svg";
 import py_Logo from "../../assets/svg/python.svg";
 import j_Logo from "../../assets/svg/js.svg";
+import react_Logo from "../../assets/svg/react.svg";
+import node_Logo from "../../assets/svg/node.svg";
+import jest_Logo from "../../assets/svg/jest.svg";
 import u_Logo from "../../assets/svg/uxui.svg";
+///
 import circle_filledIn from "../../assets/svg/circle.svg";
 
 // Data used in the component
-const imageList = [h_Logo, p_Logo, py_Logo, j_Logo, u_Logo];
+const imageList = [
+  html_Logo,
+  css_Logo,
+  p_Logo,
+  py_Logo,
+  j_Logo,
+  react_Logo,
+  node_Logo,
+  jest_Logo,
+  u_Logo,
+];
 const circle = circle_filledIn;
 const mySkills = myData.skills;
 //////////////////////
@@ -42,13 +57,13 @@ export default function MyProfile_Skills() {
                     <ul className="skill-level-section">
                       {s.level.map(function (n, index) {
                         return (
-                          <li key={index}>
+                          <span key={index}>
                             <img
                               className="skill_circle"
                               src={circle}
                               alt="star"
                             ></img>
-                          </li>
+                          </span>
                         );
                       })}
                     </ul>
