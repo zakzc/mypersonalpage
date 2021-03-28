@@ -8,9 +8,11 @@ import p_Logo from "../../assets/svg/php.svg";
 import py_Logo from "../../assets/svg/python.svg";
 import j_Logo from "../../assets/svg/js.svg";
 import u_Logo from "../../assets/svg/uxui.svg";
+import circle_filledIn from "../../assets/svg/circle.svg";
 
 // Data used in the component
 const imageList = [h_Logo, p_Logo, py_Logo, j_Logo, u_Logo];
+const circle = circle_filledIn;
 const mySkills = myData.skills;
 //////////////////////
 
@@ -29,21 +31,27 @@ export default function MyProfile_Skills() {
                 </div>
                 <img className="skill-img" src={imageList[i]} alt={s.alt}></img>
               </div>
-              {/* <span class="back-text">Shadow</span> */}
               <div className="skill-card-body">
                 <div>
                   <span className="skill-badge">And, also:</span>
                   <span className="skill-card-caption">{s.language}</span>
                 </div>
                 <div className="skill-properties">
+                  <h4>Level:</h4>
                   <span className="skill-refs">
-                    <span className="skill-rating">
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star"></i>
-                      <i className="fa fa-star grey"></i>
-                    </span>
+                    <ul className="skill-level-section">
+                      {s.level.map(function (n, index) {
+                        return (
+                          <li key={index}>
+                            <img
+                              className="skill_circle"
+                              src={circle}
+                              alt="star"
+                            ></img>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </span>
                   <span className="skill-card_links">
                     <h4>

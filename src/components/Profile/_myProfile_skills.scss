@@ -46,3 +46,12 @@
     overflow: visible;
   }
 }
+
+.skill_circle {
+  width: 10%;
+}
+
+#skill-level-section {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}

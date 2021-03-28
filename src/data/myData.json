@@ -46,55 +46,55 @@
       "skillSet": "HTML5",
       "language": ["XML"],
       "alt": "html5logo",
-      "level": 5
+      "level": [1, 2, 3, 4, 5]
     },
     {
       "skillSet": "CSS3",
       "language": ["Sass, ", "Less"],
       "alt": "html5 logo",
-      "level": 4
+      "level": [1, 2, 3, 4]
     },
     {
       "skillSet": "PHP",
       "language": ["Wordpress"],
       "alt": "PHP logo",
-      "level": 2
+      "level": [1, 2]
     },
     {
       "skillSet": "Python",
       "language": ["Django"],
       "alt": "Python logo",
-      "level": 3
+      "level": [1, 2, 3]
     },
     {
       "skillSet": "Javascript",
       "language": ["ES6 ", "Meteor.JS "],
       "alt": "Javascript logo",
-      "level": 4
+      "level": [1, 2, 3, 4]
     },
     {
       "skillSet": "React",
       "language": ["React Router, ", "Redux"],
       "alt": "Javascript logo",
-      "level": 4
+      "level": [1, 2, 3, 4]
     },
     {
       "skillSet": "Node",
       "language": ["Express ", "Meteor.JS "],
       "alt": "Javascript logo",
-      "level": 4
+      "level": [1, 2, 3, 4]
     },
     {
       "skillSet": "Jest",
       "language": ["Mocha, ", "Chai"],
       "alt": "Javascript logo",
-      "level": 4
+      "level": [1, 2, 3, 4]
     },
     {
       "skillSet": "UX/UI",
       "language": ["Design of interfaces"],
       "alt": "UX and UI",
-      "level": 4
+      "level": [1, 2, 3, 4]
     }
   ],
   "projects": [
