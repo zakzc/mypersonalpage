@@ -68,13 +68,6 @@ export default function MyProfile_Skills() {
                       })}
                     </ul>
                   </span>
-                  <span className="skill-card_links">
-                    <h4>
-                      {/* <a href={p.link} className="ul-links">
-                      Link to source code or online application
-                    </a> */}
-                    </h4>
-                  </span>
                 </div>
               </div>
             </div>
