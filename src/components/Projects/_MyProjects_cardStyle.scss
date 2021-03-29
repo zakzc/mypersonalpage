@@ -1,31 +1,24 @@
-#skills {
-  background-color: $black;
+.card-container {
+  width: 380px;
+  height: 500px;
+  margin: 30px auto;
 }
 
-.skillArea {
-  margin-left: 17%;
-  margin-right: 12%;
-}
-
-.skill-card-container {
-  width: 180px;
-}
-
-.skill-card {
+.card {
   border-radius: 25px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
 }
 
-.skill-card-head {
+.card-head {
   position: relative;
-  height: 152px;
-  background: $darkBlue;
+  height: 252px;
+  background: blue;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #e96245 8%, #ed816a 83%);
+  background: -moz-linear-gradient(-45deg, #2c3e4c 8%, #59788e 83%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #e96245 8%, #ed816a 83%);
+  background: -webkit-linear-gradient(-45deg, #2c3e4c 8%, #59788e 83%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #e96245 8%, #ed816a 83%);
+  background: linear-gradient(135deg, #2c3e4c 8%, #59788e 83%);
   border-radius: 25px 25px 0 0;
 }
 
@@ -52,26 +45,25 @@
   }
 }
 
-.skill-card-logo {
+.card-logo {
   width: 55px;
   margin: 20px;
 }
 
-.skill-img {
+.product-img {
   position: absolute;
   left: 0;
-  margin-top: -10%;
-  margin-left: 15%;
-  width: 120px;
+  margin-top: -16px;
+  margin-left: 50px;
 }
 
-.skill-card-detail {
+.card-detail {
   padding: 0 20px;
   font-size: 11px;
-  color: $white;
+  color: #fff;
 }
 
-.skill-card-detail h2 {
+.card-detail h2 {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -79,7 +71,7 @@
   text-transform: uppercase;
 }
 
-.skill-back-text {
+.back-text {
   display: inline-block;
   font-size: 125px;
   font-weight: 900;
@@ -88,13 +80,13 @@
   opacity: 0.1;
 }
 
-.skill-card-body {
-  height: 200px;
-  background: aliceblue;
+.card-body {
+  height: 300px;
+  background: #fff;
   border-radius: 0 0 25px 25px;
 }
 
-.skill-section-title {
+.section-title {
   padding: 20px 20px 5px 20px;
   display: block;
   font-size: 17px;
@@ -103,7 +95,12 @@
   text-transform: uppercase;
 }
 
-.skill-badge {
+// .section-title b {
+//   font-weight: 900;
+//   letter-spacing: 0px;
+// }
+
+.badge {
   position: relative;
   font-size: 10px;
   font-weight: 300;
@@ -116,25 +113,24 @@
   margin-top: 10%;
 }
 
-.skill-card-caption {
+.card-caption {
   display: block;
   padding: 15px 20px;
   font-size: 12px;
   font-weight: 400;
-  text-transform: uppercase;
-  color: darkslategray;
+  //   text-transform: uppercase;
 }
 
-.skill-rating {
+.product-rating {
   padding: 0 20px;
   font-size: 11px;
 }
 
-.skill-rating i.grey {
+.product-rating i.grey {
   color: #acacab;
 }
 
-.skill-card-size h4 {
+.product-size h4 {
   font-size: 11px;
   padding: 0 21px;
   margin-top: 15px;
@@ -166,17 +162,17 @@
 
 .ul-size li a.active {
   background: #f35e3d;
-  color: yellow;
+  color: #fff;
 }
 
-.skill--refs:before,
+.whatIUsed:before,
 .product-size:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.skill-card_links h4 {
+.card_links h4 {
   font-size: 11px;
   padding: 0 2px;
   margin-top: 20px;

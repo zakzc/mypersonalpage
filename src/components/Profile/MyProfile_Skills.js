@@ -36,7 +36,7 @@ export default function MyProfile_Skills() {
     <div id="skills">
       <h2 className="whiteTitles">Skill Set</h2>
       {/* <img src={h_Logo} /> */}
-      <div className="skillArea">
+      <div className="skillArea-profile">
         {mySkills.map((s, i) => (
           <div key={i} className="skill-card-container">
             <div key={i} className="skill-card">

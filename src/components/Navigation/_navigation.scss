@@ -42,6 +42,13 @@
   width: 80px;
   position: fixed; /* or absolute */
   top: 50%;
+  margin-left: 5%;
+  @media screen and (max-width: $break) {
+    margin-left: 2%;
+  }
+  @media screen and (max-width: $break-tiny) {
+    margin-left: 1%;
+  }
 }
 
 #houseIconBlack {
@@ -49,7 +56,16 @@
   width: 80px;
   position: fixed;
   top: 50%;
-  margin-left: -5%;
+  margin-left: -8%;
+  @media screen and (max-width: $break) {
+    margin-left: -15%;
+  }
+  @media screen and (max-width: $break-tiny) {
+    margin-left: -1%;
+  }
+  @media screen and (min-width: 1300px) {
+    margin-left: -6%;
+  }
 }
 
 #showProfileButton {
@@ -96,6 +112,9 @@
 #projectsPage {
   grid-area: "projectPage";
   background-color: $gray;
+  // @media screen and (max-width: $break) {
+  //   width: 90vw;
+  // }
 }
 
 #profileSplitView {

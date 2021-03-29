@@ -10,17 +10,17 @@
     transform: scale(1.05);
   }
 }
-.skillArea {
+.skillArea-profile {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 10px;
-  margin: 0;
+  padding: 2px 180px;
   // flex-direction: column;
   @media screen and (max-width: $break) {
     text-align: center;
     width: 100%;
-    padding: 2px 1px;
-    margin: 2px 1px;
+    padding: 2px 110px;
+    // margin: 2px 100px;
     overflow: visible;
   }
 }
@@ -30,9 +30,6 @@
   overflow: hidden;
   @media screen and (max-width: $break) {
     text-align: left;
-    // width: 100%;
-    // padding: 2px 1px;
-    // margin: 2px 1px;
     overflow: visible;
   }
 }
