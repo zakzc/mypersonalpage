@@ -15,7 +15,7 @@ export default function MyProjects() {
         <h1 className="heroTitle-project">Projects</h1>
       </div>
       <div className="projectSection">
-        <h2 className="blackTitles">Web Projects (JS/ES)</h2>
+        <h2 className="blackTitles">Web Apps</h2>
         <MyPortfolio1 />
       </div>
       <div

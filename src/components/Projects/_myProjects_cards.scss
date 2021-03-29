@@ -13,11 +13,11 @@
   height: 252px;
   background: blue;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #0063b2ff 8%, #9cc3d5ff 83%);
+  background: -moz-linear-gradient(-45deg, $darkBlue 8%, #9cc3d5ff 83%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #0063b2ff 8%, #9cc3d5ff 83%);
+  background: -webkit-linear-gradient(-45deg, $darkBlue 8%, #9cc3d5ff 83%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #0063b2ff 8%, #9cc3d5ff 83%);
+  background: linear-gradient(135deg, $darkBlue 8%, #9cc3d5ff 83%);
   border-radius: 25px 25px 0 0;
 }
 
