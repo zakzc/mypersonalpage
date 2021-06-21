@@ -6,9 +6,10 @@ import diaryApp from "../../assets/img/DiaryApptake1.png";
 import typerApp from "../../assets/img/TyperTake1.png";
 import thisSite from "../../assets/img/thisSite.png";
 import flashcards from "../../assets/img/Flashcards.png";
+import softTable from "../../assets/img/SoftWrapMobList.png";
 
 const myProjects = myData.projects;
-const ProjectImageList = [flashcards, thisSite, diaryApp, typerApp];
+const ProjectImageList = [softTable, flashcards, thisSite, diaryApp, typerApp];
 
 export default function MyProjects_Portfolio() {
   return (

@@ -50,7 +50,7 @@
     },
     {
       "skillSet": "CSS3",
-      "language": ["Sass, ", "Less", "Tailwind"],
+      "language": ["Sass, ", "Less, ", "Tailwind"],
       "alt": "html5 logo",
       "level": [1, 2, 3, 4]
     },
