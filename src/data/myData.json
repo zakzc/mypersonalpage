@@ -50,7 +50,7 @@
     },
     {
       "skillSet": "CSS3",
-      "language": ["Sass, ", "Less"],
+      "language": ["Sass, ", "Less", "Tailwind"],
       "alt": "html5 logo",
       "level": [1, 2, 3, 4]
     },
@@ -99,9 +99,17 @@
   ],
   "projects": [
     {
+      "name": "SoftTable",
+      "link": "https://github.com/zakzc/soft_table_front",
+      "image": "../img/SoftWrapMobList.png",
+      "alt": "coding project: soft table",
+      "tech": "Technologies used: html5, Tailwind, React, Axios",
+      "describe": "Final project for my specialist course on Full-Stack WebDev in the University. It's a tool for memorizing study contents by means of a card game"
+    },
+    {
       "name": "Flashcards",
       "link": "https://github.com/zakzc/mypersonalpage",
-      "image": "../img/thisSite.png",
+      "image": "../img/Flashcards.png",
       "alt": "coding project: flashcardsProject",
       "tech": "Technologies used: html5, css3, React, Node, Express, Sass",
       "describe": "Final project for my specialist course on Full-Stack WebDev in the University. It's a tool for memorizing study contents by means of a card game"
