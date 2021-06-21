@@ -23,7 +23,7 @@ export default function MyProjects() {
         style={{ backgroundImage: `url(${lightKeys})` }}
       ></div>
       <div className="projectSection">
-        <h2 className="blackTitles">Other Projects</h2>
+        <h2 className="blackTitles">Older Projects</h2>
         <MyPortfolio2 />
       </div>
     </div>

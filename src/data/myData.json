@@ -104,7 +104,7 @@
       "image": "../img/SoftWrapMobList.png",
       "alt": "coding project: soft table",
       "tech": "Technologies used: html5, Tailwind, React, Axios",
-      "describe": "Final project for my specialist course on Full-Stack WebDev in the University. It's a tool for memorizing study contents by means of a card game"
+      "describe": "Quick project for shows, it displays a bit of Tailwind for what is a basic list manager for docs. Needs some refactoring on files and folder, but it is a sleeper project now."
     },
     {
       "name": "Flashcards",
