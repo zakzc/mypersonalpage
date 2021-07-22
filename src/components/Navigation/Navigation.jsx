@@ -1,7 +1,7 @@
 import React from "react";
 ///
-import Projects from "../Projects/MyProjects_0";
-import Profile from "../Profile/MyProfile_0";
+import Projects from "../Projects_old/MyProjects_0";
+import Profile from "../Profile_old/MyProfile_0";
 //
 import lightHouse from "../../assets/svg/blackHouse.svg";
 import darkHouse from "../../assets/svg/whiteHouse.svg";
