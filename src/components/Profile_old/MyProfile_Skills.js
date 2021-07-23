@@ -62,6 +62,7 @@ export default function MyProfile_Skills() {
                               className="skill_circle"
                               src={circle}
                               alt="star"
+                              style={{ width: "20%" }}
                             ></img>
                           </span>
                         );

@@ -13,7 +13,7 @@ export default function MyProfile_FindMe() {
           <li key={i}>
             <div className="links" key={i}>
               <a href={c.url}>
-                <p>{c.description}</p>
+                <span>{c.description}</span>
               </a>
             </div>
           </li>

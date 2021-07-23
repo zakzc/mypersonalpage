@@ -7,12 +7,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 const InitialPage = () => {
-  // * navigation
+  // navigation
   const history = useHistory();
   const handleViewProfile = () => {
     history.push("/profile");
   };
 
+  // data
   const handleViewProjects = () => {
     history.push("/projects");
   };
@@ -60,7 +61,7 @@ const InitialPage = () => {
                 style={{ fontSize: 40 }}
                 onClick={() => handleViewProjects()}
               >
-                Portfolio
+                Projects
               </Button>
             </div>
           </Row>
