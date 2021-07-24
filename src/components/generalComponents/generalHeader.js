@@ -2,13 +2,20 @@ import React from "react";
 // comps
 import GoHomeButton from "../generalComponents/goHomeButton";
 // assets
-import profileImage from "../../assets/img/profileImage.jpg";
+// import profileImage from "../../assets/img/profileImage.jpg";
 // ui
 import Col from "react-bootstrap/Col";
 // import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-const GeneralHeader = ({ polygon, imageRef, headerTitle, sideButton }) => {
+const GeneralHeader = ({
+  polygon,
+  imageRef,
+  headerTitle,
+  sideButton,
+  headerTextColor,
+  headerTextBackground,
+}) => {
   // * views
   const HeaderPhoto = () => (
     <div
@@ -16,7 +23,7 @@ const GeneralHeader = ({ polygon, imageRef, headerTitle, sideButton }) => {
         height: "400px",
         backgroundSize: "cover",
         backgroundImage: `url(${imageRef})`,
-        backgroundPosition: "top",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         clipPath: `polygon(${polygon})`,
       }}
@@ -40,8 +47,8 @@ const GeneralHeader = ({ polygon, imageRef, headerTitle, sideButton }) => {
         display: "block",
         fontSize: "60px",
         fontWeight: "400",
-        color: "#4f6d7aff",
-        backgroundColor: "rgba(243, 243, 243, 0.9)",
+        color: `${headerTextColor}`,
+        backgroundColor: `${headerTextBackground}`,
       }}
     >
       {headerTitle}

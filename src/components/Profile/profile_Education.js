@@ -1,5 +1,7 @@
 import React from "react";
-// ui
+// comps
+import SubTitle from "../generalComponents/subTitle";
+//ui
 //import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -30,23 +32,12 @@ const Education = () => {
     </section>
   );
 
-  const EducationTitle = () => (
-    <h2
-      style={{
-        textAlign: "right",
-        marginTop: "90px",
-        color: "#4f6d7aff",
-      }}
-    >
-      Learning Path
-    </h2>
-  );
   // * view
   return (
     <Container fluid className="my-auto">
       <Row>
         <div id="myEducation">
-          <EducationTitle />
+          <SubTitle color={"#4f6d7aff"} subTitle={"Learning Path"} />
           <EducationList />
         </div>
       </Row>

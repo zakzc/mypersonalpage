@@ -21,6 +21,8 @@ const Profile = () => {
         imageRef={profileImage}
         headerTitle={headerTitle}
         sideButton={false}
+        headerTextColor={"#4f6d7aff"}
+        headerTextBackground={"rgba(243, 243, 243, 0.9)"}
       />
       <Education />
       <Skills />

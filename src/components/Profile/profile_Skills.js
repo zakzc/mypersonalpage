@@ -1,10 +1,12 @@
 import React from "react";
+// comps
+import SubTitle from "../generalComponents/subTitle";
 // data
 import myData from "../../data/myData.json";
 // ui
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+//import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 // list of images
 import html_Logo from "../../assets/svg/html5.svg";
@@ -55,12 +57,6 @@ const Skills = () => {
     </>
   );
 
-  const SkillTitle = () => (
-    <h1 className="text-light" style={{ textAlign: "right" }}>
-      Skill Set
-    </h1>
-  );
-
   const SkillCard = ({ skill, i }) => (
     <Card
       key={i}
@@ -96,11 +92,11 @@ const Skills = () => {
   const SkillSet = () => {
     return (
       <>
-        <Row style={{ marginTop: "110px" }}>
+        <Row style={{ marginTop: "195px" }}>
+          <SubTitle color={"#eaeaeaff"} subTitle={"Skill set"} />
           <Col></Col>
           <Col xs={10} sm={10} md={10} lg={10}>
             <Row>
-              <SkillTitle />
               <SkillList />
             </Row>
           </Col>
