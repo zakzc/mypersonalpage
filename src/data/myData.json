@@ -44,7 +44,7 @@
   "skills": [
     {
       "skillSet": "HTML5",
-      "language": ["XML"],
+      "language": ["HTML, ", "XML"],
       "alt": "html5logo",
       "level": [1, 2, 3, 4]
     },
@@ -80,7 +80,7 @@
     },
     {
       "skillSet": "Node",
-      "language": ["Express ", "Meteor.JS "],
+      "language": ["Express "],
       "alt": "Javascript logo",
       "level": [1, 2, 3, 4]
     },

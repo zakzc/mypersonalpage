@@ -26,17 +26,11 @@ const Timeline = () => {
     { name: "py", image: pythonApp },
   ];
 
-  // myObject.map(function (key, index) {
-  //   myObject[key] *= 2;
-  // });
-
+  // * view
   const ProjectImage = (imageReference) => {
     let imageToShow = projectsImages.filter(
       (i) => i.name === imageReference.imageReference
     );
-
-    console.log("Receif: ", imageReference, imageToShow[0].image);
-
     return (
       <img
         style={{ width: "200px" }}
@@ -52,10 +46,6 @@ const Timeline = () => {
       <div className="date-content">
         <div className="date-outer">
           <span className="date">
-            {/* <span className="month"> */}
-            {/* <img src={softTable} alt="project"></img> */}
-            {/* add image here */}
-            {/* </span> */}
             <span className="year">{project.year}</span>
           </span>
         </div>
@@ -76,13 +66,12 @@ const Timeline = () => {
     return (
       <>
         {myProjects.map((project, i) => (
-          <LineOfTime project={project} i={i} />
+          <LineOfTime project={project} i={i} key={i} />
         ))}
       </>
     );
   };
 
-  // * view
   return (
     <div className="container">
       <SubTitle color={"#4f6d7a"} subTitle={"Timeline of projects"} />
