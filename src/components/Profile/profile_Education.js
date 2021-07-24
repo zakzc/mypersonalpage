@@ -11,12 +11,17 @@ const Education = () => {
   const EducationList = () => (
     <>
       {school.map((course, i) => (
-        <StyledList key={i} title={course.title} text={course.description} />
+        <StyledList
+          key={i}
+          title={course.title}
+          text={course.description}
+          level={course.level}
+        />
       ))}
     </>
   );
 
-  const StyledList = ({ title, text }) => (
+  const StyledList = ({ title, text, level }) => (
     <section className="dl-blurbs">
       <dl>
         <dt>{title}</dt>
@@ -33,7 +38,7 @@ const Education = () => {
         color: "#4f6d7aff",
       }}
     >
-      Education
+      Learning Path
     </h2>
   );
   // * view

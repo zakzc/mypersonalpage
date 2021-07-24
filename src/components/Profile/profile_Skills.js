@@ -37,6 +37,8 @@ const Skills = () => {
   //   const star = star;
   const mySkills = myData.skills;
 
+  // * view
+
   const StarSection = ({ skill }) => (
     <>
       {skill.level.map((i) => (
@@ -53,73 +55,80 @@ const Skills = () => {
     </>
   );
 
+  const SkillTitle = () => (
+    <h1 className="text-light" style={{ textAlign: "right" }}>
+      Skill Set
+    </h1>
+  );
+
+  const SkillCard = ({ skill, i }) => (
+    <Card
+      key={i}
+      style={{
+        width: "10rem",
+        margin: "10px",
+        backgroundColor: "#eaeaeaff",
+      }}
+    >
+      <Card.Img variant="top" src={imageList[i]} alt={skill.alt} />
+      <Card.Body>
+        <Card.Title>{skill.skillSet}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
+          {skill.language}
+        </Card.Subtitle>
+        <Card.Text>
+          <Row>
+            <StarSection skill={skill} />
+          </Row>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+
+  const SkillList = () => (
+    <>
+      {mySkills.map((skill, i) => (
+        <SkillCard skill={skill} i={i} />
+      ))}
+    </>
+  );
+
   const SkillSet = () => {
     return (
       <>
-        <Row>
-          <Col xs={1} sm={1} md={1} lg={1}></Col>
+        <Row style={{ marginTop: "110px" }}>
+          <Col></Col>
           <Col xs={10} sm={10} md={10} lg={10}>
             <Row>
-              {mySkills.map((skill, i) => (
-                <Card
-                  key={i}
-                  style={{
-                    width: "15rem",
-                    margin: "10px",
-                    backgroundColor: "#eaeaeaff",
-                  }}
-                >
-                  <Card.Img variant="top" src={imageList[i]} alt={skill.alt} />
-                  <Card.Body>
-                    <Card.Title>{skill.skillSet}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      {skill.language}
-                    </Card.Subtitle>
-                    <Card.Text>
-                      <Row>
-                        <StarSection skill={skill} />
-                      </Row>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              ))}
+              <SkillTitle />
+              <SkillList />
             </Row>
           </Col>
-          <Col xs={1} sm={1} md={1} lg={1}></Col>
+          <Col></Col>
         </Row>
       </>
     );
   };
 
-  // * view
   return (
-    <Container fluid xs={12} sm={12} md={12} lg={12}>
+    <>
       <Row
         style={{
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundImage:
-            "linear-gradient(to right bottom, #4f6d7aff, #c0d6dfff)",
+          // backgroundImage:
+          //   "linear-gradient(to right bottom, #4f6d7aff, #c0d6dfff)",
+          backgroundColor: "#0093E9",
+          backgroundImage: "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)",
           clipPath: "polygon(0 10%, 100% 0, 100% 100%, 0% 100%)",
           //   transform: "skewY(-4deg)",
           position: "relative",
+          marginLeft: "0",
         }}
       >
-        <Col>
-          <h1
-            className="text-light"
-            style={{ textAlign: "right", marginTop: "90px" }}
-          >
-            Skill Set
-          </h1>
-        </Col>
-        <Row>
-          <Row className="my-auto">
-            <SkillSet />
-          </Row>
-        </Row>
+        <SkillSet />
       </Row>
-    </Container>
+    </>
   );
 };
 export default Skills;

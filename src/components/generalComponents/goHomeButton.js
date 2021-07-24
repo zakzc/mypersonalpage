@@ -1,12 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router";
 // assets
 import lightHouse from "../../assets/svg/blackHouse.svg";
-// comps
-//import Button from "react-bootstrap/Button";
 
 const GoHomeButton = () => {
+  const history = useHistory();
+
   return (
-    <div style={{ position: "absolute", top: "-5px", left: "90%" }}>
+    <div>
       <button
         type="button"
         style={{
@@ -14,6 +15,7 @@ const GoHomeButton = () => {
           border: "none",
           background: "transparent",
         }}
+        onClick={() => history.push("/")}
       >
         <img
           src={lightHouse}

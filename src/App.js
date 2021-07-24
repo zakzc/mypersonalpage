@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 // comps
 import Profile from "./components/Profile/profile_baseLayout";
-import Projects from "./components/Projects/projects";
+import Projects from "./components/Projects/projects_baseLayout";
 import Page404 from "./components/views/Page404";
 // style
 import "./App.scss";
