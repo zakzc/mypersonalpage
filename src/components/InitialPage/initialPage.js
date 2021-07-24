@@ -20,11 +20,11 @@ const InitialPage = () => {
 
   // * view
   const DarkSide = () => (
-    <Col xs={12} sm={6} md={6} lg={6} className="bg-dark text-light">
+    <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#4f6d7aff" }}>
       <Row>
         <div
           className="d-flex justify-content-end  mt-5"
-          style={{ fontSize: 40 }}
+          style={{ fontSize: 40, color: "#f3f3f3ff" }}
         >
           Zak
         </div>
@@ -36,7 +36,12 @@ const InitialPage = () => {
         >
           <Button
             variant="dark"
-            style={{ fontSize: 40 }}
+            style={{
+              fontSize: 40,
+              backgroundColor: "#4f6d7aff",
+              color: "#f3f3f3ff",
+              border: "none",
+            }}
             onClick={() => handleViewProfile()}
           >
             Profile
@@ -47,9 +52,9 @@ const InitialPage = () => {
   );
 
   const LightSide = () => (
-    <Col xs={12} sm={6} md={6} lg={6} className="bg-light text-dark">
+    <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#f3f3f3ff" }}>
       <Row>
-        <div className="mt-5" style={{ fontSize: 40 }}>
+        <div className="mt-5" style={{ fontSize: 40, color: "#4f6d7aff" }}>
           Zangrando
         </div>
       </Row>
@@ -57,7 +62,12 @@ const InitialPage = () => {
         <div style={{ marginTop: "30vh" }}>
           <Button
             variant="light"
-            style={{ fontSize: 40 }}
+            style={{
+              fontSize: 40,
+              backgroundColor: "#f3f3f3ff",
+              border: "none",
+              color: "#4f6d7aff",
+            }}
             onClick={() => handleViewProjects()}
           >
             Projects
