@@ -17,8 +17,8 @@ const Skills = () => {
   const SkillList = () => (
     <div>
       <div className="container">
-        {mySkills.map((skill, i) => (
-          <SkillCard skill={skill} i={i} key={i} />
+        {mySkills.map((skill, index) => (
+          <SkillCard skill={skill} index={index} key={index} />
           // <Skill_Cards skill={skill} i={i} key={i} />
         ))}
       </div>

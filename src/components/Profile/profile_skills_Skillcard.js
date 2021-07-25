@@ -15,7 +15,7 @@ import node_Logo from "../../assets/svg/node.svg";
 import jest_Logo from "../../assets/svg/jest.svg";
 import u_Logo from "../../assets/svg/uxui.svg";
 
-const SkillCard = ({ skill, i }) => {
+const SkillCard = ({ skill, index }) => {
   // Data used in the component
   const imageList = [
     html_Logo,
@@ -29,7 +29,9 @@ const SkillCard = ({ skill, i }) => {
     u_Logo,
   ];
 
-  const StarSection = ({ skillLevel }) => (
+  console.log("Index is:", index, index % 2);
+
+  const StarSection = ({ skillLevel, index }) => (
     <>
       {skillLevel.level.map((k) => (
         <Col key={k} style={{ alignItems: "center" }}>
@@ -52,7 +54,7 @@ const SkillCard = ({ skill, i }) => {
           "linear-gradient( 110.3deg,  rgba(79,109,122,1) 8.8%, rgba(127,146,166,1) 95.1% )",
       }}
     >
-      <img src={imageList[i]} alt={skill.alt} style={{ opacity: "0.8v" }} />
+      <img src={imageList[index]} alt={skill.alt} style={{ opacity: "0.8v" }} />
     </div>
   );
 
@@ -63,7 +65,9 @@ const SkillCard = ({ skill, i }) => {
           <ImageSection />
         </div>
         <div className="card-body">
-          <span className="tag tag-teal">{skill.skillSet}</span>
+          <span className={index % 2 === 0 ? "tag tag-pink" : "tag tag-purple"}>
+            {skill.skillSet}
+          </span>
           <h4> {skill.language}</h4>
           {/* <p> {skill.language}</p> */}
           <div className="user-info">
