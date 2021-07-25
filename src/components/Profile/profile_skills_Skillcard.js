@@ -48,13 +48,11 @@ const SkillCard = ({ skill, i }) => {
   const ImageSection = () => (
     <div
       style={{
-        backgroundColor: "#0093E9",
         backgroundImage:
-          "linear-gradient(312deg, #FFFFFF 0%, #6284FF 26%, #FF0000 90%)",
-        clipPath: "polygon(49% 0, 100% 0, 96% 100%, 4% 100%, 0 0)",
+          "linear-gradient( 110.3deg,  rgba(79,109,122,1) 8.8%, rgba(127,146,166,1) 95.1% )",
       }}
     >
-      <img src={imageList[i]} alt={skill.alt} style={{ opacity: "0.5" }} />
+      <img src={imageList[i]} alt={skill.alt} style={{ opacity: "0.8v" }} />
     </div>
   );
 

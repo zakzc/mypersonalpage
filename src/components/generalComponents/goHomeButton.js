@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 // assets
-import lightHouse from "../../assets/svg/blackHouse.svg";
+import goBackHome from "../../assets/svg/goHome.svg";
 
 const GoHomeButton = () => {
   const history = useHistory();
@@ -18,7 +18,7 @@ const GoHomeButton = () => {
         onClick={() => history.push("/")}
       >
         <img
-          src={lightHouse}
+          src={goBackHome}
           style={{
             height: "80px",
             outline: "none",

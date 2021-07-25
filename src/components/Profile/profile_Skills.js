@@ -51,7 +51,7 @@ const Skills = () => {
           // backgroundImage:
           //   "linear-gradient(to right bottom, #4f6d7aff, #c0d6dfff)",
           backgroundColor: "#0093E9",
-          backgroundImage: "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)",
+          backgroundImage: "linear-gradient(160deg, #5ea5b8 0%, #5ea5b8 100%)",
           clipPath: "polygon(0 10%, 100% 0, 100% 100%, 0% 100%)",
           //   transform: "skewY(-4deg)",
           position: "relative",
