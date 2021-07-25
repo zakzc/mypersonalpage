@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import SubTitle from "../generalComponents/subTitle";
+import SubTitle from "../views/subTitle";
 import SkillCard from "./profile_skills_Skillcard";
 // data
 import myData from "../../data/myData.json";

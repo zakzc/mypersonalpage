@@ -8,7 +8,7 @@ import softTable from "../../assets/img/SoftWrapMobList.png";
 import personalApp from "../../assets/img//Personal_meteor_work.png";
 import pythonApp from "../../assets/img/PythonCarGame.png";
 // comps
-import SubTitle from "../generalComponents/subTitle";
+import SubTitle from "../views/subTitle";
 // data
 import myData from "../../data/myData.json";
 

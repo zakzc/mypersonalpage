@@ -135,8 +135,8 @@
       "image": "../../img/thisSite.png",
       "imageRef": "current",
       "alt": "coding project: this website",
-      "tech": "Technologies used: html5, css3, React",
-      "describe": "This is the github link to the code of this website. It was/is developed entirely in React, but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
+      "tech": "Technologies used: html5, css3, React, Framer-Motion",
+      "describe": "This is the github link to the code of this website. It was/is developed entirely in React, with animations in Framer-Motion but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
     },
     {
       "year": "2018",
@@ -176,7 +176,7 @@
       "imageRef": "py",
       "alt": "coding project: python racing game",
       "tech": "Technologies used: Python, PyGame",
-      "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects in my learning path."
+      "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects that are a key element in my learning path."
     }
   ]
 }

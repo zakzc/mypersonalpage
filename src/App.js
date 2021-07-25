@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation, Redirect } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 // comps
 import InitialPage from "./components/InitialPage/initialPage";
@@ -80,11 +80,12 @@ const App = () => {
   );
 
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.key}>
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/projects" component={ProjectPage} />
         <Route exact path="/" component={StartPage} />
+        <Redirect to="/" component={StartPage} />
         <Route component={Page404} />
       </Switch>
     </AnimatePresence>

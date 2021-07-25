@@ -1,7 +1,8 @@
 import React from "react";
 // comps
-import GeneralHeader from "../generalComponents/generalHeader";
+import GeneralHeader from "../views/generalHeader";
 import Timeline from "./projects_Timeline";
+import Footer from "../views/footer";
 // ui
 // import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -28,6 +29,7 @@ const Projects = () => {
         />
       </Row>
       <Timeline />
+      <Footer />
     </Container>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import GoHomeButton from "../generalComponents/goHomeButton";
+import GoHomeButton from "./goHomeButton";
 // assets
 // import profileImage from "../../assets/img/profileImage.jpg";
 // ui

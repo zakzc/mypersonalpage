@@ -1,7 +1,8 @@
 import React from "react";
 // comps
 import Education from "./profile_Education";
-import GeneralHeader from "../generalComponents/generalHeader";
+import Footer from "../views/footer";
+import GeneralHeader from "../views/generalHeader";
 import Skills from "./profile_Skills";
 // ui
 // import Col from "react-bootstrap/Col";
@@ -26,6 +27,7 @@ const Profile = () => {
       />
       <Education />
       <Skills />
+      <Footer />
     </>
   );
 };

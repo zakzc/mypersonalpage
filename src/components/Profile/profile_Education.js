@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import SubTitle from "../generalComponents/subTitle";
+import SubTitle from "../views/subTitle";
 //ui
 //import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";

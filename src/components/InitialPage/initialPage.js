@@ -14,17 +14,19 @@ import Row from "react-bootstrap/Row";
 const InitialPage = () => {
   // * data
   const history = useHistory();
-  const [showArrow, setShowArrow] = useState(false);
+  const [showArrow, setShowArrow] = useState(true);
 
   useEffect(() => {
     return () => {
-      setShowArrow(false);
-    }; // use cleanup to toggle value, if unmounted
+      setShowArrow(true);
+    };
+    // Cleans up setShowArrow, so that it doesn't run in the background
+    // as another component is rendered
   }, []);
 
   setTimeout(() => {
-    setShowArrow(!showArrow);
-  }, 6000);
+    setShowArrow(false);
+  }, 4000);
 
   const handleViewProfile = () => {
     history.push("/profile");
