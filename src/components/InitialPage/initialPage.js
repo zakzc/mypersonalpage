@@ -23,7 +23,7 @@ const InitialPage = () => {
     <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#4f6d7aff" }}>
       <Row>
         <div
-          className="d-flex justify-content-end  mt-5"
+          className="d-flex justify-content-end  mt-4"
           style={{ fontSize: 40, color: "#f3f3f3ff" }}
         >
           Zak
@@ -31,7 +31,7 @@ const InitialPage = () => {
       </Row>
       <Row>
         <div
-          style={{ marginTop: "30vh" }}
+          style={{ marginTop: "25vh" }}
           className="d-flex justify-content-end"
         >
           <Button
@@ -54,12 +54,12 @@ const InitialPage = () => {
   const LightSide = () => (
     <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#f3f3f3ff" }}>
       <Row>
-        <div className="mt-5" style={{ fontSize: 40, color: "#4f6d7aff" }}>
+        <div className="mt-4" style={{ fontSize: 40, color: "#4f6d7aff" }}>
           Zangrando
         </div>
       </Row>
       <Row>
-        <div style={{ marginTop: "30vh" }}>
+        <div style={{ marginTop: "25vh" }}>
           <Button
             variant="light"
             style={{

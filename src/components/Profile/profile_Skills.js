@@ -28,11 +28,11 @@ const Skills = () => {
   const SkillSet = () => {
     return (
       <>
-        <Row style={{ marginTop: "195px" }}>
+        <Row style={{ marginTop: "150px" }}>
           <SubTitle color={"#eaeaeaff"} subTitle={"Skill set"} />
           <Col></Col>
           <Col xs={10} sm={10} md={10} lg={10}>
-            <Row>
+            <Row style={{ marginTop: "150px" }}>
               <SkillList />
             </Row>
           </Col>
