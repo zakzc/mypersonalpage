@@ -16,7 +16,7 @@ import jest_Logo from "../../assets/svg/jest.svg";
 import u_Logo from "../../assets/svg/uxui.svg";
 
 const SkillCard = ({ skill, index }) => {
-  // Data used in the component
+  // * data
   const imageList = [
     html_Logo,
     css_Logo,
@@ -29,8 +29,7 @@ const SkillCard = ({ skill, index }) => {
     u_Logo,
   ];
 
-  console.log("Index is:", index, index % 2);
-
+  // * view
   const StarSection = ({ skillLevel, index }) => (
     <>
       {skillLevel.level.map((k) => (

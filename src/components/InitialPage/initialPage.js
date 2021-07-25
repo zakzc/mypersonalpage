@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+// animation
+import { AnimatePresence, motion } from "framer-motion";
+// assets
+import arrowLeft from "../../assets/svg/arrow-left-circle.svg";
+import arrowRight from "../../assets/svg/arrow-right-circle.svg";
 // ui
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -7,16 +12,72 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 const InitialPage = () => {
-  // navigation
+  // * data
   const history = useHistory();
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      setShowArrow(false);
+    }; // use cleanup to toggle value, if unmounted
+  }, []);
+
+  setTimeout(() => {
+    setShowArrow(!showArrow);
+  }, 6000);
+
   const handleViewProfile = () => {
     history.push("/profile");
   };
 
-  // data
   const handleViewProjects = () => {
     history.push("/projects");
   };
+  // animation
+  const pageVariants = {
+    initial: { opacity: 0 },
+    in: { opacity: 1 },
+    out: { opacity: 0 },
+  };
+  const pageTransition = {
+    transition: "linear",
+    ease: "easeInOut",
+    duration: 0.8,
+  };
+
+  const ButtonContentProfile = ({ arrow, text }) => (
+    <>
+      {showArrow ? (
+        <AnimatePresence>
+          <motion.div
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}
+          >
+            <img
+              src={arrow}
+              style={{
+                height: "80px",
+              }}
+              alt="go to profile page"
+            />
+          </motion.div>
+        </AnimatePresence>
+      ) : (
+        <motion.div
+          initial="initial"
+          animate="in"
+          exit="out"
+          variants={pageVariants}
+          transition={pageTransition}
+        >
+          <span>{text}</span>
+        </motion.div>
+      )}
+    </>
+  );
 
   // * view
   const DarkSide = () => (
@@ -44,7 +105,7 @@ const InitialPage = () => {
             }}
             onClick={() => handleViewProfile()}
           >
-            Profile
+            <ButtonContentProfile arrow={arrowLeft} text={"Profile"} />
           </Button>
         </div>
       </Row>
@@ -70,7 +131,7 @@ const InitialPage = () => {
             }}
             onClick={() => handleViewProjects()}
           >
-            Projects
+            <ButtonContentProfile arrow={arrowRight} text={"Projects"} />
           </Button>
         </div>
       </Row>
