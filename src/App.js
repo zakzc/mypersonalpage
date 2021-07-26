@@ -10,36 +10,61 @@ import Page404 from "./components/views/Page404";
 import "./App.scss";
 
 const App = () => {
+  // * data
   const location = useLocation();
-  // * view
+
+  const pageVariantsStartPage = {
+    initial: { opacity: "0" },
+    in: {
+      opacity: "1",
+      transition: {
+        duration: 0.7,
+      },
+    },
+    out: { opacity: "0" },
+  };
+
   const pageVariantsProjects = {
     initial: { opacity: 0, x: "100vh" },
-    in: { opacity: 1, x: 0, scale: 1 },
+    in: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        transition: "linear",
+        ease: "easeInOut",
+        duration: 0.9,
+      },
+    },
     out: { opacity: 0, x: "100vh" },
   };
   const pageVariantsProfile = {
     initial: { opacity: 0, x: "-100vh" },
-    in: { opacity: 1, x: 0, scale: 1 },
+    in: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        transition: "linear",
+        ease: "easeInOut",
+        duration: 0.8,
+      },
+    },
     out: { opacity: 0, x: "-100vh" },
   };
 
-  const pageTransition = {
-    transition: "linear",
-    ease: "easeInOut",
-    duration: 0.8,
-  };
-
-  const pageVariantsStartPage = {
-    initial: { opacity: 0 },
-    in: { opacity: 1 },
-    out: { opacity: 0 },
-  };
-
-  const pageTransitionStartPage = {
-    transition: "linear",
-    ease: "anticipate",
-    duration: 0.1,
-  };
+  // * view
+  const StartPage = () => (
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariantsStartPage}
+      transition="transition"
+    >
+      <InitialPage />
+    </motion.div>
+  );
 
   const ProfilePage = () => (
     <motion.div
@@ -47,7 +72,7 @@ const App = () => {
       animate="in"
       exit="out"
       variants={pageVariantsProfile}
-      transition={pageTransition}
+      transition="transition"
     >
       <Profile />
     </motion.div>
@@ -59,21 +84,9 @@ const App = () => {
       animate="in"
       exit="out"
       variants={pageVariantsProjects}
-      transition={pageTransition}
+      transition="transition"
     >
       <Projects />
-    </motion.div>
-  );
-
-  const StartPage = () => (
-    <motion.div
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariantsStartPage}
-      transition={pageTransitionStartPage}
-    >
-      <InitialPage />
     </motion.div>
   );
 

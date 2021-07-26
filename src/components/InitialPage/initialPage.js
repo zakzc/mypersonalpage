@@ -41,14 +41,6 @@ const InitialPage = () => {
     },
   };
 
-  // const pageTransitionArrow = {
-  //   transition: "linear",
-  //   delay: 1,
-  // duration: 1,
-  // repeat: 2,
-  // repeatType: "reverse",
-  //};
-
   const buttonVariance = { hover: { scale: 1.3 } };
 
   const Arrow = ({ arrow }) => (
