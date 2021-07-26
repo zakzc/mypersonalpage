@@ -1,14 +1,19 @@
 import React from "react";
 import { useHistory } from "react-router";
+import { motion } from "framer-motion";
 // assets
 import goBackHome from "../../assets/svg/goHome.svg";
 
 const GoHomeButton = () => {
   const history = useHistory();
 
+  const buttonVariance = { hover: { scale: 1.2 } };
+
   return (
     <div>
-      <button
+      <motion.button
+        variants={buttonVariance}
+        whileHover="hover"
         type="button"
         style={{
           outline: "none",
@@ -26,7 +31,7 @@ const GoHomeButton = () => {
           }}
           alt="go back home"
         />
-      </button>
+      </motion.button>
     </div>
   );
 };

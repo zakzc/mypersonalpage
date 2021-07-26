@@ -11,9 +11,7 @@ import "./App.scss";
 
 const App = () => {
   const location = useLocation();
-  // const [enterPage, setEnterPage] = useState(0);
-  // 0=first rendering, 1= from left, 2= from right
-  //ui
+  // * view
   const pageVariantsProjects = {
     initial: { opacity: 0, x: "100vh" },
     in: { opacity: 1, x: 0, scale: 1 },
@@ -80,7 +78,7 @@ const App = () => {
   );
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence>
       <Switch location={location} key={location.key}>
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/projects" component={ProjectPage} />
