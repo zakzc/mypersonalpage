@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 ///
@@ -28,6 +29,10 @@ const SkillCard = ({ skill, index }) => {
     jest_Logo,
     u_Logo,
   ];
+
+  const cardVariance = {
+    hover: { scale: 1.05 },
+  };
 
   // * view
   const StarSection = ({ skillLevel, index }) => (
@@ -59,7 +64,7 @@ const SkillCard = ({ skill, index }) => {
 
   return (
     <>
-      <div className="card">
+      <motion.div variants={cardVariance} whileHover="hover" className="card">
         <div className="card-header">
           <ImageSection />
         </div>
@@ -75,7 +80,7 @@ const SkillCard = ({ skill, index }) => {
             </Row>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
