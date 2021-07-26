@@ -26,24 +26,38 @@ const InitialPage = () => {
   // * view
   // animation
   const pageVariantsArrow = {
-    initial: { opacity: 0 },
-    in: { opacity: 1 },
-    out: { opacity: 0 },
+    initial: { opacity: 1 },
+    animate: {
+      opacity: 0,
+      transition: {
+        delay: 1,
+        duration: 7,
+        repeat: "Infinity",
+        repeatType: "reverse",
+      },
+    },
+    final: {
+      opacity: 1,
+    },
   };
 
-  const pageTransitionArrow = {
-    transition: "linear",
-    duration: 4,
-    repeat: 2,
-  };
+  // const pageTransitionArrow = {
+  //   transition: "linear",
+  //   delay: 1,
+  // duration: 1,
+  // repeat: 2,
+  // repeatType: "reverse",
+  //};
+
+  const buttonVariance = { hover: { scale: 1.3 } };
 
   const Arrow = ({ arrow }) => (
     <motion.div
       initial="initial"
-      animate="in"
-      exit="out"
+      animate="animate"
+      exit="final"
       variants={pageVariantsArrow}
-      transition={pageTransitionArrow}
+      transition="transition"
     >
       <img
         src={arrow}
@@ -55,9 +69,22 @@ const InitialPage = () => {
     </motion.div>
   );
 
+  const ButtonText = ({ text }) => (
+    <motion.div variants={buttonVariance} whileHover="hover">
+      {text}
+    </motion.div>
+  );
+
   // render
   const DarkSide = () => (
-    <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#4f6d7aff" }}>
+    <Col
+      xs={12}
+      sm={6}
+      md={6}
+      lg={6}
+      style={{ backgroundColor: "#4f6d7aff" }}
+      onClick={() => handleViewProfile()}
+    >
       <Row>
         <div
           className="d-flex justify-content-end  mt-4"
@@ -67,55 +94,82 @@ const InitialPage = () => {
         </div>
       </Row>
       <Row>
-        <div
-          style={{ marginTop: "25vh" }}
-          className="d-flex justify-content-end"
-        >
-          <Button
-            variant="dark"
+        <Col>
+          <div
             style={{
-              fontSize: 40,
-              backgroundColor: "#4f6d7aff",
-              color: "#f3f3f3ff",
-              border: "none",
+              position: "absolute",
+              marginLeft: "5%",
+              marginTop: "18%",
             }}
-            onClick={() => handleViewProfile()}
           >
-            Profile
-          </Button>
-        </div>
+            <Arrow arrow={arrowLeft} />
+          </div>
+        </Col>
+        <Col>
+          <div
+            style={{ marginTop: "25vh" }}
+            className="d-flex justify-content-end"
+          >
+            <Button
+              variant="dark"
+              style={{
+                fontSize: 40,
+                backgroundColor: "#4f6d7aff",
+                color: "#f3f3f3ff",
+                border: "none",
+              }}
+              onClick={() => handleViewProfile()}
+            >
+              <ButtonText text={"Profile"} />
+            </Button>
+          </div>
+        </Col>
       </Row>
-      {/* <div style={{ position: "absolute", marginRight: "25%" }}>
-        <Arrow arrow={arrowLeft} />
-      </div> */}
     </Col>
   );
 
   const LightSide = () => (
-    <Col xs={12} sm={6} md={6} lg={6} style={{ backgroundColor: "#f3f3f3ff" }}>
+    <Col
+      xs={12}
+      sm={6}
+      md={6}
+      lg={6}
+      style={{ backgroundColor: "#f3f3f3ff" }}
+      onClick={() => handleViewProjects()}
+    >
       <Row>
         <div className="mt-4" style={{ fontSize: 40, color: "#4f6d7aff" }}>
           Zangrando
         </div>
       </Row>
       <Row>
-        <div style={{ marginTop: "25vh" }}>
-          {/* <div style={{ position: "absolute", marginLeft: "25%" }}>
-            <Arrow arrow={arrowRight} />
-          </div> */}
-          <Button
-            variant="light"
+        <Col>
+          <div style={{ marginTop: "25vh" }}>
+            <Button
+              variant="light"
+              style={{
+                fontSize: 40,
+                backgroundColor: "#f3f3f3ff",
+                border: "none",
+                color: "#4f6d7aff",
+              }}
+              onClick={() => handleViewProjects()}
+            >
+              <ButtonText text={"Project"} />
+            </Button>{" "}
+          </div>
+        </Col>
+        <Col>
+          <div
             style={{
-              fontSize: 40,
-              backgroundColor: "#f3f3f3ff",
-              border: "none",
-              color: "#4f6d7aff",
+              position: "absolute",
+              marginRight: "5%",
+              marginTop: "18%",
             }}
-            onClick={() => handleViewProjects()}
           >
-            Projects
-          </Button>
-        </div>
+            <Arrow arrow={arrowRight} />
+          </div>
+        </Col>
       </Row>
     </Col>
   );
