@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.skillsGradientBackground {
-    background-size: "cover";
-    background-position: "center";
-background-color: #4f6d7a;
-background-image: linear-gradient(135deg, #4f6d7a 0%, #c0d6df 50%, #5ea5b8 100%);
-
-    clip-path: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)";
-    position: "relative";
-}
-
 .container {
     display: flex;
     justify-content: space-evenly;

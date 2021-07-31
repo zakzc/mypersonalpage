@@ -12,40 +12,6 @@ import "./App.scss";
 const App = () => {
   // * data
   const location = useLocation();
-  // let slider = true;
-
-  // console.log("log: ", location.pathname);
-  // if (location.pathname === "/profile") {
-  //   slider = false;
-  // } else if (location.pathname === "/projects") {
-  //   slider = true;
-  // }
-
-  // console.log("slider is: ", slider);
-  // const pageVariantsStartPage = {
-  //   initial: { opacity: "0" },
-  //   in: {
-  //     opacity: "1",
-  //     transition: {
-  //       duration: 0.1,
-  //     },
-  //   },
-  //   out: { opacity: "1" },
-  // };
-
-  // const pageVariantsStartPage = {
-  //   initial: { x: slider ? "-100vh" : "100vh" },
-  //   in: {
-  //     x: 0,
-  //     scale: 1,
-  //     transition: {
-  //       transition: "linear",
-  //       // ease: "easeInOut",
-  //       duration: 0.5,
-  //     },
-  //   },
-  //   out: { x: slider ? "-100vh" : "100vh" },
-  // };
 
   const pageVariantsProjects = {
     initial: { x: "100vh" },
@@ -76,17 +42,7 @@ const App = () => {
   };
 
   // * view
-  const StartPage = () => (
-    // <motion.div
-    //   initial="initial"
-    //   animate="in"
-    //   exit="out"
-    //   variants={pageVariantsStartPage}
-    //   transition="transition"
-    // >
-    <InitialPage />
-    // </motion.div>
-  );
+  const StartPage = () => <InitialPage />;
 
   const ProfilePage = () => (
     <motion.div

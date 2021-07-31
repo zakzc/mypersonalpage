@@ -89,16 +89,21 @@ const Footer = () => {
 
   return (
     <>
-      <div>
-        <Row style={{ backgroundColor: "#f3f3f3", color: "#444444" }}>
-          <Col>
-            <Refs />
-          </Col>
-          <Col>
-            <Credits />
-          </Col>
-        </Row>
-      </div>
+      <Row
+        style={{
+          backgroundImage:
+            "linear-gradient(180deg, #f3f3f3 0%, #f3f3f3 70%, #ffffff 100%)",
+          color: "#444444",
+          marginTop: "50px",
+        }}
+      >
+        <Col>
+          <Refs />
+        </Col>
+        <Col>
+          <Credits />
+        </Col>
+      </Row>
     </>
   );
 };

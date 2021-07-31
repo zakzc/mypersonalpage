@@ -43,7 +43,17 @@ const Skills = () => {
 
   return (
     <>
-      <Row className="skillsGradientBackground">
+      <Row
+        style={{
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "#4f6d7a",
+          backgroundImage:
+            " linear-gradient(135deg, #4f6d7a 0%, #c0d6df 50%, #5ea5b8 100%)",
+          clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
+          position: "relative",
+        }}
+      >
         <SkillSet />
       </Row>
     </>
