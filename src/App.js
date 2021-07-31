@@ -12,58 +12,80 @@ import "./App.scss";
 const App = () => {
   // * data
   const location = useLocation();
+  // let slider = true;
 
-  const pageVariantsStartPage = {
-    initial: { opacity: "0" },
-    in: {
-      opacity: "1",
-      transition: {
-        duration: 0.7,
-      },
-    },
-    out: { opacity: "0" },
-  };
+  // console.log("log: ", location.pathname);
+  // if (location.pathname === "/profile") {
+  //   slider = false;
+  // } else if (location.pathname === "/projects") {
+  //   slider = true;
+  // }
+
+  // console.log("slider is: ", slider);
+  // const pageVariantsStartPage = {
+  //   initial: { opacity: "0" },
+  //   in: {
+  //     opacity: "1",
+  //     transition: {
+  //       duration: 0.1,
+  //     },
+  //   },
+  //   out: { opacity: "1" },
+  // };
+
+  // const pageVariantsStartPage = {
+  //   initial: { x: slider ? "-100vh" : "100vh" },
+  //   in: {
+  //     x: 0,
+  //     scale: 1,
+  //     transition: {
+  //       transition: "linear",
+  //       // ease: "easeInOut",
+  //       duration: 0.5,
+  //     },
+  //   },
+  //   out: { x: slider ? "-100vh" : "100vh" },
+  // };
 
   const pageVariantsProjects = {
-    initial: { opacity: 0, x: "100vh" },
+    initial: { x: "100vh" },
     in: {
-      opacity: 1,
       x: 0,
       scale: 1,
       transition: {
         transition: "linear",
-        ease: "easeInOut",
-        duration: 0.9,
+        // ease: "easeInOut",
+        duration: 0.5,
       },
     },
-    out: { opacity: 0, x: "100vh" },
+    out: { x: "100vh" },
   };
+
   const pageVariantsProfile = {
-    initial: { opacity: 0, x: "-100vh" },
+    initial: { x: "-100vh" },
     in: {
-      opacity: 1,
       x: 0,
       scale: 1,
       transition: {
         transition: "linear",
-        ease: "easeInOut",
-        duration: 0.8,
+        // ease: "easeInOut",
+        duration: 0.5,
       },
     },
-    out: { opacity: 0, x: "-100vh" },
+    out: { x: "-100vh" },
   };
 
   // * view
   const StartPage = () => (
-    <motion.div
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariantsStartPage}
-      transition="transition"
-    >
-      <InitialPage />
-    </motion.div>
+    // <motion.div
+    //   initial="initial"
+    //   animate="in"
+    //   exit="out"
+    //   variants={pageVariantsStartPage}
+    //   transition="transition"
+    // >
+    <InitialPage />
+    // </motion.div>
   );
 
   const ProfilePage = () => (
