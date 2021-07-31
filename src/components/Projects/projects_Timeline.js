@@ -33,7 +33,11 @@ const Timeline = () => {
     );
     return (
       <img
-        style={{ width: "200px" }}
+        style={{
+          width: "200px",
+          borderStyle: "groove",
+          borderColor: "#4f6d7aff",
+        }}
         src={imageToShow[0].image}
         alt="project"
       ></img>
@@ -57,7 +61,7 @@ const Timeline = () => {
         <p> {project.tech}</p>
         <a href={project.link}>Link to code</a>
         <br /> <br />
-        <ProjectImage imageReference={project.imageRef} />;
+        <ProjectImage imageReference={project.imageRef} />
       </div>
     </div>
   );

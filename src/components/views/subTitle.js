@@ -20,7 +20,11 @@ const SubTitle = ({ color, subTitle }) => (
     exit="out"
     variants={pageVariants}
     transition={pageTransition}
-    style={{ textAlign: "right", color: `${color}`, marginTop: "10px" }}
+    style={{
+      textAlign: "right",
+      color: `${color}`,
+      marginTop: "10px",
+    }}
   >
     {subTitle}
   </motion.h1>

@@ -1,6 +1,8 @@
 import React from "react";
 // comps
 import SubTitle from "../views/subTitle";
+// icon
+import EducationBackground from "../../assets/svg/files.svg";
 //ui
 //import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -34,7 +36,16 @@ const Education = () => {
 
   // * view
   return (
-    <Container fluid className="my-auto">
+    <Container
+      fluid
+      className="my-auto"
+      style={{
+        background: `url(${EducationBackground})`,
+        backgroundSize: "125px 175px",
+        backgroundColor: "#f3f3f3",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <Row>
         <div id="myEducation">
           <SubTitle color={"#4f6d7aff"} subTitle={"Learning Path"} />

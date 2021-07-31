@@ -39,7 +39,7 @@ const Footer = () => {
         For more information about me, check:{" "}
         <span>
           <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+            style={{ textDecoration: "none", color: "purple" }}
             href="https://github.com/zakzc"
           >
             my Github page
@@ -48,7 +48,7 @@ const Footer = () => {
         and{" "}
         <span>
           <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+            style={{ textDecoration: "none", color: "purple" }}
             href="https://www.linkedin.com/in/zakzangrando/"
           >
             My LinkedIn profile.
@@ -80,6 +80,12 @@ const Footer = () => {
         <span>
           <a
             style={{ textDecoration: "none", color: "whiteSmoke" }}
+            href="https://unsplash.com/@claybanks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >
+            photo by Clay Banks (front page),{" "}
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "whiteSmoke" }}
             href="https://unsplash.com/photos/DJ7bWa-Gwks"
           >
             Photo by ian dooley on Unsplash (profile) and{" "}
@@ -99,15 +105,13 @@ const Footer = () => {
   return (
     <>
       <div>
-        <Row style={{ backgroundColor: "#4f6d7aff", color: "#f3f3f3ff" }}>
-          <Col></Col>
+        <Row style={{ backgroundColor: "#4f6d7a", color: "#f3f3f3ff" }}>
           <Col>
             <Refs />
           </Col>
           <Col>
             <Credits />
           </Col>
-          <Col></Col>
         </Row>
       </div>
     </>

@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 // assets
 import arrowLeft from "../../assets/svg/arrow-left-circle.svg";
 import arrowRight from "../../assets/svg/arrow-right-circle.svg";
+// image
+import HeroBackgroundImage from "../../assets/img/backgroundImage.jpg";
 // ui
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -74,13 +76,13 @@ const InitialPage = () => {
       sm={6}
       md={6}
       lg={6}
-      style={{ backgroundColor: "#4f6d7aff" }}
+      style={{ backgroundColor: "rgba(79, 109, 122, 0.50)" }}
       onClick={() => handleViewProfile()}
     >
       <Row>
         <div
           className="d-flex justify-content-end  mt-4"
-          style={{ fontSize: 40, color: "#f3f3f3ff" }}
+          style={{ fontSize: 40, color: "#f3f3f3" }}
         >
           Zak
         </div>
@@ -106,8 +108,8 @@ const InitialPage = () => {
               variant="dark"
               style={{
                 fontSize: 40,
-                backgroundColor: "#4f6d7aff",
-                color: "#f3f3f3ff",
+                backgroundColor: "transparent",
+                color: "#f3f3f3",
                 border: "none",
               }}
               onClick={() => handleViewProfile()}
@@ -126,7 +128,7 @@ const InitialPage = () => {
       sm={6}
       md={6}
       lg={6}
-      style={{ backgroundColor: "#f3f3f3ff" }}
+      style={{ backgroundColor: "rgba(243, 243, 243, 0.70)" }}
       onClick={() => handleViewProjects()}
     >
       <Row>
@@ -141,7 +143,7 @@ const InitialPage = () => {
               variant="light"
               style={{
                 fontSize: 40,
-                backgroundColor: "#f3f3f3ff",
+                backgroundColor: "transparent",
                 border: "none",
                 color: "#4f6d7aff",
               }}
@@ -167,7 +169,17 @@ const InitialPage = () => {
   );
 
   return (
-    <Container fluid>
+    <Container
+      fluid
+      style={{
+        backgroundImage: `url(${HeroBackgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        // width: "100vw",
+        // height: "100vh",
+      }}
+    >
       <Row className="vh-100">
         <DarkSide />
         <LightSide />

@@ -8,7 +8,7 @@
     display: block;
     width: 2px;
     height: 100%;
-    background: #c6c6c6;
+    background: $cultured;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -53,7 +53,7 @@
 
 .main-timeline .icon:before {
     background: #fff;
-    border: 2px solid #232323;
+    border: 2px solid $touchOfPurple;
     left: -3px
 }
 
@@ -81,7 +81,7 @@
     content: "";
     width: 36.5%;
     height: 2px;
-    background: #c6c6c6;
+    background: $cultured;
     margin: auto 0;
     position: absolute;
     top: 0;
@@ -114,7 +114,7 @@
 
 .main-timeline .date-outer:before {
     background: #fff;
-    border: 2px solid #232323;
+    border: 2px solid $cadet;
     left: -6px
 }
 
@@ -148,7 +148,7 @@
     display: block;
     font-size: 30px;
     font-weight: 700;
-    color: #232323;
+    color: $cadet;
     line-height: 36px
 }
 

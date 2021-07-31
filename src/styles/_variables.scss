@@ -1,6 +1,6 @@
 // Colors
 $black: #0a1a29;
-$white: #fbfcf8;
+$white: #c6c6c6;
 //$gray: #c7d3d4ff;
 $gray: #eee2dc;
 $red: #f35e3d;
@@ -8,7 +8,31 @@ $lightBlue: #9cc3d5ff;
 $darkBlue: #123c69;
 $mainBlue: #0a1a29;
 $touchOfPurple: #ac3b61;
+//
+/* COLOR HEX */
+$cadet: #4f6d7aff;
+$maximum-blue: #5ea5b8ff;
+$columbia-blue: #c0d6dfff;
+$platinum: #eaeaeaff;
+$cultured: #f3f3f3ff;
+$nero: #444444;
 // Breakpoint for small screen
 // $break: 768px;
 $break: 768px;
 $break-tiny: 425px;
+
+//- Google Fonts
+$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
+$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+
+//- @type List
+$abril-fatface: 'Abril Fatface',
+cursive;
+$montserrat: 'Montserrat',
+sans-serif;
+
+//- Typography
+$base-font-family: $montserrat;
+$heading-font-family: $abril-fatface;
+
+$font-size-small: 0.875em;
