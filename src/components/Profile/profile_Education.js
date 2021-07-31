@@ -48,7 +48,7 @@ const Education = () => {
     >
       <Row>
         <div id="myEducation">
-          <SubTitle color={"#4f6d7aff"} subTitle={"Learning Path"} />
+          <SubTitle color={"#7A5C4F"} subTitle={"Learning Path"} />
           <EducationList />
         </div>
       </Row>

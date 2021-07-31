@@ -9,25 +9,19 @@ const Footer = () => {
       <p>
         The effects and animations on this page are either mine or they were
         found on{" "}
-        <a
-          style={{ textDecoration: "none", color: "whiteSmoke" }}
-          href="https://freefrontend.com/"
-        >
+        <a className="linkItem" href="https://freefrontend.com/">
           {" "}
           Free frontend
         </a>
         , which is a great source for references. The ones here were tweaked and
         adjusted to fit this project. These include:{" "}
         <a
-          style={{ textDecoration: "none", color: "whiteSmoke" }}
+          className="linkItem"
           href="https://www.bootdey.com/snippets/view/bs4-my-experience-timeline"
         >
           Timeline from Projects page and{" "}
         </a>
-        <a
-          style={{ textDecoration: "none", color: "whiteSmoke" }}
-          href="https://codepen.io/eyupucmaz/pen/oNbeXOb"
-        >
+        <a className="linkItem" href="https://codepen.io/eyupucmaz/pen/oNbeXOb">
           Card layout from Profile page
         </a>{" "}
       </p>
@@ -38,17 +32,14 @@ const Footer = () => {
       <p>
         For more information about me, check:{" "}
         <span>
-          <a
-            style={{ textDecoration: "none", color: "purple" }}
-            href="https://github.com/zakzc"
-          >
+          <a className="linkItem" href="https://github.com/zakzc">
             my Github page
           </a>
         </span>{" "}
         and{" "}
         <span>
           <a
-            style={{ textDecoration: "none", color: "purple" }}
+            className="linkItem"
             href="https://www.linkedin.com/in/zakzangrando/"
           >
             My LinkedIn profile.
@@ -58,19 +49,13 @@ const Footer = () => {
       <p>
         Icons come from:{" "}
         <span>
-          <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
-            href="https://linearicons.com/"
-          >
+          <a className="linkItem" href="https://linearicons.com/">
             Linea icons
           </a>
         </span>{" "}
         and{" "}
         <span>
-          <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
-            href="https://www.flaticon.com/"
-          >
+          <a className="linkItem" href="https://www.flaticon.com/">
             Flat icon
           </a>
         </span>
@@ -79,20 +64,20 @@ const Footer = () => {
         Images used include:{" "}
         <span>
           <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+            className="linkItem"
             href="https://unsplash.com/@claybanks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
           >
             photo by Clay Banks (front page),{" "}
           </a>
           <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+            className="linkItem"
             href="https://unsplash.com/photos/DJ7bWa-Gwks"
           >
             Photo by ian dooley on Unsplash (profile) and{" "}
           </a>
 
           <a
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+            className="linkItem"
             href="https://unsplash.com/photos/4UGmm3WRUoQ"
           >
             photo by Sigmund on Unsplash (projects).
@@ -105,7 +90,7 @@ const Footer = () => {
   return (
     <>
       <div>
-        <Row style={{ backgroundColor: "#4f6d7a", color: "#f3f3f3ff" }}>
+        <Row style={{ backgroundColor: "#f3f3f3", color: "#444444" }}>
           <Col>
             <Refs />
           </Col>

@@ -59,7 +59,9 @@ const Timeline = () => {
         <p className="description">{project.describe}</p>
         <br />
         <p> {project.tech}</p>
-        <a href={project.link}>Link to code</a>
+        <a className="linkItem" href={project.link}>
+          Check the code
+        </a>
         <br /> <br />
         <ProjectImage imageReference={project.imageRef} />
       </div>
@@ -78,7 +80,7 @@ const Timeline = () => {
 
   return (
     <div className="container">
-      <SubTitle color={"#4f6d7a"} subTitle={"Timeline of projects"} />
+      <SubTitle color={"#7A5C4F"} subTitle={"Timeline of projects"} />
       <div className="main-timeline">
         <ProjectList />
       </div>

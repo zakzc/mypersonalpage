@@ -8,7 +8,7 @@
     display: block;
     width: 2px;
     height: 100%;
-    background: white;
+    background: $dark-brown;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -53,7 +53,7 @@
 
 .main-timeline .icon:before {
     background: #fff;
-    border: 2px solid $touchOfPurple;
+    border: 2px solid $cadet;
     left: -3px
 }
 
@@ -81,7 +81,7 @@
     content: "";
     width: 36.5%;
     height: 2px;
-    background: $cultured;
+    background: $cadet;
     margin: auto 0;
     position: absolute;
     top: 0;

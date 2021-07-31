@@ -19,7 +19,6 @@ const Skills = () => {
       <div className="container">
         {mySkills.map((skill, index) => (
           <SkillCard skill={skill} index={index} key={index} />
-          // <Skill_Cards skill={skill} i={i} key={i} />
         ))}
       </div>
     </div>
@@ -28,11 +27,11 @@ const Skills = () => {
   const SkillSet = () => {
     return (
       <>
-        <Row style={{ marginTop: "150px" }}>
-          <SubTitle color={"#eaeaeaff"} subTitle={"Skill set"} />
+        <Row style={{ marginTop: "120px", marginBottom: "100px" }}>
+          <SubTitle color={"#7A5C4F"} subTitle={"Skill set"} />
           <Col></Col>
           <Col xs={10} sm={10} md={10} lg={10}>
-            <Row style={{ marginTop: "150px" }}>
+            <Row style={{ marginTop: "15px" }}>
               <SkillList />
             </Row>
           </Col>
@@ -44,18 +43,7 @@ const Skills = () => {
 
   return (
     <>
-      <Row
-        style={{
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundColor: "#0093E9",
-          backgroundImage: "linear-gradient(160deg, #4f6d7a 0%, #5ea5b8 100%)",
-          clipPath: "polygon(0 10%, 100% 0, 100% 100%, 0% 100%)",
-          //   transform: "skewY(-4deg)",
-          position: "relative",
-          marginLeft: "0",
-        }}
-      >
+      <Row className="skillsGradientBackground">
         <SkillSet />
       </Row>
     </>

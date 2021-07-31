@@ -25,7 +25,8 @@ const GeneralHeader = ({
         backgroundImage: `url(${imageRef})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        clipPath: `polygon(${polygon})`,
+        //clipPath: `polygon(${polygon})`,
+        clipPath: "polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%)",
       }}
     >
       <Row>
