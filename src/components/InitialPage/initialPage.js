@@ -25,7 +25,6 @@ const InitialPage = () => {
     history.push("/projects");
   };
 
-  // * view
   // animation
   const pageVariantsArrow = {
     initial: { opacity: 1 },
@@ -69,10 +68,10 @@ const InitialPage = () => {
     </motion.div>
   );
 
-  // render
+  // * view
   const DarkSide = () => (
     <Col
-      xs={12}
+      xs={6}
       sm={6}
       md={6}
       lg={6}
@@ -82,7 +81,7 @@ const InitialPage = () => {
       <Row>
         <div
           className="d-flex justify-content-end  mt-4"
-          style={{ fontSize: 40, color: "#f3f3f3" }}
+          style={{ fontSize: 32, color: "#f3f3f3" }}
         >
           Zak
         </div>
@@ -124,7 +123,7 @@ const InitialPage = () => {
 
   const LightSide = () => (
     <Col
-      xs={12}
+      xs={6}
       sm={6}
       md={6}
       lg={6}
@@ -132,7 +131,7 @@ const InitialPage = () => {
       onClick={() => handleViewProjects()}
     >
       <Row>
-        <div className="mt-4" style={{ fontSize: 40, color: "#4f6d7aff" }}>
+        <div className="mt-4" style={{ fontSize: 32, color: "#4f6d7aff" }}>
           Zangrando
         </div>
       </Row>

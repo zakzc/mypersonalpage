@@ -42,7 +42,7 @@ const Education = () => {
       style={{
         background: `url(${EducationBackground})`,
         backgroundSize: "125px 175px",
-        backgroundColor: "#f3f3f3",
+        backgroundColor: "#eaeaea",
         backgroundRepeat: "repeat",
       }}
     >

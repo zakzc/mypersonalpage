@@ -1,4 +1,14 @@
 .linkItem {
-     text-decoration:none;
+     text-decoration: none;
      color: $dark-brown;
+}
+
+.footerContainer {
+     margin-top: 50px;
+}
+
+.separator {
+     border-top: solid 1px;
+     border-color: $light-brown;
+     margin-bottom: 25px;
 }

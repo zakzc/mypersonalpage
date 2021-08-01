@@ -1,15 +1,11 @@
 import React from "react";
 // comps
 import GoHomeButton from "./goHomeButton";
-// assets
-// import profileImage from "../../assets/img/profileImage.jpg";
 // ui
 import Col from "react-bootstrap/Col";
-// import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 const GeneralHeader = ({
-  polygon,
   imageRef,
   headerTitle,
   sideButton,
@@ -25,7 +21,6 @@ const GeneralHeader = ({
         backgroundImage: `url(${imageRef})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        //clipPath: `polygon(${polygon})`,
         clipPath: "polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%)",
       }}
     >

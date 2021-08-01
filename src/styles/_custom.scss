@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "./variables";
 @import "../components/Profile/profile_Education";
 @import "../components/Projects/projects_Timeline";
@@ -8,6 +8,10 @@
 
 body {
     font-family: "Montserrat", "Open Sans", sans-serif;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $platinum;
 }
 
 // colours

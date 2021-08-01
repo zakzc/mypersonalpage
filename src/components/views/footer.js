@@ -89,14 +89,8 @@ const Footer = () => {
 
   return (
     <>
-      <Row
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, #f3f3f3 0%, #f3f3f3 70%, #ffffff 100%)",
-          color: "#444444",
-          marginTop: "50px",
-        }}
-      >
+      <Row className="footerContainer">
+        <div className="separator"></div>
         <Col>
           <Refs />
         </Col>
