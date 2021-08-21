@@ -9,7 +9,7 @@ import Page404 from "./components/views/Page404";
 // style
 import "./App.scss";
 
-const App = () => {
+const App: React.FC = (): any => {
   // * data
   const location = useLocation();
 
@@ -20,7 +20,6 @@ const App = () => {
       scale: 1,
       transition: {
         transition: "linear",
-        // ease: "easeInOut",
         duration: 0.5,
       },
     },
@@ -34,7 +33,6 @@ const App = () => {
       scale: 1,
       transition: {
         transition: "linear",
-        // ease: "easeInOut",
         duration: 0.5,
       },
     },
@@ -42,7 +40,7 @@ const App = () => {
   };
 
   // * view
-  const StartPage = () => <InitialPage />;
+  const StartPage: React.FC = () => (<InitialPage />)
 
   const ProfilePage = () => (
     <motion.div
@@ -50,7 +48,7 @@ const App = () => {
       animate="in"
       exit="out"
       variants={pageVariantsProfile}
-      transition="transition"
+      transition={pageVariantsProfile.in.transition}
     >
       <Profile />
     </motion.div>
@@ -62,7 +60,7 @@ const App = () => {
       animate="in"
       exit="out"
       variants={pageVariantsProjects}
-      transition="transition"
+      transition={pageVariantsProfile.in.transition}
     >
       <Projects />
     </motion.div>
@@ -74,7 +72,7 @@ const App = () => {
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/projects" component={ProjectPage} />
         <Route exact path="/" component={StartPage} />
-        <Redirect to="/" component={StartPage} />
+        <Redirect to="/"/>
         <Route component={Page404} />
       </Switch>
     </AnimatePresence>

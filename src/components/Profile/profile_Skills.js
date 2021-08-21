@@ -7,6 +7,8 @@ import myData from "../../data/myData.json";
 // ui
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+// img
+import KeyboardImage from "../../assets/img/lightKeyboard.jpg";
 ///
 
 const Skills = () => {
@@ -48,8 +50,10 @@ const Skills = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: "#4f6d7a",
-          backgroundImage:
-            " linear-gradient(135deg, #4f6d7a 0%, #c0d6df 50%, #5ea5b8 100%)",
+          backgroundImage: [
+            "linear-gradient(135deg, rgba(79, 109, 122, 0.5) 0%, rgba(192, 214, 223, 0.8) 50%, rgba(94, 165, 184, 1) 100%)",
+            `url(${KeyboardImage})`,
+          ],
           clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
           position: "relative",
         }}
