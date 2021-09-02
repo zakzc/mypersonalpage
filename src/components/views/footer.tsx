@@ -3,8 +3,8 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-const Footer = () => {
-  const Credits = () => (
+const Footer: React.FC = (): any => {
+  const Credits: React.FC = (): any => (
     <>
       <p>
         The effects and animations on this page are either mine or they were
@@ -13,21 +13,22 @@ const Footer = () => {
           {" "}
           Free frontend
         </a>
-        , which is a great source for references. The ones here were tweaked and
+        , which, by the way, is a great source for references. The ones here were tweaked and
         adjusted to fit this project. These include:{" "}
         <a
           className="linkItem"
           href="https://www.bootdey.com/snippets/view/bs4-my-experience-timeline"
         >
-          Timeline from Projects page and{" "}
+          Timeline from Projects page
         </a>
+       {" "} and{" "}
         <a className="linkItem" href="https://codepen.io/eyupucmaz/pen/oNbeXOb">
           Card layout from Profile page
         </a>{" "}
       </p>
     </>
   );
-  const Refs = () => (
+  const Refs: React.FC = ():any => (
     <>
       <p>
         For more information about me, check:{" "}
@@ -89,8 +90,8 @@ const Footer = () => {
 
   return (
     <>
-      <Row className="footerContainer">
-        <div className="separator"></div>
+      <Row className="footerContainer" style={{padding: 30}}>
+        {/* <div className="separator"></div> */}
         <Col>
           <Refs />
         </Col>
