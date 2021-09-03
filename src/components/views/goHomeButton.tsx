@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 // assets
 import goBackHome from "../../assets/svg/goHome.svg";
 
-const GoHomeButton = () => {
+const GoHomeButton: React.FC = ():any => {
   const history = useHistory();
 
   const buttonVariance = { hover: { scale: 1.2 } };
