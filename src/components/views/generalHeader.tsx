@@ -5,15 +5,23 @@ import GoHomeButton from "./goHomeButton";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-const GeneralHeader = ({
+interface GeneralHeaderProps {
+  imageRef: string,
+  headerTitle: string,
+  sideButton: string,
+  headerTextColor: string,
+  headerTextBackground: string,
+}
+
+const GeneralHeader: React.FC<GeneralHeaderProps> = ({
   imageRef,
   headerTitle,
   sideButton,
   headerTextColor,
   headerTextBackground,
-}) => {
+}): any  => {
   // * views
-  const HeaderPhoto = () => (
+  const HeaderPhoto: React.FC = () => (
     <div
       style={{
         height: "400px",
@@ -36,13 +44,13 @@ const GeneralHeader = ({
     </div>
   );
 
-  const HeaderTitle = () => (
+  const HeaderTitle: React.FC = () => (
     <h1
       style={{
         textTransform: "uppercase",
         display: "block",
         fontSize: "60px",
-        fontWeight: "400",
+        fontWeight: 400,
         color: `${headerTextColor}`,
         backgroundColor: `${headerTextBackground}`,
       }}

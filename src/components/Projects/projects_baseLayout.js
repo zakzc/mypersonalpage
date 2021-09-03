@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import GeneralHeader from "../views/generalHeader";
+import GeneralHeader from "../views/generalHeader.tsx";
 import Timeline from "./projects_Timeline";
 import Footer from "../views/footer";
 // ui
