@@ -1,6 +1,11 @@
 import React from "react";
 
-const SubTitle = ({ color, subTitle }) => (
+interface SubTitleProps {
+  color: String, 
+  subTitle: String
+}
+
+const SubTitle: React.FC<SubTitleProps> = ({ color, subTitle }) => (
   <h1
     style={{
       textAlign: "right",
