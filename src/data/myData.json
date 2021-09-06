@@ -120,12 +120,22 @@
     },
     {
       "year": "2020",
+      "name": "Flashcards API",
+      "link": "https://github.com/zakzc/flashcards_API",
+      "image": "../../img/api.png",
+      "imageRef": "flash api",
+      "alt": "coding project: flashcardsProject API",
+      "tech": "Technologies used: Node, Express",
+      "describe": "The backend side of this project, storing the contents of cards."
+    },
+    {
+      "year": "2020",
       "name": "Flashcards",
-      "link": "https://github.com/zakzc/mypersonalpage",
+      "link": "https://github.com/zakzc/flashcards_front",
       "image": "../../img/Flashcards.png",
       "imageRef": "flash",
       "alt": "coding project: flashcardsProject",
-      "tech": "Technologies used: html5, css3, React, Node, Express, Sass",
+      "tech": "Technologies used: html5, css3, React, Sass",
       "describe": "This is, basically, a tool for memorizing study contents by means of a card game. It is similar to Anki and equivalents."
     },
     {
@@ -135,7 +145,7 @@
       "image": "../../img/thisSite.png",
       "imageRef": "current",
       "alt": "coding project: this website",
-      "tech": "Technologies used: html5, css3, React, Framer-Motion",
+      "tech": "Technologies used: html5, css3, React, Framer-Motion, TypeScript",
       "describe": "This is the github link to the code of this website. It was/is developed entirely in React, with animations in Framer-Motion but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
     },
     {

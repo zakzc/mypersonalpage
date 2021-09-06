@@ -13,7 +13,7 @@ const Education = () => {
   const school = myData.education;
 
   const EducationList = () => (
-    <>
+    <div id="educationContainer">
       {school.map((course, i) => (
         <StyledList
           key={i}
@@ -22,7 +22,7 @@ const Education = () => {
           level={course.level}
         />
       ))}
-    </>
+    </div>
   );
 
   const StyledList = ({ title, text, level }) => (

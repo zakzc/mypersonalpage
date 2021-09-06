@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 // animation
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 // assets
 import arrowLeft from "../../assets/svg/arrow-left-circle.svg";
 import arrowRight from "../../assets/svg/arrow-right-circle.svg";
@@ -13,7 +13,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-const InitialPage = () => {
+const InitialPage: React.FC = ():any => {
   // * data
   const history = useHistory();
 
@@ -26,14 +26,14 @@ const InitialPage = () => {
   };
 
   // animation
-  const pageVariantsArrow = {
+  const pageVariantsArrow: Variants = {
     initial: { opacity: 1 },
     animate: {
       opacity: 0,
       transition: {
         delay: 1,
         duration: 7,
-        repeat: "Infinity",
+        repeat: Infinity,
         repeatType: "reverse",
       },
     },
@@ -44,13 +44,17 @@ const InitialPage = () => {
 
   const buttonVariance = { hover: { scale: 1.3 } };
 
-  const Arrow = ({ arrow }) => (
+  interface ArrowProps {
+    arrow: string,
+  }
+
+  const Arrow: React.FC<ArrowProps> = ({ arrow }):any => (
     <motion.div
       initial="initial"
       animate="animate"
       exit="final"
       variants={pageVariantsArrow}
-      transition="transition"
+      transition={pageVariantsArrow.transition}
     >
       <img
         src={arrow}
@@ -62,14 +66,18 @@ const InitialPage = () => {
     </motion.div>
   );
 
-  const ButtonText = ({ text }) => (
+  interface ButtonTextProps {
+    text: string
+  }
+
+  const ButtonText: React.FC<ButtonTextProps> = ({ text }): any => (
     <motion.div variants={buttonVariance} whileHover="hover">
       {text}
     </motion.div>
   );
 
   // * view
-  const DarkSide = () => (
+  const DarkSide: React.FC = (): any => (
     <Col
       xs={6}
       sm={6}
@@ -121,7 +129,7 @@ const InitialPage = () => {
     </Col>
   );
 
-  const LightSide = () => (
+  const LightSide: React.FC = ():any => (
     <Col
       xs={6}
       sm={6}

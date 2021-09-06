@@ -17,8 +17,8 @@ $platinum: #eaeaeaff;
 $cultured: #f3f3f3ff;
 $nero: #444444;
 ///@at-root
-$dark-brown: #7A5C4F;
-$light-brown: #B89D91;
+$dark-brown: #7a5c4f;
+$light-brown: #b89d91;
 
 // Breakpoint for small screen
 // $break: 768px;
@@ -26,14 +26,12 @@ $break: 768px;
 $break-tiny: 425px;
 
 //- Google Fonts
-$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
-$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+$font-google-primary: "https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap";
+$font-google-secondary: "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
 
 //- @type List
-$abril-fatface: 'Abril Fatface',
-cursive;
-$montserrat: 'Montserrat',
-sans-serif;
+$abril-fatface: "Abril Fatface", cursive;
+$montserrat: "Montserrat", sans-serif;
 
 //- Typography
 $base-font-family: $montserrat;

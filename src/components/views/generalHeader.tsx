@@ -48,11 +48,13 @@ const GeneralHeader: React.FC<GeneralHeaderProps> = ({
     <h1
       style={{
         textTransform: "uppercase",
-        display: "block",
+        // display: "block",
         fontSize: "60px",
         fontWeight: 400,
         color: `${headerTextColor}`,
         backgroundColor: `${headerTextBackground}`,
+        justifyContent: "center",
+        alignItems: "center"
       }}
     >
       {headerTitle}

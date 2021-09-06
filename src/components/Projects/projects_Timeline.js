@@ -4,6 +4,7 @@ import diaryApp from "../../assets/img/DiaryApptake1.png";
 import typerApp from "../../assets/img/TyperTake1.png";
 import thisSite from "../../assets/img/thisSite.png";
 import flashcards from "../../assets/img/Flashcards.png";
+import apiImage from "../../assets/img/api.png";
 import softTable from "../../assets/img/SoftWrapMobList.png";
 import personalApp from "../../assets/img//Personal_meteor_work.png";
 import pythonApp from "../../assets/img/PythonCarGame.png";
@@ -20,6 +21,7 @@ const Timeline = () => {
     { name: "diary", image: diaryApp },
     { name: "typer", image: typerApp },
     { name: "current", image: thisSite },
+    { name: "flash api", image: apiImage },
     { name: "flash", image: flashcards },
     { name: "soft", image: softTable },
     { name: "personal", image: personalApp },
