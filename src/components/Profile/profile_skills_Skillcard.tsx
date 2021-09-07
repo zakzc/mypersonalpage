@@ -69,7 +69,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
         alt={skill.alt}
         style={{ opacity: "0.8", height: "40%" }}
       />
-    </div>
+    </div> 
   );
 
   const CardComponent: React.FC = () => (
