@@ -24,7 +24,7 @@ const App: React.FC = (): any => {
       },
     },
     out: { x: "100vh" },
-  };
+  }
 
   const pageVariantsProfile = {
     initial: { x: "-100vh" },
@@ -37,7 +37,7 @@ const App: React.FC = (): any => {
       },
     },
     out: { x: "-100vh" },
-  };
+  }
 
   // * view
   const StartPage: React.FC = () => (<InitialPage />)
@@ -52,7 +52,7 @@ const App: React.FC = (): any => {
     >
       <Profile />
     </motion.div>
-  );
+  )
 
   const ProjectPage = () => (
     <motion.div
@@ -64,7 +64,7 @@ const App: React.FC = (): any => {
     >
       <Projects />
     </motion.div>
-  );
+  )
 
   return (
     <AnimatePresence>
@@ -76,7 +76,7 @@ const App: React.FC = (): any => {
         <Route component={Page404} />
       </Switch>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default App;
+export default App

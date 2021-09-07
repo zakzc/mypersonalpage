@@ -64,7 +64,7 @@ const InitialPage: React.FC = ():any => {
         alt="go to profile page"
       />
     </motion.div>
-  );
+  )
 
   interface ButtonTextProps {
     text: string

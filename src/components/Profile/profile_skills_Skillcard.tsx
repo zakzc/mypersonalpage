@@ -39,7 +39,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
     node_Logo,
     jest_Logo,
     u_Logo,
-  ];
+  ]
   // * view
 
   interface StarSectionProps {
@@ -60,7 +60,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
         </Col>
       ))}
     </Row>
-  );
+  )
 
   const ImageSection: React.FC = () => (
     <div>
@@ -70,7 +70,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
         style={{ opacity: "0.8", height: "40%" }}
       />
     </div> 
-  );
+  )
 
   const CardComponent: React.FC = () => (
     <>
