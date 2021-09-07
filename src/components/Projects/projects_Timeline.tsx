@@ -13,7 +13,7 @@ import SubTitle from "../views/subTitle";
 // data
 import myData from "../../data/myData.json";
 
-const Timeline = () => {
+const Timeline: React.FC = () => {
   // * data
   const myProjects = myData.projects.sort((a, b) => (b.year < a.year ? -1 : 1));
 
@@ -28,8 +28,12 @@ const Timeline = () => {
     { name: "py", image: pythonApp },
   ];
 
+  interface ProjectImageProps {
+    imageReference: string
+  }
+
   // * view
-  const ProjectImage = (imageReference) => {
+  const ProjectImage: React.FC<ProjectImageProps> = (imageReference) => {
     let imageToShow = projectsImages.filter(
       (i) => i.name === imageReference.imageReference
     );
@@ -46,7 +50,19 @@ const Timeline = () => {
     );
   };
 
-  const LineOfTime = ({ project, i }) => (
+  interface LineOfTimeProps {
+    project: {
+      year: string,
+      name: string,
+      describe: string,
+      tech: string,
+      link: string,
+      imageRef: string
+    }
+  i: number,
+  }
+
+  const LineOfTime: React.FC<LineOfTimeProps> = ({ project, i }) => (
     <div className="timeline" key={i}>
       <div className="icon"></div>
       <div className="date-content">
@@ -70,7 +86,7 @@ const Timeline = () => {
     </div>
   );
 
-  const ProjectList = () => {
+  const ProjectList: React.FC = () => {
     return (
       <>
         {myProjects.map((project, i) => (

@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 interface GeneralHeaderProps {
   imageRef: string,
   headerTitle: string,
-  sideButton: string,
+  sideButton: boolean,
   headerTextColor: string,
   headerTextBackground: string,
 }

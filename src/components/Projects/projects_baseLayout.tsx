@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import GeneralHeader from "../views/generalHeader.tsx";
+import GeneralHeader from "../views/generalHeader";
 import Timeline from "./projects_Timeline";
 import Footer from "../views/footer";
 // ui
@@ -10,17 +10,14 @@ import Row from "react-bootstrap/Row";
 // assets
 import profileImage from "../../assets/img/project.jpg";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   // * data
-  // header data
-  const polygon = "0 0, 100% 0%, 100% 100%, 0 80%";
-  const headerTitle = "Projects";
+  const headerTitle: string = "Projects";
 
   return (
     <Container fluid>
       <Row>
         <GeneralHeader
-          polygon={polygon}
           imageRef={profileImage}
           headerTitle={headerTitle}
           sideButton={true}
@@ -33,4 +30,5 @@ const Projects = () => {
     </Container>
   );
 };
+
 export default Projects;
