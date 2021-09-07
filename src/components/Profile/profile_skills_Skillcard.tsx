@@ -16,7 +16,18 @@ import node_Logo from "../../assets/svg/node.svg";
 import jest_Logo from "../../assets/svg/jest.svg";
 import u_Logo from "../../assets/svg/uxui.svg";
 
-const SkillCard = ({ skill, index }) => {
+interface SkillCardProps {
+    skill:{
+      skillSet: string,
+      language: string[],
+      alt: string,
+      level: any,
+    }, 
+    index: number, 
+    key: number,
+}
+
+const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
   // * data
   const imageList = [
     html_Logo,
@@ -29,15 +40,15 @@ const SkillCard = ({ skill, index }) => {
     jest_Logo,
     u_Logo,
   ];
-
-  // const cardVariance = {
-  //   hover: { scale: 1.05 },
-  // };
-
   // * view
-  const StarSection = ({ skillLevel, index }) => (
+
+  interface StarSectionProps {
+    skillLevel: {level: number[]},
+  }
+
+  const StarSection: React.FC<StarSectionProps> = ({ skillLevel }) => (
     <Row style={{ alignItems: "center" }}>
-      {skillLevel.level.map((k) => (
+      {skillLevel.level.map((k: number) => (
         <Col key={k} style={{ alignItems: "center" }}>
           <img
             style={{
@@ -51,13 +62,8 @@ const SkillCard = ({ skill, index }) => {
     </Row>
   );
 
-  const ImageSection = () => (
-    <div
-    // style={{
-    //   backgroundImage:
-    //     "linear-gradient( 110.3deg,  rgba(79,109,122,1) 8.8%, rgba(127,146,166,1) 95.1% )",
-    // }}
-    >
+  const ImageSection: React.FC = () => (
+    <div>
       <img
         src={imageList[index]}
         alt={skill.alt}
@@ -66,27 +72,7 @@ const SkillCard = ({ skill, index }) => {
     </div>
   );
 
-  // const CardComponent2 = () => (
-  //   <motion.div variants={cardVariance} whileHover="hover" className="card">
-  //     <div className="card-header">
-  //       <ImageSection />
-  //     </div>
-  //     <div className="card-body">
-  //       <span className={index % 2 === 0 ? "tag tag-pink" : "tag tag-purple"}>
-  //         {skill.skillSet}
-  //       </span>
-  //       <h4> {skill.language}</h4>
-  //       {/* <p> {skill.language}</p> */}
-  //       <div className="user-info">
-  //         <Row>
-  //           <StarSection skillLevel={skill} />
-  //         </Row>
-  //       </div>
-  //     </div>
-  //   </motion.div>
-  // );
-
-  const CardComponent = () => (
+  const CardComponent: React.FC = () => (
     <>
       <div className="row">
         <div className="col-sm-4">
@@ -103,9 +89,7 @@ const SkillCard = ({ skill, index }) => {
               </div>
               <div className="card-footer">
                 <div className="media">
-                  {/* <div className="media-body"> */}
                   <StarSection skillLevel={skill} />
-                  {/* </div> */}
                 </div>
               </div>
             </div>

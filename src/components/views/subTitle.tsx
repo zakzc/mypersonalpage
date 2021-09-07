@@ -1,8 +1,8 @@
 import React from "react";
 
 interface SubTitleProps {
-  color: String, 
-  subTitle: String
+  color: string, 
+  subTitle: string
 }
 
 const SubTitle: React.FC<SubTitleProps> = ({ color, subTitle }) => (

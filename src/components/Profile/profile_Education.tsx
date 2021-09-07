@@ -9,10 +9,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import myData from "../../data/myData.json";
 
-const Education = () => {
+const Education: React.FC = () => {
   const school = myData.education;
 
-  const EducationList = () => (
+  const EducationList: React.FC = () => (
     <div id="educationContainer">
       {school.map((course, i) => (
         <StyledList
@@ -25,7 +25,14 @@ const Education = () => {
     </div>
   );
 
-  const StyledList = ({ title, text, level }) => (
+  interface StyleListProps {
+    key: number,
+    title: string,
+    text: string,
+    level: string,
+  }
+
+  const StyledList: React.FC<StyleListProps> = ({ title, text }) => (
     <section className="dl-blurbs">
       <dl>
         <dt>{title}</dt>

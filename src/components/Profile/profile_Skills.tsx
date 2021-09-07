@@ -11,12 +11,12 @@ import Row from "react-bootstrap/Row";
 import KeyboardImage from "../../assets/img/lightKeyboard.jpg";
 ///
 
-const Skills = () => {
+const Skills: React.FC = () => {
   // * data
   const mySkills = myData.skills;
 
   // * view
-  const SkillList = () => (
+  const SkillList: React.FC = () => (
     <div>
       <div className="container">
         {mySkills.map((skill, index) => (
@@ -26,7 +26,7 @@ const Skills = () => {
     </div>
   );
 
-  const SkillSet = () => {
+  const SkillSet: React.FC = () => {
     return (
       <>
         <Row style={{ marginTop: "120px", marginBottom: "100px" }}>
@@ -50,10 +50,7 @@ const Skills = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: "#4f6d7a",
-          backgroundImage: [
-            "linear-gradient(135deg, rgba(79, 109, 122, 0.5) 0%, rgba(192, 214, 223, 0.8) 50%, rgba(94, 165, 184, 1) 100%)",
-            `url(${KeyboardImage})`,
-          ],
+          backgroundImage: `url(${KeyboardImage})`,
           clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
           position: "relative",
         }}
