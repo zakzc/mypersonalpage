@@ -15,13 +15,14 @@ const Projects: React.FC = () => {
   const headerTitle: string = "Projects";
 
   return (
-    <Container fluid>
+    <Container fluid style={{ backgroundColor: "#eaeaea",
+        maxWidth: "1400px"}}>
       <Row>
         <GeneralHeader
           imageRef={profileImage}
           headerTitle={headerTitle}
           sideButton={true}
-          headerTextColor={"#f3f3f3"}
+          headerTextColor={"#4f6d7a"}
           headerTextBackground={"rgba(79,109,122, 0.8)"}
         />
       </Row>

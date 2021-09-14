@@ -2,7 +2,8 @@ import React from "react";
 // comps
 import SubTitle from "../views/subTitle";
 // icon
-import EducationBackground from "../../assets/svg/files.svg";
+// import EducationBackground from "../../assets/svg/files.svg";
+import paperBack from "../../assets/img/paperBack.jpg";
 //ui
 //import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -35,7 +36,11 @@ const Education: React.FC = () => {
   const StyledList: React.FC<StyleListProps> = ({ title, text }) => (
     <section className="dl-blurbs">
       <dl>
-        <dt>{title}</dt>
+        <dd  style={{
+          fontSize: "2em",
+          textDecoration: "underline",
+          textDecorationColor: "#5ea5b8"
+        }}>{title}</dd>
         <dd>{text}</dd>
       </dl>
     </section>
@@ -44,13 +49,13 @@ const Education: React.FC = () => {
   // * view
   return (
     <Container
-      fluid
-      className="my-auto"
+      // fluid
+      // className="my-auto"
       style={{
-        background: `url(${EducationBackground})`,
-        backgroundSize: "125px 175px",
+        // background: `url(${paperBack})`,
+        // backgroundSize: "125px 175px",
         backgroundColor: "#eaeaea",
-        backgroundRepeat: "repeat",
+        maxWidth: "1250px",
       }}
     >
       <Row>

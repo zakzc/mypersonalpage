@@ -77,16 +77,15 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
       <div className="row">
         <div className="col-sm-4">
           <div className="card text-white card-has-bg click-col">
-            <ImageSection />
+            {/* <ImageSection /> */}
             <div className="card-img-overlay d-flex flex-column">
-              <div className="card-body">
+    
                 <span
                   className={index % 2 === 0 ? "tag tag-even" : "tag tag-odd"}
                 >
                   {skill.skillSet}
                 </span>
                 <h4 className="card-title mt-5">{skill.language}</h4>
-              </div>
               <div className="card-footer">
                 <div className="media">
                   <StarSection skillLevel={skill} />

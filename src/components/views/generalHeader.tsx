@@ -52,9 +52,11 @@ const GeneralHeader: React.FC<GeneralHeaderProps> = ({
         fontSize: "60px",
         fontWeight: 400,
         color: `${headerTextColor}`,
-        backgroundColor: `${headerTextBackground}`,
+        // backgroundColor: `${headerTextBackground}`,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        // fontFamily: "Permanent Marker"
+        textShadow: "1px 1px #000000"
       }}
     >
       {headerTitle}

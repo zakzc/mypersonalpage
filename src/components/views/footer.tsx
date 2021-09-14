@@ -92,7 +92,8 @@ const Footer: React.FC = (): any => {
 
   return (
     <>
-      <Row className="footerContainer" style={{padding: 30}}>
+      <Row className="footerContainer" style={{padding: 30,   backgroundColor: "#eaeaea",
+        maxWidth: "1250px",}}>
         {/* <div className="separator"></div> */}
         <Col>
           <Refs />

@@ -58,7 +58,7 @@ const Timeline: React.FC = () => {
       tech: string,
       link: string,
       imageRef: string
-    }
+    },
   i: number,
   }
 
@@ -97,7 +97,7 @@ const Timeline: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{maxWidth: "1250px"}}>
       <SubTitle color={"#7A5C4F"} subTitle={"Timeline of projects"} />
       <div className="main-timeline">
         <ProjectList />

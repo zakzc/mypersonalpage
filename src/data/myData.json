@@ -1,192 +1,198 @@
 {
-  "education": [
-    {
-      "title": "Analyst",
-      "level": "Graduation",
-      "description": "Computer Systems Analysis",
-      "stage": "Graduated"
-    },
-    {
-      "title": "Bachelor",
-      "level": "Graduation",
-      "description": "English Language, Translation and Literature",
-      "stage": "Graduated"
-    },
-    {
-      "title": "Specialist",
-      "level": "Post graduation (Specialization)",
-      "description": "Full-Stack WebDesign",
-      "stage": "Awaiting official documentation"
-    },
-    {
-      "title": "Specialist",
-      "level": "Post graduation (Specialization)",
-      "description": "Software Engineering",
-      "stage": "Ongoing"
-    },
-    {
-      "title": "Master",
-      "level": "MBA",
-      "description": "Information Security",
-      "stage": "Graduated"
-    }
-  ],
-  "contact": [
-    {
-      "url": "https://www.linkedin.com/in/zakzangrando/",
-      "description": "Find me on LinkedIn"
-    },
-    {
-      "url": "https://github.com/zakzc",
-      "description": "Link to this website's code on GitHub"
-    }
-  ],
-  "skills": [
-    {
-      "skillSet": "HTML5",
-      "language": ["HTML, ", "XML"],
-      "alt": "html5logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "CSS3",
-      "language": ["Sass, ", "Less, ", "Tailwind"],
-      "alt": "html5 logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "PHP",
-      "language": ["Wordpress"],
-      "alt": "PHP logo",
-      "level": [1, 2]
-    },
-    {
-      "skillSet": "Python",
-      "language": ["Django"],
-      "alt": "Python logo",
-      "level": [1, 2, 3]
-    },
-    {
-      "skillSet": "Javascript",
-      "language": ["ES6 ", "Meteor.JS "],
-      "alt": "Javascript logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "React",
-      "language": ["React Router, ", "Redux"],
-      "alt": "Javascript logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "Node",
-      "language": ["Express "],
-      "alt": "Javascript logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "Jest",
-      "language": ["Mocha, ", "Chai"],
-      "alt": "Javascript logo",
-      "level": [1, 2, 3, 4]
-    },
-    {
-      "skillSet": "UX/UI",
-      "language": ["Interfaces, user experience"],
-      "alt": "UX and UI",
-      "level": [1, 2, 3, 4]
-    }
-  ],
-  "projects": [
-    {
-      "year": "2020",
-      "name": "Quality-Conform",
-      "link": "https://github.com/zakzc/qualyconform",
-      "image": "../../img/SoftWrapMobList.png",
-      "imageRef": "soft",
-      "alt": "coding project: soft table",
-      "tech": "Technologies used: html5, React, Axios",
-      "describe": "Another learning project working on gathering of data from forms and processing them. This one registers non-conformities added by users."
-    },
-    {
-      "year": "2020",
-      "name": "Soft Table",
-      "link": "https://github.com/zakzc/soft_table_front",
-      "image": "../../assets/img/SoftWrapMobList.png",
-      "imageRef": "soft",
-      "alt": "coding project: soft table",
-      "tech": "Technologies used: html5, Tailwind, React, Axios",
-      "describe": "Quick project for shows, it displays a bit of Tailwind for what is a basic trial. It is a sleeper project now."
-    },
-    {
-      "year": "2020",
-      "name": "Flashcards API",
-      "link": "https://github.com/zakzc/flashcards_API",
-      "image": "../../img/api.png",
-      "imageRef": "flash api",
-      "alt": "coding project: flashcardsProject API",
-      "tech": "Technologies used: Node, Express",
-      "describe": "The backend side of this project, storing the contents of cards."
-    },
-    {
-      "year": "2020",
-      "name": "Flashcards",
-      "link": "https://github.com/zakzc/flashcards_front",
-      "image": "../../img/Flashcards.png",
-      "imageRef": "flash",
-      "alt": "coding project: flashcardsProject",
-      "tech": "Technologies used: html5, css3, React, Sass",
-      "describe": "This is, basically, a tool for memorizing study contents by means of a card game. It is similar to Anki and equivalents."
-    },
-    {
-      "year": "2017",
-      "name": "This website",
-      "link": "https://github.com/zakzc/mypersonalpage",
-      "image": "../../img/thisSite.png",
-      "imageRef": "current",
-      "alt": "coding project: this website",
-      "tech": "Technologies used: html5, css3, React, Framer-Motion, TypeScript",
-      "describe": "This is the github link to the code of this website. It was/is developed entirely in React, with animations in Framer-Motion but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
-    },
-    {
-      "year": "2018",
-      "name": "Diary App",
-      "link": "https://guarded-dusk-70293.herokuapp.com",
-      "image": "../../assets/img/DiaryApptake1.png",
-      "imageRef": "diary",
-      "alt": "coding project: Diary",
-      "tech": "Technologies used: html5, css3, JS, MeteorJS.",
-      "describe": "This is a project from my course on Meteor.JS by the University of London - Goldsmiths. This is a diary that keeps track of your entries and returns them to you if you ask for a list of entries. It has a log in page and you must log in if you want to use it. The front and back end are made with Meteor. On clicking, the link will take to the actual app that is active on Heroku."
-    },
-    {
-      "year": "2017",
-      "name": "Typer",
-      "link": "https://github.com/zakzc/Typer",
-      "image": "../../img/TyperTake1.png",
-      "imageRef": "typer",
-      "alt": "coding project: typer",
-      "tech": "Technologies used: html5, css3, ES6, jquery, Ajax.",
-      "describe": "This is project for a Typer game, where it shows you a text and you have to type it as fast as you can. It uses material design for simplification of the UI. The link will take you to the Github page where the project is stored. Follow the readme.md for instructions on how to turn it on locally."
-    },
-    {
-      "year": "2015",
-      "name": "Older personal webpages",
-      "link": "no Link",
-      "image": "../../img/Personal_Django_index.png",
-      "imageRef": "personal",
-      "alt": "Older coding projects",
-      "tech": "Technologies used: Python, Django, Wordpress, PHP",
-      "describe": "Through the years I have made different versions of my personal webpage, as well as other projects. Initially on wordpress in a self-hosted version. Then, tweaking themes using php and making my only branches of themes with personal styles. This is the last version of a personal website, done initially in PHP, then developed with Django - apart from the usual html,css, js, of course. There is no link to this, since most of these pages don't exist anymore."
-    },
-    {
-      "year": "2018",
-      "name": "Python Game",
-      "link": "https://github.com/zakzc/thegame",
-      "image": "../../img/PythonCarGame.png",
-      "imageRef": "py",
-      "alt": "coding project: python racing game",
-      "tech": "Technologies used: Python, PyGame",
-      "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects that are a key element in my learning path."
-    }
-  ]
+    "education": [
+        {
+            "title": "Analyst",
+            "level": "Graduation",
+            "description": "Computer Systems Analysis",
+            "stage": "Graduated"
+        },
+        {
+            "title": "Bachelor",
+            "level": "Graduation",
+            "description": "English Language, Translation and Literature",
+            "stage": "Graduated"
+        },
+        {
+            "title": "Specialist",
+            "level": "Post graduation (Specialization)",
+            "description": "Full-Stack WebDesign",
+            "stage": "Awaiting official documentation"
+        },
+        {
+            "title": "Specialist",
+            "level": "Post graduation (Specialization)",
+            "description": "Software Engineering",
+            "stage": "Ongoing"
+        },
+        {
+            "title": "Master",
+            "level": "MBA",
+            "description": "Information Security",
+            "stage": "Graduated"
+        }
+    ],
+    "contact": [
+        {
+            "url": "https://www.linkedin.com/in/zakzangrando/",
+            "description": "Find me on LinkedIn"
+        },
+        {
+            "url": "https://github.com/zakzc",
+            "description": "Link to this website's code on GitHub"
+        }
+    ],
+    "skills": [
+        {
+            "skillSet": "HTML5",
+            "language": ["HTML, ", "XML"],
+            "alt": "html5logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "CSS3",
+            "language": ["Sass, ", "Less, ", "Tailwind"],
+            "alt": "html5 logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "PHP",
+            "language": ["Wordpress"],
+            "alt": "PHP logo",
+            "level": [1, 2]
+        },
+        {
+            "skillSet": "Python",
+            "language": ["Django"],
+            "alt": "Python logo",
+            "level": [1, 2, 3]
+        },
+        {
+            "skillSet": "Javascript",
+            "language": ["ES6 ", "Meteor.JS "],
+            "alt": "Javascript logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "React",
+            "language": ["React Router, ", "Redux"],
+            "alt": "Javascript logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "Node",
+            "language": ["Express "],
+            "alt": "Javascript logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "Jest",
+            "language": ["Mocha, ", "Chai"],
+            "alt": "Javascript logo",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "TypeScript",
+            "language": ["Typescript"],
+            "alt": "Typescript logo",
+            "level": [1, 2, 3]
+        },
+        {
+            "skillSet": "UX/UI",
+            "language": ["Interfaces, user experience"],
+            "alt": "UX and UI",
+            "level": [1, 2, 3, 4]
+        }
+    ],
+    "projects": [
+        {
+            "year": "2020",
+            "name": "Quality-Conform",
+            "link": "https://github.com/zakzc/qualyconform",
+            "image": "../../img/SoftWrapMobList.png",
+            "imageRef": "soft",
+            "alt": "coding project: soft table",
+            "tech": "Technologies used: html5, React, Axios",
+            "describe": "Another learning project working on gathering of data from forms and processing them. This one registers non-conformities added by users."
+        },
+        {
+            "year": "2020",
+            "name": "Soft Table",
+            "link": "https://github.com/zakzc/soft_table_front",
+            "image": "../../assets/img/SoftWrapMobList.png",
+            "imageRef": "soft",
+            "alt": "coding project: soft table",
+            "tech": "Technologies used: html5, Tailwind, React, Axios",
+            "describe": "Quick project for shows, it displays a bit of Tailwind for what is a basic trial. It is a sleeper project now."
+        },
+        {
+            "year": "2020",
+            "name": "Flashcards API",
+            "link": "https://github.com/zakzc/flashcards_API",
+            "image": "../../img/api.png",
+            "imageRef": "flash api",
+            "alt": "coding project: flashcardsProject API",
+            "tech": "Technologies used: Node, Express",
+            "describe": "The backend side of this project, storing the contents of cards."
+        },
+        {
+            "year": "2020",
+            "name": "Flashcards",
+            "link": "https://github.com/zakzc/flashcards_front",
+            "image": "../../img/Flashcards.png",
+            "imageRef": "flash",
+            "alt": "coding project: flashcardsProject",
+            "tech": "Technologies used: html5, css3, React, Sass",
+            "describe": "This is, basically, a tool for memorizing study contents by means of a card game. It is similar to Anki and equivalents."
+        },
+        {
+            "year": "2017",
+            "name": "This website",
+            "link": "https://github.com/zakzc/mypersonalpage",
+            "image": "../../img/thisSite.png",
+            "imageRef": "current",
+            "alt": "coding project: this website",
+            "tech": "Technologies used: html5, css3, React, Framer-Motion, TypeScript",
+            "describe": "This is the github link to the code of this website. It was/is developed entirely in React, with animations in Framer-Motion but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
+        },
+        {
+            "year": "2018",
+            "name": "Diary App",
+            "link": "https://guarded-dusk-70293.herokuapp.com",
+            "image": "../../assets/img/DiaryApptake1.png",
+            "imageRef": "diary",
+            "alt": "coding project: Diary",
+            "tech": "Technologies used: html5, css3, JS, MeteorJS.",
+            "describe": "This is a project from my course on Meteor.JS by the University of London - Goldsmiths. This is a diary that keeps track of your entries and returns them to you if you ask for a list of entries. It has a log in page and you must log in if you want to use it. The front and back end are made with Meteor. On clicking, the link will take to the actual app that is active on Heroku."
+        },
+        {
+            "year": "2017",
+            "name": "Typer",
+            "link": "https://github.com/zakzc/Typer",
+            "image": "../../img/TyperTake1.png",
+            "imageRef": "typer",
+            "alt": "coding project: typer",
+            "tech": "Technologies used: html5, css3, ES6, jquery, Ajax.",
+            "describe": "This is project for a Typer game, where it shows you a text and you have to type it as fast as you can. It uses material design for simplification of the UI. The link will take you to the Github page where the project is stored. Follow the readme.md for instructions on how to turn it on locally."
+        },
+        {
+            "year": "2015",
+            "name": "Older personal webpages",
+            "link": "no Link",
+            "image": "../../img/Personal_Django_index.png",
+            "imageRef": "personal",
+            "alt": "Older coding projects",
+            "tech": "Technologies used: Python, Django, Wordpress, PHP",
+            "describe": "Through the years I have made different versions of my personal webpage, as well as other projects. Initially on wordpress in a self-hosted version. Then, tweaking themes using php and making my only branches of themes with personal styles. This is the last version of a personal website, done initially in PHP, then developed with Django - apart from the usual html,css, js, of course. There is no link to this, since most of these pages don't exist anymore."
+        },
+        {
+            "year": "2018",
+            "name": "Python Game",
+            "link": "https://github.com/zakzc/thegame",
+            "image": "../../img/PythonCarGame.png",
+            "imageRef": "py",
+            "alt": "coding project: python racing game",
+            "tech": "Technologies used: Python, PyGame",
+            "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects that are a key element in my learning path."
+        }
+    ]
 }

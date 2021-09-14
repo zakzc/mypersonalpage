@@ -6,6 +6,7 @@ import SkillCard from "./profile_skills_Skillcard";
 import myData from "../../data/myData.json";
 // ui
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 // img
 import KeyboardImage from "../../assets/img/lightKeyboard.jpg";
@@ -29,7 +30,7 @@ const Skills: React.FC = () => {
   const SkillSet: React.FC = () => {
     return (
       <>
-        <Row style={{ marginTop: "120px", marginBottom: "100px" }}>
+        <Row >
           <SubTitle color={"#7A5C4F"} subTitle={"Skill set"} />
           <Col></Col>
           <Col xs={10} sm={10} md={10} lg={10}>
@@ -44,20 +45,23 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <>
+    <Container  fluid className="my-auto">
       <Row
         style={{
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundColor: "#4f6d7a",
-          backgroundImage: `url(${KeyboardImage})`,
-          clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
-          position: "relative",
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          // backgroundColor: "#4f6d7a",
+          // backgroundImage: `url(${KeyboardImage})`,
+          // clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
+          // position: "relative",
+          
+          backgroundColor: "#eaeaea",
+          maxWidth: "1250px",
         }}
       >
         <SkillSet />
       </Row>
-    </>
+    </Container>
   );
 };
 export default Skills;
