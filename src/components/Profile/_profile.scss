@@ -7,9 +7,9 @@ $newspaper_background: #fff8ed;
   text-transform: uppercase;
 }
 
-.display--block {
-  display: block;
-}
+// .display--block {
+//   display: block;
+// }
 
 .text--vertical {
   -webkit-writing-mode: vertical-rl;
@@ -73,9 +73,9 @@ body {
 
       &::before,
       &::after {
-        content: "";
-        height: 1px;
-        flex-basis: 100%;
+        // content: "";
+        // height: 1px;
+        // flex-basis: 100%;
         // background: $primary_color;
         margin-top: 2px;
       }
@@ -139,14 +139,14 @@ body {
       margin-bottom: 0.5rem;
 
       &__marker {
-        flex: 1;
-        background: $primary_color;
-        display: flex;
+        // flex: 1;
+        // background: $primary_color;
+        //display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 1rem;
-        text-transform: uppercase;
-        color: #fff;
+        // margin-right: 1rem;
+        // text-transform: uppercase;
+        //color: #fff;
         font-size: 2rem;
         font-weight: 700;
         padding: 0 1rem;
@@ -154,16 +154,16 @@ body {
 
       &__preview {
         flex: 4;
-        border: 1px solid $primary_color;
+        // border: 1px solid $primary_color;
         display: flex;
 
         .preview-title {
           flex: 1;
-          align-self: center;
+          align-self: left;
           font-size: 1.75rem;
           padding: 0.2rem;
           font-weight: bold;
-          margin-right: 5px;
+          // margin-right: 5px;
         }
 
         .preview-content-wrapper {
@@ -208,7 +208,7 @@ body {
 
     //     main stories
     .stories {
-      border-bottom: 3px solid #7a5c4f;
+      // border-bottom: 3px solid #7a5c4f;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -303,20 +303,20 @@ body {
                   flex-wrap: wrap;
                   text-transform: uppercase;
 
-                  &::before,
-                  &::after {
-                    content: "";
-                    height: 1px;
-                    flex-basis: 100%;
-                    background: $primary_color;
-                    margin-top: 2px;
-                  }
+                  // &::before,
+                  // &::after {
+                  //   content: "";
+                  //   height: 1px;
+                  //   flex-basis: 100%;
+                  //   background: $primary_color;
+                  //   margin-top: 2px;
+                  // }
 
-                  &::after {
-                    align-self: flex-end;
-                    margin-top: 0;
-                    margin-bottom: 2px;
-                  }
+                  // &::after {
+                  //   align-self: flex-end;
+                  //   margin-top: 0;
+                  //   margin-bottom: 2px;
+                  // }
 
                   .text--superscript {
                     background: $primary_color;
@@ -379,15 +379,15 @@ body {
             padding: 0.2rem 0.5rem;
             position: relative;
 
-            &::after {
-              content: "";
-              height: 1px;
-              background: $primary_color;
-              position: absolute;
-              bottom: -3px;
-              left: 0;
-              right: 0;
-            }
+            // &::after {
+            //   content: "";
+            //   height: 1px;
+            //   background: $primary_color;
+            //   position: absolute;
+            //   bottom: -3px;
+            //   left: 0;
+            //   right: 0;
+            // }
 
             .name {
               text-transform: uppercase;
@@ -534,13 +534,13 @@ body {
         position: relative;
         text-align: center;
         height: 3px;
-        background: $primary_color;
+        // background: $primary_color;
         margin-bottom: 1rem;
 
         &::before {
           content: "";
           height: 1px;
-          background: $primary_color;
+          // background: $primary_color;
           margin-top: 5px;
           position: absolute;
           left: 0;
@@ -572,8 +572,8 @@ body {
         .column--weather {
           flex: 1;
           text-align: center;
-          margin-left: 8px;
-          margin-right: 8px;
+          margin-left: 18px;
+          margin-right: 18px;
 
           &::first-of-type {
             margin-left: 0;
@@ -597,7 +597,7 @@ body {
             }
           }
           .weather_city {
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-weight: bold;
             border-top: 1px solid $primary_color;
             border-bottom: 1px solid $primary_color;

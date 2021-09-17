@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 // comps
-import SubTitle from '../views/subTitle';
+import SubTitle from '../views/subTitle'
 // icon
 // import EducationBackground from '../../assets/svg/files.svg';
 // import paperBack from '../../assets/img/paperBack.jpg';
@@ -8,17 +8,17 @@ import SubTitle from '../views/subTitle';
 //import Col from "react-bootstrap/Col";
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
-import myData from '../../data/myData.json';
+import myData from '../../data/myData.json'
 
 const Education: React.FC = () => {
-    const school = myData.education;
+    const school = myData.education
 
     interface EducationStyleProps {
-        key: number;
-        order: number;
-        title: string;
-        level: string;
-        description: string;
+        key: number
+        order: number
+        title: string
+        level: string
+        description: string
     }
 
     const EducationStyled: React.FC<EducationStyleProps> = ({ order, title, level, description }) => (
@@ -26,7 +26,7 @@ const Education: React.FC = () => {
             <div className="exclusive-story__marker">{order})</div>
             <div className="exclusive-story__preview">
                 <div className="preview-title">
-                    <span className="text display--block">{title}</span>s
+                    <span className="text display--block">{title}</span>
                 </div>
                 <div className="preview-content-wrapper">
                     <div className="preview-content">
@@ -36,7 +36,7 @@ const Education: React.FC = () => {
                 </div>
             </div>
         </div>
-    );
+    )
 
     //  <SubTitle color={'#7A5C4F'} subTitle={'Learning Path'} />;
     const EducationList: React.FC = () => (
@@ -53,7 +53,7 @@ const Education: React.FC = () => {
                 ))}
             </div>
         </>
-    );
+    )
 
     // interface StyleListProps {
     //     key: number;
@@ -85,7 +85,7 @@ const Education: React.FC = () => {
             <SubTitle color={'#7A5C4F'} subTitle={'Learning Path'} />
             <EducationList />
         </div>
-    );
-};
+    )
+}
 
-export default Education;
+export default Education

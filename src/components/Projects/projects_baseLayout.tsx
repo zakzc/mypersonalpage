@@ -8,7 +8,6 @@ import Footer from '../views/footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 // assets
-import profileImage from '../../assets/img/project.jpg';
 
 const Projects: React.FC = () => {
     // * data
@@ -17,13 +16,7 @@ const Projects: React.FC = () => {
     return (
         <Container className="news-page">
             <Row>
-                <GeneralHeader
-                    imageRef={profileImage}
-                    headerTitle={headerTitle}
-                    sideButton={true}
-                    headerTextColor={'#4f6d7a'}
-                    headerTextBackground={'rgba(79,109,122, 0.8)'}
-                />
+                <GeneralHeader headerTitle={headerTitle} sideButton={true} />
             </Row>
             <Timeline />
             <Footer />

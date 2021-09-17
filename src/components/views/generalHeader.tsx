@@ -3,42 +3,33 @@ import React from 'react';
 import GoHomeButton from './goHomeButton';
 // ui
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
 
 interface GeneralHeaderProps {
-    imageRef: string;
+    // imageRef: string;
     headerTitle: string;
     sideButton: boolean;
-    headerTextColor: string;
-    headerTextBackground: string;
+    // headerTextColor: string;
+    // headerTextBackground: string;
 }
 
-const GeneralHeader: React.FC<GeneralHeaderProps> = ({
-    imageRef,
-    headerTitle,
-    sideButton,
-    headerTextColor,
-    headerTextBackground,
-}): any => {
+const GeneralHeader: React.FC<GeneralHeaderProps> = ({ headerTitle, sideButton }): any => {
     // * views
     const HeaderPhoto: React.FC = () => (
-        <Container className="news-page__section publisher" style={{ backgroundColor: '#fff8ed' }}>
-            <Row>
-                <Col>{sideButton ? <GoHomeButton /> : null}</Col>
-                <Col></Col> <Col></Col> <Col></Col>
-                <Col>
-                    <div className="news-page__section publisher" style={{ backgroundColor: 'fff8ed' }}>
-                        <div className="logo-shield">
-                            <HeaderTitle />
-                        </div>
-                        <div className="publisher_name"></div>
+        <div className="news-page__section publisher">
+            <Col>{sideButton ? <GoHomeButton /> : null}</Col>
+            {/* <GoHomeButton /> */}
+            <Col>
+                <div className="news-page__section publisher">
+                    <div className="logo-shield">
+                        <HeaderTitle />
                     </div>
-                </Col>
-                <Col></Col> <Col></Col> <Col></Col>
-                <Col>{sideButton ? null : <GoHomeButton />}</Col>
-            </Row>
-        </Container>
+                    <div className="publisher_name"></div>
+                </div>
+            </Col>
+            <Col>{sideButton ? null : <GoHomeButton />}</Col>
+        </div>
     );
 
     const HeaderTitle: React.FC = () => (
