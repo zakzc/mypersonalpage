@@ -1,67 +1,55 @@
-import React from "react";
+import React from 'react';
 // comps
-import SubTitle from "../views/subTitle";
-import SkillCard from "./profile_skills_Skillcard";
+import SubTitle from '../views/subTitle';
+import SkillCard from './profile_skills_Skillcard';
 // data
-import myData from "../../data/myData.json";
+import myData from '../../data/myData.json';
 // ui
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-// img
-import KeyboardImage from "../../assets/img/lightKeyboard.jpg";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 ///
 
 const Skills: React.FC = () => {
-  // * data
-  const mySkills = myData.skills;
+    // * data
+    const mySkills = myData.skills;
 
-  // * view
-  const SkillList: React.FC = () => (
-    <div>
-      <div className="container">
-        {mySkills.map((skill, index) => (
-          <SkillCard skill={skill} index={index} key={index} />
-        ))}
-      </div>
-    </div>
-  );
+    // * view
 
-  const SkillSet: React.FC = () => {
-    return (
-      <>
-        <Row >
-          <SubTitle color={"#7A5C4F"} subTitle={"Skill set"} />
-          <Col></Col>
-          <Col xs={10} sm={10} md={10} lg={10}>
-            <Row style={{ marginTop: "15px" }}>
-              <SkillList />
-            </Row>
-          </Col>
-          <Col></Col>
-        </Row>
-      </>
+    const SkillList: React.FC = () => (
+        <div className="news-page_section weather">
+            <div className="section-divider" title="My Skills"></div>
+            {mySkills.map((skill, index) => (
+                <SkillCard skill={skill} index={index} key={index} />
+            ))}
+        </div>
     );
-  };
 
-  return (
-    <Container  fluid className="my-auto">
-      <Row
-        style={{
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          // backgroundColor: "#4f6d7a",
-          // backgroundImage: `url(${KeyboardImage})`,
-          // clipPath: "polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)",
-          // position: "relative",
-          
-          backgroundColor: "#eaeaea",
-          maxWidth: "1250px",
-        }}
-      >
-        <SkillSet />
-      </Row>
-    </Container>
-  );
+    const SkillSet: React.FC = () => {
+        return (
+            <>
+                <Row>
+                    <SubTitle color={'#7A5C4F'} subTitle={'Skill set'} />
+                    <Col></Col>
+                    <Col xs={10} sm={10} md={10} lg={10}>
+                        <Row>
+                            <SkillList />
+                        </Row>
+                    </Col>
+                    <Col></Col>
+                </Row>
+            </>
+        );
+    };
+
+    return (
+        <Container>
+            <div>
+                <div className="columns-wrapper column--weathers">
+                    <SkillSet />
+                </div>
+            </div>
+        </Container>
+    );
 };
 export default Skills;

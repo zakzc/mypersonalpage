@@ -1,35 +1,34 @@
 {
     "education": [
         {
+            "order": 1,
             "title": "Analyst",
             "level": "Graduation",
             "description": "Computer Systems Analysis",
             "stage": "Graduated"
         },
         {
+            "order": 2,
             "title": "Bachelor",
             "level": "Graduation",
             "description": "English Language, Translation and Literature",
             "stage": "Graduated"
         },
         {
+            "order": 3,
             "title": "Specialist",
             "level": "Post graduation (Specialization)",
             "description": "Full-Stack WebDesign",
             "stage": "Awaiting official documentation"
         },
         {
+            "order": 4,
             "title": "Specialist",
             "level": "Post graduation (Specialization)",
             "description": "Software Engineering",
             "stage": "Ongoing"
         },
-        {
-            "title": "Master",
-            "level": "MBA",
-            "description": "Information Security",
-            "stage": "Graduated"
-        }
+        { "order": 5, "title": "Master", "level": "MBA", "description": "Information Security", "stage": "Graduated" }
     ],
     "contact": [
         {
@@ -193,6 +192,14 @@
             "alt": "coding project: python racing game",
             "tech": "Technologies used: Python, PyGame",
             "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects that are a key element in my learning path."
+        }
+    ],
+    "aboutMe": [
+        {
+            "paragraph": "I am a full-stack developer with more than 7 years developing 💻 websites with modern platforms and programming languages. I like to learn things, build things, fix things 🔧 with a keen eye to design and purpose."
+        },
+        {
+            "paragraph": "Going into Development was, in a sense, a career change, because that was not my full time job, but, at the same time, building things with code has been a constant throughout my life. From that perspective, I just decided to finally do something I really enjoy and something I am passionate about."
         }
     ]
 }

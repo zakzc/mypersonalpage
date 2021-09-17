@@ -156,7 +156,7 @@ const InitialPage: React.FC = ():any => {
               }}
               onClick={() => handleViewProjects()}
             >
-              <ButtonText text={"Project"} />
+              <ButtonText text={"Portfolio"} />
             </Button>{" "}
           </div>
         </Col>
