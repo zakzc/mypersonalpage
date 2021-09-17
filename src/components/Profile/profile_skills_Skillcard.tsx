@@ -1,20 +1,21 @@
 import React from 'react';
 // import { motion } from "framer-motion";
 import Col from 'react-bootstrap/Col';
+//import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 ///
 //import star from "../../assets/svg/circle.svg";
 import star from '../../assets/svg/star.svg';
 // list of images
-import html_Logo from '../../assets/svg/html5.svg';
-import css_Logo from '../../assets/svg/css3.svg';
-import p_Logo from '../../assets/svg/php.svg';
-import py_Logo from '../../assets/svg/python.svg';
-import j_Logo from '../../assets/svg/js.svg';
-import react_Logo from '../../assets/svg/react.svg';
-import node_Logo from '../../assets/svg/node.svg';
-import jest_Logo from '../../assets/svg/jest.svg';
-import u_Logo from '../../assets/svg/uxui.svg';
+// import html_Logo from '../../assets/svg/html5.svg';
+// import css_Logo from '../../assets/svg/css3.svg';
+// import p_Logo from '../../assets/svg/php.svg';
+// import py_Logo from '../../assets/svg/python.svg';
+// import j_Logo from '../../assets/svg/js.svg';
+// import react_Logo from '../../assets/svg/react.svg';
+// import node_Logo from '../../assets/svg/node.svg';
+// import jest_Logo from '../../assets/svg/jest.svg';
+// import u_Logo from '../../assets/svg/uxui.svg';
 
 interface SkillCardProps {
     skill: {
@@ -29,7 +30,7 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
     // * data
-    const imageList = [html_Logo, css_Logo, p_Logo, py_Logo, j_Logo, react_Logo, node_Logo, jest_Logo, u_Logo];
+    //const imageList = [html_Logo, css_Logo, p_Logo, py_Logo, j_Logo, react_Logo, node_Logo, jest_Logo, u_Logo];
     // * view
 
     interface StarSectionProps {
@@ -52,27 +53,29 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
         </Row>
     );
 
-    const ImageSection: React.FC = () => (
-        <div>
-            <img src={imageList[index]} alt={skill.alt} style={{ opacity: '0.8', height: '40%' }} />
-        </div>
-    );
+    // const ImageSection: React.FC = () => (
+    //     <div>
+    //         <img src={imageList[index]} alt={skill.alt} style={{ opacity: '0.8', height: '40%' }} />
+    //     </div>
+    // );
 
     const CardComponent: React.FC = () => (
-        <>
-            <div className="columns-wrapper column--weathers">
-                <div className="column column--weather">
-                    <div className="weather_value text_shadow--hot">{skill.skillSet}</div>
-                    <div className="weather_city">{skill.language}</div>
-                    <StarSection skillLevel={skill} />
-                </div>
-            </div>
-        </>
+        <div className="column column--weather">
+            {/* <Col xs={6} md={4} lg={3}> */}
+            <div className="weather_value text_shadow--hot">{skill.skillSet}</div>
+            <div className="weather_city">{skill.language}</div>
+            <StarSection skillLevel={skill} />
+            {/* </Col> */}
+        </div>
     );
 
     return (
         <>
-            <CardComponent />
+            <div className="news-page_section weather">
+                <div className="columns-wrapper column--weathers">
+                    <CardComponent />
+                </div>
+            </div>
         </>
     );
 };

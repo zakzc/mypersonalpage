@@ -7,7 +7,7 @@ import myData from '../../data/myData.json';
 // ui
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+//import Row from 'react-bootstrap/Row';
 ///
 
 const Skills: React.FC = () => {
@@ -18,37 +18,33 @@ const Skills: React.FC = () => {
 
     const SkillList: React.FC = () => (
         <div className="news-page_section weather">
-            <div className="section-divider" title="My Skills"></div>
-            {mySkills.map((skill, index) => (
-                <SkillCard skill={skill} index={index} key={index} />
-            ))}
+            <div className="section-divider" title="Weather"></div>
+            <div className="columns-wrapper column--weathers">
+                {mySkills.map((skill, index) => (
+                    <SkillCard skill={skill} index={index} key={index} />
+                ))}
+            </div>
         </div>
     );
 
     const SkillSet: React.FC = () => {
         return (
             <>
-                <Row>
-                    <SubTitle color={'#7A5C4F'} subTitle={'Skill set'} />
-                    <Col></Col>
-                    <Col xs={10} sm={10} md={10} lg={10}>
-                        <Row>
-                            <SkillList />
-                        </Row>
-                    </Col>
-                    <Col></Col>
-                </Row>
+                {/* <Row> */}
+                <SubTitle color={'#7A5C4F'} subTitle={'Skill set'} />
+                <Col></Col>
+                {/* <Col xs={10} sm={10} md={10} lg={10}> */}
+                <SkillList />
+                {/* </Col> */}
+                <Col></Col>
+                {/* </Row> */}
             </>
         );
     };
 
     return (
         <Container>
-            <div>
-                <div className="columns-wrapper column--weathers">
-                    <SkillSet />
-                </div>
-            </div>
+            <SkillSet />
         </Container>
     );
 };

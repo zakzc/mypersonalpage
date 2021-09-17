@@ -6,8 +6,8 @@ import SubTitle from '../views/subTitle';
 // import paperBack from '../../assets/img/paperBack.jpg';
 //ui
 //import Col from "react-bootstrap/Col";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
 import myData from '../../data/myData.json';
 
 const Education: React.FC = () => {
@@ -22,7 +22,7 @@ const Education: React.FC = () => {
     }
 
     const EducationStyled: React.FC<EducationStyleProps> = ({ order, title, level, description }) => (
-        <>
+        <div className="news-page__section exclusive-story">
             <div className="exclusive-story__marker">{order})</div>
             <div className="exclusive-story__preview">
                 <div className="preview-title">
@@ -35,7 +35,7 @@ const Education: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 
     //  <SubTitle color={'#7A5C4F'} subTitle={'Learning Path'} />;
@@ -81,14 +81,10 @@ const Education: React.FC = () => {
 
     // * view
     return (
-        <Container>
-            <Row>
-                <div id="myEducation">
-                    <SubTitle color={'#7A5C4F'} subTitle={'Learning Path'} />
-                    <EducationList />
-                </div>
-            </Row>
-        </Container>
+        <div id="myEducation">
+            <SubTitle color={'#7A5C4F'} subTitle={'Learning Path'} />
+            <EducationList />
+        </div>
     );
 };
 

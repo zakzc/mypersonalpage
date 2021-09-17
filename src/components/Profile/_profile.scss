@@ -549,14 +549,14 @@ body {
         }
 
         &::after {
-          content: "Weather";
+          content: "Languages and Frameworks";
           position: absolute;
           top: -5px;
           left: 0;
           right: 0;
           background: $newspaper_background;
           padding: 0rem 0.5rem;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           margin: 0 auto;
           width: fit-content;
           font-weight: 700;
