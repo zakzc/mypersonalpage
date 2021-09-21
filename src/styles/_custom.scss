@@ -1,8 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+///
 @import "./variables";
 @import "../components/Profile/profile_Education";
 @import "../components/Projects/projects_Timeline";
@@ -11,7 +9,7 @@
 @import "../components/Profile/profile";
 
 body {
-    font-family: "Indie Flower", "Kalam", "Montserrat", "Open Sans", sans-serif;
+    font-family: "Architects Daughter", "Indie Flower", "Kalam", sans-serif;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -19,32 +17,11 @@ body {
     //background-color: #212121;
 }
 
-// *,
-// ::after,
-// ::before {
-//     box-sizing: inherit;
-// }
-
-// body {
-//   margin: 50px 0 0 0;
-//   padding: 0;
-//   width: 100%;
-//   min-width: 250px;
-//   text-align: center;
-// }
-h3 {
-    margin-top: 75px;
-    font-family: sans-serif;
-    color: #222;
-    font-size: 2em;
-    text-decoration: underline;
-}
-
 .notebook {
     display: inline-block;
     margin: 0 auto;
     position: relative;
-    background-color: #946947;
+    //background-color: #946947;
     background: linear-gradient(175deg at 0 0, #b69180, #946947); /*#C9A8A1*/
     // width: 203px;
     // height: 280px;
@@ -82,7 +59,7 @@ h3 {
     background-image: radial-gradient(circle at 5% 40%, transparent 70%, #555 20%);
 }
 
-$grid-color: #d95d16;
+// $grid-color: #d95d16;
 
 // .paperBackGround {
 //     background-color: rgba(#fff, 0.5);
@@ -93,3 +70,11 @@ $grid-color: #d95d16;
 //     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
 //     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 // }
+
+.paperBackGround {
+    background-color: rgba(#fff, 0.5);
+    background-image: linear-gradient(rgba(150, 150, 150, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(150, 150, 150, 0.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}

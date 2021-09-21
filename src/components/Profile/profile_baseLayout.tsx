@@ -4,13 +4,12 @@ import Education from './profile_Education'
 import Footer from '../views/footer'
 import GeneralHeader from '../views/generalHeader'
 import Skills from './profile_Skills'
-//import ProfileMain from './profile_Main';
 // ui
-// import Col from "react-bootstrap/Col";
 import Container from 'react-bootstrap/Container'
-// import Row from "react-bootstrap/Row";
 // assets
 import AboutMe from './profile_MyInfo'
+// svg
+import Computer from '../../assets/svg/Computer.svg'
 
 const Profile: React.FC = () => {
     // const polygon = "0 0, 100% 0, 100% 84%, 0% 100%";
@@ -20,10 +19,10 @@ const Profile: React.FC = () => {
         <Container className="news-page notebook">
             <GeneralHeader headerTitle={headerTitle} sideButton={false} />
             <AboutMe />
+            <img src={Computer} alt="computer drawing" style={{ width: '90px' }} />
             <Education />
             <Skills />
             <Footer />
-            {/* <ProfileMain /> */}
         </Container>
     )
 }
