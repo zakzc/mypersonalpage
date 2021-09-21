@@ -16,7 +16,7 @@ const ProfileMain: React.FC = () => {
             <div className="column column--left">
                 <div className="story-title">
                     <div className="story-title--first-line">
-                        <div className="title-text text--normal" style={{ color: '#4f6d7a' }}>
+                        <div className="title-text text--normal" style={{ color: '#7A5C4F' }}>
                             About me
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const ProfileMain: React.FC = () => {
                 <div className="story-content">
                     <div className="story-column column--first">
                         {myText.map((text, index) => (
-                            <div className="text--capitalize-first" key={index}>
+                            <div className="text--capitalize-first" key={index} style={{ color: '#527689' }}>
                                 <p>{text.paragraph}</p> <br />
                             </div>
                         ))}
@@ -37,7 +37,7 @@ const ProfileMain: React.FC = () => {
 
     const SideNote: React.FC = () => (
         <Col xs={10} sm={10}>
-            <div className="column column--right">
+            <div className="column column--right ">
                 <div className="author">
                     <div className="name">Side Notes</div>
                     <div className="footnote">Some extra info</div>

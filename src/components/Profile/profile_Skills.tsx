@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 // comps
-import SubTitle from '../views/subTitle';
-import SkillCard from './profile_skills_Skillcard';
+import SubTitle from '../views/subTitle'
+import SkillCard from './profile_skills_Skillcard'
 // data
-import myData from '../../data/myData.json';
+import myData from '../../data/myData.json'
 // ui
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 //import Row from 'react-bootstrap/Row';
 ///
 
 const Skills: React.FC = () => {
     // * data
-    const mySkills = myData.skills;
+    const mySkills = myData.skills
 
     // * view
 
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
                 ))}
             </div>
         </div>
-    );
+    )
 
     const SkillSet: React.FC = () => {
         return (
@@ -39,13 +39,13 @@ const Skills: React.FC = () => {
                 <Col></Col>
                 {/* </Row> */}
             </>
-        );
-    };
+        )
+    }
 
     return (
         <Container>
             <SkillSet />
         </Container>
-    );
-};
-export default Skills;
+    )
+}
+export default Skills

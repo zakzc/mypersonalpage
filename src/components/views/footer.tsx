@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 // ui
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 const Footer: React.FC = (): any => {
     const Credits: React.FC = (): any => (
@@ -23,7 +23,7 @@ const Footer: React.FC = (): any => {
                 </a>{' '}
             </p>
         </>
-    );
+    )
 
     const Refs: React.FC = (): any => (
         <>
@@ -74,11 +74,11 @@ const Footer: React.FC = (): any => {
                 </span>
             </p>
         </>
-    );
+    )
 
     return (
         <>
-            <Row className="footerContainer" style={{ padding: 30, backgroundColor: '#fff8ed', maxWidth: '1250px' }}>
+            <Row className="footerContainer" style={{ padding: 30, maxWidth: '1250px', color: '#527689' }}>
                 {/* <div className="separator"></div> */}
                 <Col>
                     <Refs />
@@ -88,6 +88,6 @@ const Footer: React.FC = (): any => {
                 </Col>
             </Row>
         </>
-    );
-};
-export default Footer;
+    )
+}
+export default Footer

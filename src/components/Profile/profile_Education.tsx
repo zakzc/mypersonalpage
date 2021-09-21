@@ -22,7 +22,7 @@ const Education: React.FC = () => {
     }
 
     const EducationStyled: React.FC<EducationStyleProps> = ({ order, title, level, description }) => (
-        <div className="news-page__section exclusive-story">
+        <div className="news-page__section exclusive-story" style={{ color: '#527689' }}>
             <div className="exclusive-story__marker">{order})</div>
             <div className="exclusive-story__preview">
                 <div className="preview-title">
@@ -30,8 +30,12 @@ const Education: React.FC = () => {
                 </div>
                 <div className="preview-content-wrapper">
                     <div className="preview-content">
-                        <div className="preview-content--left">{level}</div>
-                        <div className="preview-content--right">{description}</div>
+                        <div className="preview-content--left">
+                            <h3>{level}</h3>
+                        </div>
+                        <div className="preview-content--right">
+                            <h4>{description}</h4>
+                        </div>
                     </div>
                 </div>
             </div>

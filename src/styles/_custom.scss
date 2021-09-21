@@ -15,5 +15,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     // background-color: $platinum;
-    background-color: #212121;
+    //background-color: #212121;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
 }

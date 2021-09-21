@@ -1,52 +1,26 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
-			c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
-			c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
-			s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
-			c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
-			c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
-			c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
-			C455.549,238.499,449.593,232.543,442.246,232.543z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 512 512">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+</metadata>
+<defs/>
+<g id="Untitled" vectornator:layerName="Untitled">
+<path d="M506.555+208.064L263.859+30.367C259.179+26.941+252.821+26.941+248.143+30.367L5.445+208.064C-0.483+212.405-1.771+220.729+2.57+226.657C6.911+232.585+15.236+233.871+21.163+229.532L256+57.588L490.837+229.531C493.205+231.266+495.957+232.101+498.685+232.101C502.781+232.101+506.823+230.216+509.429+226.656C513.771+220.729+512.483+212.405+506.555+208.064Z" opacity="1" fill="#527689"/>
+<path d="M442.246+232.543C434.9+232.543+428.943+238.499+428.943+245.846L428.943+457.595L322.521+457.595L322.521+342.009C322.521+305.329+292.679+275.489+256.001+275.489C219.323+275.489+189.481+305.331+189.481+342.009L189.481+457.596L83.058+457.596L83.058+245.847C83.058+238.5+77.101+232.544+69.755+232.544C62.409+232.544+56.452+238.5+56.452+245.847L56.452+470.9C56.452+478.247+62.409+484.203+69.755+484.203L202.784+484.203C209.78+484.203+215.505+478.798+216.035+471.936C216.067+471.625+216.087+471.285+216.087+470.9L216.087+342.01C216.087+320.001+233.992+302.096+256.001+302.096C278.01+302.096+295.915+320.002+295.915+342.01L295.915+470.9C295.915+471.283+295.935+471.617+295.967+471.924C296.491+478.791+302.218+484.203+309.218+484.203L442.247+484.203C449.594+484.203+455.55+478.247+455.55+470.9L455.55+245.847C455.549+238.499+449.593+232.543+442.246+232.543Z" opacity="1" fill="#527689"/>
 </g>
 </svg>

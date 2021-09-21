@@ -91,7 +91,7 @@
         },
         {
             "skillSet": "TypeScript",
-            "language": ["Typescript"],
+            "language": ["a.k.a. JavaScript with syntax for types"],
             "alt": "Typescript logo",
             "level": [1, 2, 3]
         },
@@ -99,6 +99,12 @@
             "skillSet": "UX/UI",
             "language": ["Interfaces, user experience"],
             "alt": "UX and UI",
+            "level": [1, 2, 3, 4]
+        },
+        {
+            "skillSet": "Git",
+            "language": ["Version control, Git and Git hub"],
+            "alt": "git",
             "level": [1, 2, 3, 4]
         }
     ],

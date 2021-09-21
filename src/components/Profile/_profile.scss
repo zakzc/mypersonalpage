@@ -1,5 +1,7 @@
-$primary_color: #7a5c4f;
+//$primary_color: #7a5c4f;
 $newspaper_background: #fff8ed;
+// $newspaper_background: #fff;
+$primary_color: #527689;
 
 // Base
 
@@ -549,7 +551,7 @@ body {
         }
 
         &::after {
-          content: "Languages and Frameworks";
+          // content: "Languages and Frameworks";
           position: absolute;
           top: -5px;
           left: 0;
