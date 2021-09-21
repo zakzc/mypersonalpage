@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     const headerTitle: string = 'Portfolio'
 
     return (
-        <Container className="news-page">
+        <Container className="news-page notebook">
             <Row>
                 <GeneralHeader headerTitle={headerTitle} sideButton={true} />
             </Row>

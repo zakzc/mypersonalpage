@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
     const headerTitle = 'Profile'
 
     return (
-        <Container className="news-page">
+        <Container className="news-page notebook">
             <GeneralHeader headerTitle={headerTitle} sideButton={false} />
             <AboutMe />
             <Education />

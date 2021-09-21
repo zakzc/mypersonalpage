@@ -12,15 +12,12 @@ const Footer: React.FC = (): any => {
                     {' '}
                     Free frontend
                 </a>
-                , which, by the way, is a great source for references. The ones here were tweaked and adjusted to fit
-                this project. These include:{' '}
+                , which is a great source for references. The ones here were tweaked and adjusted to fit this project.
+                These include:{' '}
                 <a className="linkItem" href="https://www.bootdey.com/snippets/view/bs4-my-experience-timeline">
-                    Timeline from Projects page
+                    Timeline
                 </a>{' '}
-                and{' '}
-                <a className="linkItem" href="https://codepen.io/eyupucmaz/pen/oNbeXOb">
-                    Card layout from Profile page
-                </a>{' '}
+                that is used in the portfolio page.
             </p>
         </>
     )
@@ -53,25 +50,18 @@ const Footer: React.FC = (): any => {
                     <a className="linkItem" href="https://www.flaticon.com/">
                         Flat icon
                     </a>
+                    . Some are hand-drawn by me.
                 </span>
             </p>
             <p>
-                Images used include:{' '}
-                <span>
-                    <a
-                        className="linkItem"
-                        href="https://unsplash.com/@claybanks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    >
-                        photo by Clay Banks (front page),{' '}
-                    </a>
-                    <a className="linkItem" href="https://unsplash.com/photos/DJ7bWa-Gwks">
-                        Photo by ian dooley on Unsplash (profile) and{' '}
-                    </a>
-
-                    <a className="linkItem" href="https://unsplash.com/photos/4UGmm3WRUoQ">
-                        photo by Sigmund on Unsplash (projects).
-                    </a>
-                </span>
+                Images used include: Photo by{' '}
+                <a href="https://unsplash.com/@thepaintedsquare?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Jessica Lewis
+                </a>{' '}
+                on{' '}
+                <a href="https://unsplash.com/s/photos/bullet-journal-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash
+                </a>
             </p>
         </>
     )

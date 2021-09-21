@@ -31,7 +31,7 @@ const Education: React.FC = () => {
                 <div className="preview-content-wrapper">
                     <div className="preview-content">
                         <div className="preview-content--left">
-                            <h3>{level}</h3>
+                            <h4>{level}</h4>
                         </div>
                         <div className="preview-content--right">
                             <h4>{description}</h4>
@@ -58,30 +58,6 @@ const Education: React.FC = () => {
             </div>
         </>
     )
-
-    // interface StyleListProps {
-    //     key: number;
-    //     title: string;
-    //     text: string;
-    //     level: string;
-    // }
-
-    // const StyledList: React.FC<StyleListProps> = ({ title, text }) => (
-    //     <section className="dl-blurbs">
-    //         <dl>
-    //             <dd
-    //                 style={{
-    //                     fontSize: '2em',
-    //                     textDecoration: 'underline',
-    //                     textDecorationColor: '#5ea5b8',
-    //                 }}
-    //             >
-    //                 {title}
-    //             </dd>
-    //             <dd>{text}</dd>
-    //         </dl>
-    //     </section>
-    // );
 
     // * view
     return (
