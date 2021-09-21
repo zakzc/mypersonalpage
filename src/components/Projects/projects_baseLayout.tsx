@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 // comps
-import GeneralHeader from '../views/generalHeader';
-import Timeline from './projects_Timeline';
-import Footer from '../views/footer';
+import GeneralHeader from '../views/generalHeader'
+import Timeline from './projects_Timeline'
+import Footer from '../views/footer'
 // ui
 // import Col from "react-bootstrap/Col";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 // assets
 
 const Projects: React.FC = () => {
     // * data
-    const headerTitle: string = 'Projects';
+    const headerTitle: string = 'Portfolio'
 
     return (
         <Container className="news-page">
@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
             <Timeline />
             <Footer />
         </Container>
-    );
-};
+    )
+}
 
-export default Projects;
+export default Projects

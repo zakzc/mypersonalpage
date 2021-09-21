@@ -81,8 +81,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
                 <ImageSection />
             </div>
             <div className="weather_city">{skill.skillSet}</div>
-            <h4>{skill.language}</h4>
             <StarSection skillLevel={skill} />
+            <h4>{skill.language}</h4>
+
             {/* </Col> */}
         </div>
     )

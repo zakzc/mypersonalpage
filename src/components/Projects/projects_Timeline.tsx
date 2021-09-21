@@ -37,22 +37,8 @@ const Timeline: React.FC = () => {
     const ProjectImage: React.FC<ProjectImageProps> = ({ imageReference, textReference }) => {
         let imageToShow = projectsImages.filter((i) => i.name === imageReference)
         return (
-            <div className="plrWrapper ">
-                <div className="item">
-                    <div className="polaroid">
-                        <img src={imageToShow[0].image} alt="project" />
-                        <div className="caption">{textReference}</div>
-                    </div>
-                </div>
-                {/* <img
-                    className="polaroid "
-                    style={{
-                        width: '200px',
-                    }}
-                    src={imageToShow[0].image}
-                    alt="project"
-                />
-                <div className="caption">Love ballons</div> */}
+            <div className="img-tape img-tape--3">
+                <img src={imageToShow[0].image} alt={textReference} />
             </div>
         )
     }
@@ -80,7 +66,9 @@ const Timeline: React.FC = () => {
                 </div>
             </div>
             <div className="timeline-content">
-                <h5 className="title">{project.name}</h5>
+                <h5 className="title" style={{ textDecoration: 'underline', textDecorationColor: '#7a5c4f' }}>
+                    {project.name}
+                </h5>
                 <p className="description">{project.describe}</p>
                 <br />
                 <p> {project.tech}</p>
