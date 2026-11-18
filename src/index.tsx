@@ -1,25 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-//import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router } from "react-router-dom";
-// import ReactGA from "react-ga";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.scss'
+import App from './App'
 
-// function initializeReactGA() {
-//   ReactGA.initialize("UA-107335443-1");
-//   ReactGA.pageview("/");
-// }
-
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById("root")
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <App />
+    </StrictMode>
+)

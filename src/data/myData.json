@@ -2,33 +2,39 @@
     "education": [
         {
             "order": 1,
-            "title": "Analyst",
-            "level": "Graduation",
+            "title": "Associate's degree",
+            "level": "2019 – 2021",
             "description": "Computer Systems Analysis",
-            "stage": "Graduated"
+            "stage": "Centro Universitário da Grande Dourados"
         },
         {
             "order": 2,
-            "title": "Bachelor",
-            "level": "Graduation",
-            "description": "English Language, Translation and Literature",
-            "stage": "Graduated"
+            "title": "Bachelor's degree",
+            "level": "2020 – 2023",
+            "description": "Computer Software Engineering",
+            "stage": "Centro Universitário da Grande Dourados"
         },
         {
             "order": 3,
-            "title": "Specialist",
-            "level": "Post graduation (Specialization)",
-            "description": "Full-Stack WebDesign",
-            "stage": "Awaiting official documentation"
+            "title": "MBA",
+            "level": "2020 – 2021",
+            "description": "Information Security / Information Assurance",
+            "stage": "Cruzeiro do Sul Virtual"
         },
         {
             "order": 4,
-            "title": "Specialist",
-            "level": "Post graduation (Specialization)",
-            "description": "Software Engineering",
-            "stage": "Ongoing"
+            "title": "Master's degree",
+            "level": "2003 – 2006",
+            "description": "Literary Theory",
+            "stage": "Universidade de Brasília"
         },
-        { "order": 5, "title": "Master", "level": "MBA", "description": "Information Security", "stage": "Graduated" }
+        {
+            "order": 5,
+            "title": "Bachelor's degree",
+            "level": "1992 – 1997",
+            "description": "English Language and Translation",
+            "stage": "Universidade de Brasília"
+        }
     ],
     "contact": [
         {
@@ -43,161 +49,223 @@
     "skills": [
         {
             "skillSet": "HTML5",
-            "language": ["HTML, ", "XML"],
-            "alt": "html5logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "HTML, ",
+                "XML"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "CSS3",
-            "language": ["Sass, ", "Less, ", "Tailwind"],
-            "alt": "html5 logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "Sass, ",
+                "Less, ",
+                "Tailwind"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "PHP",
-            "language": ["Wordpress"],
-            "alt": "PHP logo",
-            "level": [1, 2]
+            "language": [
+                "Wordpress"
+            ],
+            "level": [
+                1,
+                2
+            ]
         },
         {
             "skillSet": "Python",
-            "language": ["Django"],
-            "alt": "Python logo",
-            "level": [1, 2, 3]
+            "language": [
+                "Django"
+            ],
+            "level": [
+                1,
+                2,
+                3
+            ]
         },
         {
             "skillSet": "Javascript",
-            "language": ["ES6 ", "Meteor.JS "],
-            "alt": "Javascript logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "ES6 ",
+                "Meteor.JS "
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "React",
-            "language": ["React Router, ", "Redux"],
-            "alt": "Javascript logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "React Router, ",
+                "Redux"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "Node",
-            "language": ["Express "],
-            "alt": "Javascript logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "Express "
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "Jest",
-            "language": ["Mocha, ", "Chai"],
-            "alt": "Javascript logo",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "Mocha, ",
+                "Chai"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "TypeScript",
-            "language": ["a.k.a. JavaScript with syntax for types"],
-            "alt": "Typescript logo",
-            "level": [1, 2, 3]
+            "language": [
+                "a.k.a. JavaScript with syntax for types"
+            ],
+            "level": [
+                1,
+                2,
+                3
+            ]
         },
         {
             "skillSet": "UX/UI",
-            "language": ["Interfaces, user experience"],
-            "alt": "UX and UI",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "Interfaces, user experience"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "skillSet": "Git",
-            "language": ["Version control, Git and Git hub"],
-            "alt": "git",
-            "level": [1, 2, 3, 4]
+            "language": [
+                "Version control, Git and Git hub"
+            ],
+            "level": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "skillSet": "Next.js",
+            "language": [
+                "Next.js, Redux, Webpack"
+            ]
+        },
+        {
+            "skillSet": "Cloud & CI",
+            "language": [
+                "Microsoft Azure, Azure DevOps, CI pipelines, Kibana"
+            ]
+        },
+        {
+            "skillSet": "APIs & Data",
+            "language": [
+                "API Management, JSON, Elasticsearch, Postman"
+            ]
+        },
+        {
+            "skillSet": "Figma",
+            "language": [
+                "UI prototyping with design teams"
+            ]
+        },
+        {
+            "skillSet": "Agile & Practices",
+            "language": [
+                "SAFe, code review, debugging, refactoring"
+            ]
+        },
+        {
+            "skillSet": "C++",
+            "language": [
+                "Essential Training and Advanced Topics (certified)"
+            ]
+        },
+        {
+            "skillSet": "Leadership & Teaching",
+            "language": [
+                "Team management, higher education teaching"
+            ]
         }
     ],
     "projects": [
         {
-            "year": "2020",
-            "name": "Quality-Conform",
-            "link": "https://github.com/zakzc/qualyconform",
-            "image": "../../img/SoftWrapMobList.png",
-            "imageRef": "soft",
-            "alt": "coding project: soft table",
-            "tech": "Technologies used: html5, React, Axios",
-            "describe": "Another learning project working on gathering of data from forms and processing them. This one registers non-conformities added by users."
+            "year": "2026",
+            "name": "News Hub",
+            "link": "",
+            "tech": "Technologies used: React, TypeScript, Vite, Node, Express",
+            "describe": "A personal news dashboard that gathers headlines from free RSS feeds of reputable outlets. Browse by category, switch between English and Brazilian news, follow a story across outlets and monitor any subject. (Private repository.)"
         },
         {
-            "year": "2020",
-            "name": "Soft Table",
-            "link": "https://github.com/zakzc/soft_table_front",
-            "image": "../../assets/img/SoftWrapMobList.png",
-            "imageRef": "soft",
-            "alt": "coding project: soft table",
-            "tech": "Technologies used: html5, Tailwind, React, Axios",
-            "describe": "Quick project for shows, it displays a bit of Tailwind for what is a basic trial. It is a sleeper project now."
+            "year": "2024",
+            "name": "zak-theme01",
+            "link": "https://github.com/zakzc/zak-theme01",
+            "tech": "Technologies used: VS Code extension, JSON",
+            "describe": "A custom colour theme for Visual Studio Code."
         },
         {
-            "year": "2020",
-            "name": "Flashcards API",
-            "link": "https://github.com/zakzc/flashcards_API",
-            "image": "../../img/api.png",
-            "imageRef": "flash api",
-            "alt": "coding project: flashcardsProject API",
-            "tech": "Technologies used: Node, Express",
-            "describe": "The backend side of this project, storing the contents of cards."
+            "year": "2024",
+            "name": "Invaders",
+            "link": "https://github.com/zakzc/invaders",
+            "tech": "Technologies used: Rust, Crossterm",
+            "describe": "A terminal-based Space Invaders style game written in Rust, with keyboard controls and sound effects."
         },
         {
-            "year": "2020",
-            "name": "Flashcards",
-            "link": "https://github.com/zakzc/flashcards_front",
-            "image": "../../img/Flashcards.png",
-            "imageRef": "flash",
-            "alt": "coding project: flashcardsProject",
-            "tech": "Technologies used: html5, css3, React, Sass",
-            "describe": "This is, basically, a tool for memorizing study contents by means of a card game. It is similar to Anki and equivalents."
-        },
-        {
-            "year": "2017",
+            "year": "2023",
             "name": "This website",
             "link": "https://github.com/zakzc/mypersonalpage",
-            "image": "../../img/thisSite.png",
-            "imageRef": "current",
-            "alt": "coding project: this website",
-            "tech": "Technologies used: html5, css3, React, Framer-Motion, TypeScript",
-            "describe": "This is the github link to the code of this website. It was/is developed entirely in React, with animations in Framer-Motion but had many previous incarnations in: Django, Node, PHP/Wordpress and in plain JS"
+            "tech": "Technologies used: React, TypeScript, Vite, Framer Motion, Sass",
+            "describe": "My personal page, kept up to date and rebuilt over the years as a single-page portfolio."
         },
         {
-            "year": "2018",
-            "name": "Diary App",
-            "link": "https://guarded-dusk-70293.herokuapp.com",
-            "image": "../../assets/img/DiaryApptake1.png",
-            "imageRef": "diary",
-            "alt": "coding project: Diary",
-            "tech": "Technologies used: html5, css3, JS, MeteorJS.",
-            "describe": "This is a project from my course on Meteor.JS by the University of London - Goldsmiths. This is a diary that keeps track of your entries and returns them to you if you ask for a list of entries. It has a log in page and you must log in if you want to use it. The front and back end are made with Meteor. On clicking, the link will take to the actual app that is active on Heroku."
+            "year": "2023",
+            "name": "Change File Name To Date",
+            "link": "https://github.com/zakzc/changeFileNameToDate",
+            "tech": "Technologies used: Python",
+            "describe": "A small Python utility script for renaming files by date."
         },
         {
-            "year": "2017",
-            "name": "Typer",
-            "link": "https://github.com/zakzc/Typer",
-            "image": "../../img/TyperTake1.png",
-            "imageRef": "typer",
-            "alt": "coding project: typer",
-            "tech": "Technologies used: html5, css3, ES6, jquery, Ajax.",
-            "describe": "This is project for a Typer game, where it shows you a text and you have to type it as fast as you can. It uses material design for simplification of the UI. The link will take you to the Github page where the project is stored. Follow the readme.md for instructions on how to turn it on locally."
-        },
-        {
-            "year": "2015",
-            "name": "Older personal webpages",
-            "link": "no Link",
-            "image": "../../img/Personal_Django_index.png",
-            "imageRef": "personal",
-            "alt": "Older coding projects",
-            "tech": "Technologies used: Python, Django, Wordpress, PHP",
-            "describe": "Through the years I have made different versions of my personal webpage, as well as other projects. Initially on wordpress in a self-hosted version. Then, tweaking themes using php and making my only branches of themes with personal styles. This is the last version of a personal website, done initially in PHP, then developed with Django - apart from the usual html,css, js, of course. There is no link to this, since most of these pages don't exist anymore."
-        },
-        {
-            "year": "2018",
+            "year": "2020",
             "name": "Python Game",
             "link": "https://github.com/zakzc/thegame",
-            "image": "../../img/PythonCarGame.png",
-            "imageRef": "py",
-            "alt": "coding project: python racing game",
             "tech": "Technologies used: Python, PyGame",
-            "describe": "Through the years I made several projects in Python as part of my learning path.This is project for a small race game. It was made entirely in Python. This will take you to the github page where the code is backed up. I haven't updated this in several years, so can't say if it still works. But it's symbolic for, literally, hundreds of other small programs and projects that are a key element in my learning path."
+            "describe": "A simple practice project: a car game built with Python and PyGame."
         }
     ],
     "aboutMe": [
@@ -206,6 +274,88 @@
         },
         {
             "paragraph": "Going into Development was, in a sense, a career change, because that was not my full time job, but, at the same time, building things with code has been a constant throughout my life. From that perspective, I just decided to finally do something I really enjoy and something I am passionate about."
+        }
+    ],
+    "experience": [
+        {
+            "company": "S&P Global",
+            "role": "Software Engineer",
+            "period": "Feb 2023 – Present",
+            "location": "Gdańsk, Poland",
+            "summary": "Frontend and cloud-based solutions: building and optimising high-performance applications in a cloud environment.",
+            "highlights": [
+                "Build dynamic, responsive web applications with Next.js, React, Redux and JavaScript libraries.",
+                "Develop and manage APIs with API Management, handling data as JSON.",
+                "Code review, debugging and refactoring for performance and maintainability.",
+                "Cloud delivery on Microsoft Azure and Azure DevOps with CI pipelines; monitoring and logging with Kibana; asset bundling with Webpack.",
+                "Prototype and implement interfaces together with design teams in Figma."
+            ]
+        },
+        {
+            "company": "Tata Consultancy Services",
+            "role": "Full Stack Engineer (freelance)",
+            "period": "Oct 2021 – Mar 2023",
+            "location": "Warsaw, Poland",
+            "summary": "Scalable software for an international company serving thousands of users worldwide.",
+            "highlights": [
+                "Designed responsive, maintainable front ends with JavaScript, TypeScript, React and Redux.",
+                "Built and debugged APIs using API Management, JSON, Elasticsearch, Kibana and Postman.",
+                "Set up CI pipelines on Microsoft Azure and Azure DevOps.",
+                "Delivered within agile cycles using the Scaled Agile Framework (SAFe)."
+            ]
+        },
+        {
+            "company": "Ministry of Foreign Affairs, Brazil",
+            "role": "Chancellery Officer",
+            "period": "Feb 2007 – Jul 2020",
+            "location": "Brasília, Brazil",
+            "summary": "Management, operations and strategic support, with international assignments in Slovakia, the Netherlands and Algeria. Vice-Consul in the Netherlands (2011–2013).",
+            "highlights": [
+                "Led budgeting, procurement and contract management.",
+                "Managed legacy IT infrastructure with technical teams.",
+                "Key liaison in the rollout of a global eLearning platform.",
+                "Ran data research, analysis and reporting on economic, political and cultural trends."
+            ]
+        },
+        {
+            "company": "Universidade de Brasília",
+            "role": "Assistant Professor",
+            "period": "Jan 2005 – Jan 2007",
+            "location": "Brasília, Brazil",
+            "summary": "Research and teaching in translation studies, linguistics and critical analysis.",
+            "highlights": [
+                "Taught technical translation (technology, economics, business) and literary translation.",
+                "Taught critical reading, text analysis and speech interpretation.",
+                "Supervised final-year research projects and theses."
+            ]
+        }
+    ],
+    "certifications": [
+        "C++: Advanced Topics",
+        "C++ Essential Training",
+        "HTML Essential Training (2017)",
+        "WordPress: Ecommerce"
+    ],
+    "languages": [
+        {
+            "name": "Portuguese",
+            "level": "Native or bilingual"
+        },
+        {
+            "name": "English",
+            "level": "Full professional"
+        },
+        {
+            "name": "French",
+            "level": "Limited working"
+        },
+        {
+            "name": "Italian",
+            "level": "Limited working"
+        },
+        {
+            "name": "Spanish",
+            "level": "Limited working"
         }
     ]
 }
