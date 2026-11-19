@@ -13,10 +13,10 @@ const Education = () => (
                         <li key={e.order}>
                             <Reveal delay={(i % 3) * 0.08}>
                                 <article className="card edu">
-                                    <span className="tag">{e.level}</span>
-                                    <h3>{e.description}</h3>
+                                    <span className="tag">{e.period}</span>
+                                    <h3>{e.field}</h3>
                                     <p>
-                                        {e.title} &middot; {e.stage}
+                                        {e.degree} &middot; {e.school}
                                     </p>
                                 </article>
                             </Reveal>

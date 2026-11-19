@@ -53,7 +53,7 @@ const Skills = () => (
                                     )}
                                 </span>
                                 <h3>{skill.skillSet}</h3>
-                                <p>{skill.language.join('').trim()}</p>
+                                <p>{skill.language.join(', ')}</p>
                                 {skill.level && (
                                     <span
                                         className="skill__level"

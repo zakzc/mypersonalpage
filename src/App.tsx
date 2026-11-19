@@ -1,3 +1,4 @@
+import { MotionConfig } from 'framer-motion'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,7 +9,7 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 
 const App = () => (
-    <>
+    <MotionConfig reducedMotion="user">
         <Nav />
         <main>
             <Hero />
@@ -19,7 +20,7 @@ const App = () => (
             <Projects />
         </main>
         <Footer />
-    </>
+    </MotionConfig>
 )
 
 export default App

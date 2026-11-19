@@ -2,38 +2,38 @@
     "education": [
         {
             "order": 1,
-            "title": "Associate's degree",
-            "level": "2019 – 2021",
-            "description": "Computer Systems Analysis",
-            "stage": "Centro Universitário da Grande Dourados"
+            "degree": "Associate's degree",
+            "field": "Computer Systems Analysis",
+            "period": "2019 – 2021",
+            "school": "Centro Universitário da Grande Dourados"
         },
         {
             "order": 2,
-            "title": "Bachelor's degree",
-            "level": "2020 – 2023",
-            "description": "Computer Software Engineering",
-            "stage": "Centro Universitário da Grande Dourados"
+            "degree": "Bachelor's degree",
+            "field": "Computer Software Engineering",
+            "period": "2020 – 2023",
+            "school": "Centro Universitário da Grande Dourados"
         },
         {
             "order": 3,
-            "title": "MBA",
-            "level": "2020 – 2021",
-            "description": "Information Security / Information Assurance",
-            "stage": "Cruzeiro do Sul Virtual"
+            "degree": "MBA",
+            "field": "Information Security / Information Assurance",
+            "period": "2020 – 2021",
+            "school": "Cruzeiro do Sul Virtual"
         },
         {
             "order": 4,
-            "title": "Master's degree",
-            "level": "2003 – 2006",
-            "description": "Literary Theory",
-            "stage": "Universidade de Brasília"
+            "degree": "Master's degree",
+            "field": "Literary Theory",
+            "period": "2003 – 2006",
+            "school": "Universidade de Brasília"
         },
         {
             "order": 5,
-            "title": "Bachelor's degree",
-            "level": "1992 – 1997",
-            "description": "English Language and Translation",
-            "stage": "Universidade de Brasília"
+            "degree": "Bachelor's degree",
+            "field": "English Language and Translation",
+            "period": "1992 – 1997",
+            "school": "Universidade de Brasília"
         }
     ],
     "contact": [
@@ -50,7 +50,7 @@
         {
             "skillSet": "HTML5",
             "language": [
-                "HTML, ",
+                "HTML",
                 "XML"
             ],
             "level": [
@@ -63,8 +63,8 @@
         {
             "skillSet": "CSS3",
             "language": [
-                "Sass, ",
-                "Less, ",
+                "Sass",
+                "Less",
                 "Tailwind"
             ],
             "level": [
@@ -98,8 +98,8 @@
         {
             "skillSet": "Javascript",
             "language": [
-                "ES6 ",
-                "Meteor.JS "
+                "ES6",
+                "Meteor.JS"
             ],
             "level": [
                 1,
@@ -111,7 +111,7 @@
         {
             "skillSet": "React",
             "language": [
-                "React Router, ",
+                "React Router",
                 "Redux"
             ],
             "level": [
@@ -124,7 +124,7 @@
         {
             "skillSet": "Node",
             "language": [
-                "Express "
+                "Express"
             ],
             "level": [
                 1,
@@ -136,7 +136,7 @@
         {
             "skillSet": "Jest",
             "language": [
-                "Mocha, ",
+                "Mocha",
                 "Chai"
             ],
             "level": [
@@ -270,7 +270,7 @@
     ],
     "aboutMe": [
         {
-            "paragraph": "I am a full-stack developer with more than 7 years developing 💻 websites with modern platforms and programming languages. I like to learn things, build things, fix things 🔧 with a keen eye to design and purpose."
+            "paragraph": "I am a full-stack developer building websites 💻 with modern platforms and programming languages. I like to learn things, build things, fix things 🔧 with a keen eye to design and purpose."
         },
         {
             "paragraph": "Going into Development was, in a sense, a career change, because that was not my full time job, but, at the same time, building things with code has been a constant throughout my life. From that perspective, I just decided to finally do something I really enjoy and something I am passionate about."
